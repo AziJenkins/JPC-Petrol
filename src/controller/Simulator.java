@@ -2,9 +2,10 @@ package controller;
 
 import java.util.Random;
 
+import interfaces.Tickable;
 import model.PetrolStation;
 
-public class Simulator {
+public class Simulator implements Tickable{
 
 	
 	private PetrolStation station;
@@ -19,4 +20,9 @@ public class Simulator {
 		this.t = t;
 		this.station = new PetrolStation(numPumps, numTills);
 	}
-}
+
+
+	public void tick() {
+		// TODO Auto-generated method stub
+		
+	}}
