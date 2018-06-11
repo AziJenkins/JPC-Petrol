@@ -13,4 +13,10 @@ public class Simulator {
 	private double t;
 	public static Random rand;
 	
+	public Simulator(double p, double q, double t, numPumps, numTills) {
+		this.p = p;
+		this.q = q;
+		this.t = t;
+		this.station = new PetrolStation(numPumps, numTills);
+	}
 }

@@ -4,9 +4,9 @@ public class PumpQueue {
 
 	private Pump[] pumps;
 	
-	public PumpQueue(int noPumps) {
-		pumps = new Pump[noPumps];
-		for (int i = 0; i < noPumps; i++) {
+	public PumpQueue(int numPumps) {
+		pumps = new Pump[numPumps];
+		for (int i = 0; i < numPumps; i++) {
 			pumps[i] = new Pump();
 		}
 	}

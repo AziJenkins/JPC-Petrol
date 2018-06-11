@@ -9,9 +9,9 @@ public class PetrolStation {
 	private double fuelIncome = 0;
 	private double shopIncome = 0;
 
-	public PetrolStation(int noPumps, int noTills) {
-		this.pumps = new PumpQueue(noPumps);
-		this.tills = new TillQueue(noTills);
+	public PetrolStation(int numPumps, int numTills) {
+		this.pumps = new PumpQueue(numPumps);
+		this.tills = new TillQueue(numTills);
 		
 	}
 }

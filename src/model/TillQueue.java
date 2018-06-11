@@ -4,9 +4,9 @@ public class TillQueue {
 	
 	private Till[] tills;
 	
-	public TillQueue(int noTills) {
-		tills = new Till[noTills];
-		for (int i = 0; i < noTills; i++) {
+	public TillQueue(int numTills) {
+		tills = new Till[numTills];
+		for (int i = 0; i < numTills; i++) {
 			tills[i] = new Till();
 		}
 	}
