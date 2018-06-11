@@ -1,5 +1,7 @@
 package controller;
 
+import java.util.Random;
+
 import model.PetrolStation;
 
 public class Simulator {
@@ -9,5 +11,6 @@ public class Simulator {
 	private final double p;
 	private final double q;
 	private double t;
+	public static Random rand;
 	
 }
