@@ -1,5 +1,7 @@
 package model;
 
+import exceptions.MinGreaterThanMaxException;
+
 public class FamilySedan extends Vehicle {
 
 	private static final double FAMILY_SEDAN_SIZE = 1.5;
@@ -12,7 +14,7 @@ public class FamilySedan extends Vehicle {
 	private static final double FAMILY_SEDAN_MINIMUM_SHOPPING_SPEND = 8;
 	private static final double FAMILY_SEDAN_MAXIMUM_SHOPPING_SPEND = 16;
 	
-	public FamilySedan() {
-		super(FAMILY_SEDAN_SIZE, FAMILY_SEDAN_MINIMUM_FUEL_CAPACITY, FAMILY_SEDAN_MAXUMIM_FUEL_CAPACITY);
+	public FamilySedan() throws MinGreaterThanMaxException{
+		super(FAMILY_SEDAN_SIZE, FAMILY_SEDAN_MINIMUM_FUEL_CAPACITY, FAMILY_SEDAN_MAXUMIM_FUEL_CAPACITY, FAMILY_SEDAN_PROBABILITY_TO_SHOP, FAMILY_SEDAN_TICKS_BEFORE_NO_SHOPPING, FAMILY_SEDAN_MINIMUM_SHOPPING_TICKS, FAMILY_SEDAN_MAXIMUM_SHOPPING_TICKS, FAMILY_SEDAN_MINIMUM_SHOPPING_SPEND, FAMILY_SEDAN_MAXIMUM_SHOPPING_SPEND);
 	}
 }
