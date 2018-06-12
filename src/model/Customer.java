@@ -10,12 +10,14 @@ public class Customer {
 	private Boolean willShop;
 	private double shopTime;
 	private double shopSpend;
+	private int fuelBought;
 	
-	public Customer(UUID registration, double shopTime, double shopSpend, Boolean willShop) {
+	public Customer(UUID registration, double shopTime, double shopSpend, int fuelBought, Boolean willShop) {
 		this.registration = registration;
 		this.shopTime = shopTime;
 		this.shopSpend = shopSpend;
 		this.willShop = willShop;
+		this.fuelBought = fuelBought;
 	}
 	
 	public UUID getRegistration() {
@@ -24,5 +26,14 @@ public class Customer {
 	
 	public Boolean getHasPaid() {
 		return hasPaid;
+	}
+	
+	public Payment pay() {
+		double shopMoney = shopSpend;
+		int fuel = fuelBought;
+		shopSpend = 0;
+		fuelBought = 0;
+		hasPaid = true;
+		return new Payment(fuel, shopMoney);
 	}
 }

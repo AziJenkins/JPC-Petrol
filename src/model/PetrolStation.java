@@ -18,4 +18,18 @@ public class PetrolStation {
 	public void collectPayments() {
 		
 	}
+	
+	public Boolean recieveVehicle(Vehicle v) {
+		
+	}
+	
+	public void recieveCustomer(Customer c) {
+		
+	}
+	
+	public void dispatchComplete() {
+		
+	}
+	
+	
 }

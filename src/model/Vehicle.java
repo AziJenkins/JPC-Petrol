@@ -78,9 +78,13 @@ public abstract class Vehicle {
 			return false;
 		}
 	}
+	
+	public double getSize() {
+		return size;
+	}
 
 	public Customer leaveCar() {
-		return new Customer(registration, shoppingTicks, shoppingSpend, decideToShop());
+		return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop());
 	}
 	
 	public Boolean decideToShop() {
