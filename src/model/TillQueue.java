@@ -10,4 +10,20 @@ public class TillQueue {
 			tills[i] = new Till();
 		}
 	}
+	
+	public void enqueue() {
+		
+	}
+	
+	public void dequeue() {
+		
+	}
+	
+	public double payFuel() {
+		
+	}
+	
+	public double payShop() {
+		
+	}
 }

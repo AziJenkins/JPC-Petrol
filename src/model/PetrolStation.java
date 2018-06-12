@@ -15,5 +15,7 @@ public class PetrolStation {
 		
 	}
 	
-	
+	public void collectPayments() {
+		
+	}
 }

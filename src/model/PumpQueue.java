@@ -10,4 +10,16 @@ public class PumpQueue {
 			pumps[i] = new Pump();
 		}
 	}
+	
+	public void fuel(int fuelAmount) {
+		
+	}
+	
+	public bool enqueue(Vehicle v) {
+		
+	}
+	
+	public void dequeueAllFullyPaid() {
+		
+	}
 }
