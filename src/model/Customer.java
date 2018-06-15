@@ -10,14 +10,16 @@ public class Customer {
 	private Boolean willShop;
 	private double shopTime;
 	private double shopSpend;
+	private int payTicks;
 	private int fuelBought;
 	
-	public Customer(UUID registration, double shopTime, double shopSpend, int fuelBought, Boolean willShop) {
+	public Customer(UUID registration, double shopTime, double shopSpend, int fuelBought, Boolean willShop, int payTicks) {
 		this.registration = registration;
 		this.shopTime = shopTime;
 		this.shopSpend = shopSpend;
 		this.willShop = willShop;
 		this.fuelBought = fuelBought;
+		this.payTicks = payTicks;
 	}
 	
 	public UUID getRegistration() {

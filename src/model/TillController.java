@@ -1,10 +1,10 @@
 package model;
 
-public class TillQueue {
+public class TillController {
 	
 	private Till[] tills;
 	
-	public TillQueue(int numTills) {
+	public TillController(int numTills) {
 		tills = new Till[numTills];
 		for (int i = 0; i < numTills; i++) {
 			tills[i] = new Till();
@@ -19,11 +19,11 @@ public class TillQueue {
 		
 	}
 	
-	public double payFuel() {
-		
+	public Payment[] collectPayments() {
+		return null;
 	}
 	
-	public double payShop() {
-		
+	public Till[] getTills() {
+		return this.tills;
 	}
 }

@@ -1,16 +1,30 @@
 package model;
 
-public class Till implements Queue {
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Queue;
+
+import utils.CircularArrayQueue;
+
+public class Till {
 	
 	public final static int MAX_QUEUE_SIZE = 5; //completely random choice - needs rethink
 
-	private Customer[] queue;
-	private int head;
-	private int tail;
+	private CircularArrayQueue<Customer> queue;
 	
 	public Till() {
-		this.queue = new Customer[MAX_QUEUE_SIZE];
-		this.head = 0;
-		this.tail = 0;
+		queue = new CircularArrayQueue<Customer>();
+	}
+	
+	public Payment collectPayment() {
+		return null;
+	}
+	
+	public void reduceTimers() {
+		
+	}
+
+	public CircularArrayQueue<Customer> getQueue() {
+		return this.queue;
 	}
 }

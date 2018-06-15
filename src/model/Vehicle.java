@@ -20,9 +20,11 @@ public abstract class Vehicle {
 	private final double shoppingSpend;
 	private final double shopProbability;
 	private final double ticksBeforeNoShop;
+	private final int payTicks;
 	private int currentFuel;
 	private Boolean isFueled = false;
 	private Boolean hasPaid = false;
+	private Boolean isOccupied = true;
 	private UUID registration;
 	private int ticksSinceArrival = 0;
 	private Random rand = new Random();
@@ -37,6 +39,7 @@ public abstract class Vehicle {
 		this.fuelCapacity = calculateMaxCapacity(minCapacity, maxCapacity);
 		this.shoppingTicks = calculateShoppingTicks(minShopTicks, maxShopTicks);
 		this.shoppingSpend = calculateShopSpend(minShopSpend, maxShopSpend);
+		this.payTicks = calculatePayTicks();
 	}
 
 	private int calculateMaxCapacity(int minCapacity, int maxCapacity) throws MinGreaterThanMaxException {
@@ -69,6 +72,10 @@ public abstract class Vehicle {
 		else 
 			return (rand.nextDouble() * (maxShopSpend - minShopSpend)) + minShopSpend;
 	}
+	
+	private int calculatePayTicks() {
+		return 0;
+	}
 
 	public Boolean tryFill(int fuelRate) {
 		if (!isFueled) {
@@ -84,7 +91,7 @@ public abstract class Vehicle {
 	}
 
 	public Customer leaveCar() {
-		return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop());
+		return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop(), payTicks);
 	}
 	
 	public Boolean decideToShop() {

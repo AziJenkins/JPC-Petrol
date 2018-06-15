@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class Shop {
 
-	private Set<Customer> holdingArea;
+	private HashSet<Customer> holdingArea;
 	
 	public Shop() {
 		this.holdingArea = new HashSet<Customer>();
@@ -16,10 +16,14 @@ public class Shop {
 	}
 	
 	public Customer remove() {
-		
+		return null;
 	}
 	
 	public void reduceAllTimers() {
 		
+	}
+	
+	public HashSet<Customer> getContents() {
+		return this.holdingArea;
 	}
 }
