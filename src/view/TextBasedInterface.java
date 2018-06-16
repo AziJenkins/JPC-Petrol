@@ -8,23 +8,42 @@ import java.util.Scanner;
 
 import model.*;
 
+/**
+ * @author AZJENKIN
+ *
+ */
 public class TextBasedInterface {
 
+	/**
+	 * 
+	 */
 	private Scanner scan;
 
+	/**
+	 * 
+	 */
 	public TextBasedInterface() {
 		scan = new Scanner(System.in);
 	}
 
+	/**
+	 * 
+	 */
 	public void start() {
 		System.out.println("Welcome to the Petrol Station.");
 	}
 
+	/**
+	 * 
+	 */
 	public void end() {
 		System.out.println("Thank you for playing!!!");
 		scan.close();
 	}
 
+	/**
+	 * @param p
+	 */
 	public void showAll(PetrolStation p) {
 		System.out.println("Petrol Station:");
 		showIncome(p);
@@ -34,6 +53,9 @@ public class TextBasedInterface {
 		showAllPumps(p.getPumps());
 	}
 
+	/**
+	 * @param p
+	 */
 	public void showAllPumps(PumpController p) {
 		System.out.println("Pumps");
 		Pump[] pumps = p.getPumps();
@@ -43,6 +65,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @param p
+	 */
 	public void showPump(Pump p) {
 		System.out.println(" contains:");
 		Iterator<?> i = p.getQueue().iterator();
@@ -51,6 +76,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @param t
+	 */
 	public void showAllTills(TillController t) {
 		System.out.println("Tills");
 		Till[] tills = t.getTills();
@@ -60,6 +88,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @param t
+	 */
 	public void showTill(Till t) {
 		System.out.println(" contains:");
 		Iterator<?> i = t.getQueue().iterator();
@@ -68,6 +99,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @param p
+	 */
 	public void showShop(Shop p) {
 		System.out.println("The shop contains the following Customers:");
 		HashSet<Customer> s = p.getContents();
@@ -77,11 +111,17 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @param p
+	 */
 	public void showTime(PetrolStation p) {
 		int time = p.getTicks() * 10;
 		System.out.println(time + " seconds have passed");
 	}
 
+	/**
+	 * @param p
+	 */
 	public void showIncome(PetrolStation p) {
 		double fuelIncome = p.getFuelIncome();
 		double shopIncome = p.getShopIncome();
@@ -89,6 +129,9 @@ public class TextBasedInterface {
 		System.out.println("Shop income: " + shopIncome);
 	}
 
+	/**
+	 * @return
+	 */
 	public double getP() {
 		System.out.println("Please choose the chance of small cars and motorbikes (0.01, 0.02, 0.03, 0.04, 0.05)");
 		while (true) {
@@ -110,6 +153,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @return
+	 */
 	public double getQ() {
 		System.out.println("Please choose the chance of family sedans (0.01, 0.02, 0.03, 0.04, 0.05)");
 		while (true) {
@@ -131,6 +177,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @return
+	 */
 	public boolean getTrucksAllowed() {
 		System.out.println("Are trucks allowed in the station? y/n");
 		while (true) {
@@ -146,6 +195,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @return
+	 */
 	public int getNumPumps() {
 		System.out.println("Please choose the number of pumps (1, 2, 4)");
 		while (true) {
@@ -163,6 +215,9 @@ public class TextBasedInterface {
 		}
 	}
 
+	/**
+	 * @return
+	 */
 	public int getNumTills() {
 		System.out.println("Please choose the number of tills (1, 2, 4)");
 		while (true) {

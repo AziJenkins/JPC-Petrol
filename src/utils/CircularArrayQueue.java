@@ -4,121 +4,123 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Queue;
 
-public class CircularArrayQueue<T> implements Queue{
+/**
+ * @author AZJENKIN
+ *
+ * @param <T>
+ */
+public class CircularArrayQueue<T> implements Iterable<T> {
 
+	/**
+	 * 
+	 */
 	private int front;
+	/**
+	 * 
+	 */
 	private int rear;
+	/**
+	 * 
+	 */
 	private T[] queue;
+	/**
+	 * 
+	 */
 	private int size;
-	
+
+	/**
+	 * @param size
+	 */
 	public CircularArrayQueue(int size) {
 		this.size = size;
-		queue = (T[])new Object[size];
+		queue = (T[]) new Object[size];
+		front = -1;
+		rear = -1;
 	}
 
-	@Override
-	public boolean addAll(Collection c) {
-		// TODO Auto-generated method stub
+	/**
+	 * @param t
+	 * @return
+	 */
+	public boolean add(T t) {
+		if (!isFull()) {
+			queue[rear] = t;
+			rear = (rear + 1) % size;
+			return true;
+		}
 		return false;
 	}
 
-	@Override
-	public void clear() {
-		// TODO Auto-generated method stub
-		
+	/**
+	 * @return
+	 */
+	public T remove() {
+		if (!isEmpty()) {
+			front = (front + 1) % size;
+			T removed = queue[front];
+			queue[front] = null;
+			return removed;
+		}
+		return null;
 	}
 
-	@Override
-	public boolean contains(Object o) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public boolean containsAll(Collection c) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
+	/**
+	 * @return
+	 */
 	public boolean isEmpty() {
-		return first == -1 && last == first;
-	}
-
-	@Override
-	public Iterator iterator() {
-		return new Iterator<T>();
-	}
-
-	@Override
-	public boolean remove(Object o) {
-		// TODO Auto-generated method stub
+		if (queue[front + 1] == null) {
+			return true;
+		}
 		return false;
 	}
 
-	@Override
-	public boolean removeAll(Collection c) {
-		// TODO Auto-generated method stub
+	/**
+	 * @return
+	 */
+	public boolean isFull() {
+		if (queue[front].equals(queue[rear]) && front == rear) {
+			return true;
+		}
 		return false;
 	}
 
-	@Override
-	public boolean retainAll(Collection c) {
-		// TODO Auto-generated method stub
+	/**
+	 * @return
+	 */
+	public T peek() {
+		return queue[front + 1];
+	}
+
+	/**
+	 * @param t
+	 * @return
+	 */
+	public boolean contains(T t) {
+		for (T thing : queue) {
+			if (thing == t) {
+				return true;
+			}
+		}
 		return false;
 	}
 
-	@Override
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	/* (non-Javadoc)
+	 * @see java.lang.Iterable#iterator()
+	 */
+	public Iterator<T> iterator() {
+		Iterator<T> iterator = new Iterator<T>() {
+			private int current = front;
 
-	@Override
-	public Object[] toArray() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+			@Override
+			public boolean hasNext() {
+				return current < size && queue[current + 1] != null;
+			}
 
-	@Override
-	public Object[] toArray(Object[] a) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean add(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public Object element() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public boolean offer(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public Object peek() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Object poll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Object remove() {
-		// TODO Auto-generated method stub
-		return null;
+			@Override
+			public T next() {
+				return queue[current];
+			}
+		};
+		return iterator;
 	}
 }
