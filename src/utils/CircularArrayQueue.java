@@ -4,7 +4,10 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Queue;
 
+import exceptions.EmptyQueueException;
+
 /**
+ * A Circular Array Queue
  * @author AZJENKIN
  *
  * @param <T>
@@ -12,86 +15,92 @@ import java.util.Queue;
 public class CircularArrayQueue<T> implements Iterable<T> {
 
 	/**
-	 * 
+	 * The index of the element at the front of the queue
 	 */
 	private int front;
 	/**
-	 * 
+	 * The index of the element at the rear of the queue
 	 */
 	private int rear;
 	/**
-	 * 
+	 * The array that holds queue items
 	 */
 	private T[] queue;
 	/**
-	 * 
+	 * The maximum size of the queue
 	 */
 	private int size;
 
 	/**
-	 * @param size
+	 * Constructor for CircularArrayQueue
+	 * @param size The maximum size of the queue
 	 */
 	public CircularArrayQueue(int size) {
 		this.size = size;
 		queue = (T[]) new Object[size];
 		front = -1;
-		rear = -1;
+		rear = 0;
 	}
 
 	/**
+	 * Add an element to the rear of the queue
 	 * @param t
 	 * @return
+	 * 
 	 */
 	public boolean add(T t) {
-		if (!isFull()) {
-			queue[rear] = t;
-			rear = (rear + 1) % size;
-			return true;
+		if (isFull()) {
+			return false;
 		}
-		return false;
+		if(front == -1) {
+			front++;
+		}
+		queue[rear] = t;
+		rear = (rear + 1) % size;
+		return true;
 	}
 
 	/**
+	 * Remove the element at the front of the queue
 	 * @return
+	 * @throws EmptyQueueException 
 	 */
-	public T remove() {
-		if (!isEmpty()) {
-			front = (front + 1) % size;
-			T removed = queue[front];
-			queue[front] = null;
-			return removed;
+	public T remove() throws EmptyQueueException {
+		if (isEmpty()) {
+			throw new EmptyQueueException();
 		}
-		return null;
+		T e = queue[front];
+		queue[front] = null;
+		front = (front + 1) % size;
+		return e;
 	}
 
 	/**
+	 * Returns true if there is nothing in the queue
 	 * @return
 	 */
 	public boolean isEmpty() {
-		if (queue[front + 1] == null) {
-			return true;
-		}
-		return false;
+		return front == -1 || queue[front] == null;
 	}
 
 	/**
+	 * Returns true if the queue is full
 	 * @return
 	 */
 	public boolean isFull() {
-		if (queue[front].equals(queue[rear]) && front == rear) {
-			return true;
-		}
-		return false;
+		return rear == front && queue[front] != null;
 	}
 
 	/**
+	 * Return the first element in the queue without removing it
 	 * @return
 	 */
 	public T peek() {
-		return queue[front + 1];
+		return queue[front];
 	}
 
 	/**
+	 * Check if the queue contains a specified element
 	 * @param t
 	 * @return
 	 */
@@ -104,21 +113,24 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 		return false;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * Returns an iterator for the queue
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Iterable#iterator()
 	 */
 	public Iterator<T> iterator() {
 		Iterator<T> iterator = new Iterator<T>() {
-			private int current = front;
+			private int next = front;
 
 			@Override
 			public boolean hasNext() {
-				return current < size && queue[current + 1] != null;
+				return !isEmpty() && queue[next] != null;
 			}
 
 			@Override
 			public T next() {
-				return queue[current];
+				return queue[next];
 			}
 		};
 		return iterator;

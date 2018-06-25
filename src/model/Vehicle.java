@@ -10,77 +10,84 @@ import exceptions.CustomerCarMismatchException;
 import exceptions.MinGreaterThanMaxException;
 
 /**
+ * A model Vehicle
  * @author AZJENKIN
  *
  */
 public abstract class Vehicle {
 	/**
-	 * 
+	 * The amount of space the Vehicle takes up in a queue
 	 */
 	private final double size;
 	/**
-	 * 
+	 * The capacity of the Vehicles fuel tank in Gallons
 	 */
 	private final int fuelCapacity;
 	/**
-	 * 
+	 * The amount of time the driver of the Vehicle will
+	 * spend in the Shop if they visit
 	 */
 	private final int shoppingTicks;
 	/**
-	 * 
+	 * The amount of money the driver of the Vehicle will
+	 * spend in the Shop if they visit
 	 */
 	private final double shoppingSpend;
 	/**
-	 * 
+	 * The probability that the driver of the Vehicle will
+	 * visit the shop given that they fueled fast enough
 	 */
 	private final double shopProbability;
 	/**
-	 * 
+	 * If the driver of the Vehicle does not complete fueling
+	 * within this time they will not visit the shop
 	 */
 	private final double ticksBeforeNoShop;
 	/**
-	 * 
+	 * The time that the driver of the Vehicle will take to
+	 * complete payment at the till
 	 */
 	private final int payTicks;
 	/**
-	 * 
+	 * The current amount of fuel in the Vehicle
 	 */
 	private int currentFuel;
 	/**
-	 * 
+	 * A flag to show that the Vehicle is full
 	 */
 	private Boolean isFueled = false;
 	/**
-	 * 
+	 * A flag to show that the driver of the Vehicle has paid
 	 */
 	private Boolean hasPaid = false;
 	/**
-	 * 
+	 * A flag to show that the driver of the Vehicle is in it
 	 */
 	private Boolean isOccupied = true;
 	/**
-	 * 
+	 * The unique registration of the Vehicle
 	 */
 	private UUID registration;
 	/**
-	 * 
+	 * The number of ticks the Vehicle has been at the Petrol Station
 	 */
 	private int ticksSinceArrival = 0;
 	/**
-	 * 
+	 * A Randomiser for deciding the value of; fuelCapacity, shoppingTicks, shoppingSpend, payTicks
 	 */
 	private Random rand = new Random();
 
 	/**
-	 * @param size
-	 * @param minCapacity
-	 * @param maxCapacity
-	 * @param shopProbability
-	 * @param ticksBeforeNoShop
-	 * @param minShopTicks
-	 * @param maxShopTicks
-	 * @param minShopSpend
-	 * @param maxShopSpend
+	 * Constructor for a Vehicle 
+	 * @param size The amount of space the Vehicle takes up in a queue
+	 * @param minCapacity The minimum capacity of the Vehicles fuel tank
+	 * @param maxCapacity The maximum capacity of the Vehicles fuel tank
+	 * @param shopProbability The probability that the driver of the Vehicle will visit the Shop 
+	 * @param ticksBeforeNoShop The time before which the driver of the Vehicle will definitely not visit the Shop 
+	 * @param minShopTicks The minimum (ticks)time the driver of the Vehicle will spend browsing the Shop
+	 * @param maxShopTicks The maximum (ticks)time the driver of the Vehicle will spend browsing the Shop
+	 * @param minShopSpend The minimum amount the driver will spend if they visit the Shop
+	 * @param maxShopSpend The maximum amount the driver will spend if they visit the Shop
 	 * @throws MinGreaterThanMaxException
 	 */
 	public Vehicle(double size, int minCapacity, int maxCapacity, double shopProbability, int ticksBeforeNoShop,
@@ -90,70 +97,32 @@ public abstract class Vehicle {
 		this.currentFuel = 0;
 		this.shopProbability = shopProbability;
 		this.ticksBeforeNoShop = ticksBeforeNoShop;		
-		this.fuelCapacity = calculateMaxCapacity(minCapacity, maxCapacity);
-		this.shoppingTicks = calculateShoppingTicks(minShopTicks, maxShopTicks);
-		this.shoppingSpend = calculateShopSpend(minShopSpend, maxShopSpend);
-		this.payTicks = calculatePayTicks();
+		this.fuelCapacity = (int)Math.round(randomiseBetweenLimits(minCapacity, maxCapacity));
+		this.shoppingTicks = (int)Math.round(randomiseBetweenLimits(minShopTicks, maxShopTicks));
+		this.shoppingSpend = randomiseBetweenLimits(minShopSpend, maxShopSpend);
+		this.payTicks = (int)Math.round(randomiseBetweenLimits(Customer.MINIMUM_PAY_TICKS, Customer.MAXIMUM_PAY_TICKS));
 	}
 
 	/**
-	 * @param minCapacity
-	 * @param maxCapacity
+	 * Chooses a random number between a lower limit and an upper limit
+	 * @param minValue
+	 * @param maxValue
 	 * @return
 	 * @throws MinGreaterThanMaxException
 	 */
-	private int calculateMaxCapacity(int minCapacity, int maxCapacity) throws MinGreaterThanMaxException {
-		int capacityDifference = maxCapacity - minCapacity;
+	private double randomiseBetweenLimits(double minValue, double maxValue) throws MinGreaterThanMaxException {
+		double capacityDifference = maxValue - minValue;
 		if (capacityDifference < 0)
 			throw new MinGreaterThanMaxException();
 		else if (capacityDifference == 0) 
-			return maxCapacity;
+			return maxValue;
 		else 
-			return rand.nextInt(maxCapacity - minCapacity) + minCapacity;
+			return (rand.nextDouble() * (maxValue - minValue)) + minValue;
 	}
 
 	/**
-	 * @param minShopTicks
-	 * @param maxShopTicks
-	 * @return
-	 * @throws MinGreaterThanMaxException
-	 */
-	private int calculateShoppingTicks(int minShopTicks, int maxShopTicks) throws MinGreaterThanMaxException {
-		int shopTickDifference = maxShopTicks - minShopTicks;
-		if(shopTickDifference < 0)
-			throw new MinGreaterThanMaxException();
-		else if (shopTickDifference == 0) 
-			return maxShopTicks;
-		else 
-			return rand.nextInt(maxShopTicks - minShopTicks) + minShopTicks;
-		
-	}
-
-	/**
-	 * @param minShopSpend
-	 * @param maxShopSpend
-	 * @return
-	 * @throws MinGreaterThanMaxException
-	 */
-	private double calculateShopSpend(double minShopSpend, double maxShopSpend) throws MinGreaterThanMaxException {
-		double shopSpendDifference = maxShopSpend - minShopSpend;
-		if (shopSpendDifference < 0)
-			throw new MinGreaterThanMaxException();
-		else if (shopSpendDifference == 0)
-			return maxShopSpend;
-		else 
-			return (rand.nextDouble() * (maxShopSpend - minShopSpend)) + minShopSpend;
-	}
-	
-	/**
-	 * @return
-	 */
-	private int calculatePayTicks() {
-		return 0;
-	}
-
-	/**
-	 * @param fuelRate
+	 * Attempt to fill the Vehicle 
+	 * @param fuelRate The number of gallons to fuel the Vehicle
 	 * @return
 	 */
 	public Boolean tryFill(int fuelRate) {
@@ -166,6 +135,7 @@ public abstract class Vehicle {
 	}
 	
 	/**
+	 * Getter for the size of the Vehicle
 	 * @return
 	 */
 	public double getSize() {
@@ -173,13 +143,15 @@ public abstract class Vehicle {
 	}
 
 	/**
+	 * Create a driver to leave the Vehicle
 	 * @return
 	 */
-	public Customer leaveCar() {
+	public Customer leaveVehicle() {
 		return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop(), payTicks);
 	}
 	
 	/**
+	 * Choose to shop based of the number of ticks since arrival to a Petrol Station compared to a reasonable amount of time (ticksBeforeNoShop) 
 	 * @return
 	 */
 	public Boolean decideToShop() {
@@ -187,7 +159,8 @@ public abstract class Vehicle {
 	}
 
 	/**
-	 * @param c
+	 * Set the hasPaid and isOccupied flags when the drive reenters their Vehicle
+	 * @param c A Customer
 	 * @throws CustomerCarMismatchException
 	 */
 	public void reEnterCar(Customer c) throws CustomerCarMismatchException {
@@ -199,7 +172,7 @@ public abstract class Vehicle {
 	}
 	
 	/**
-	 * 
+	 * Increase the number of ticks since arrival
 	 */
 	public void addTick() {
 		this.ticksSinceArrival ++;

@@ -27,14 +27,14 @@ public class TextBasedInterface {
 	}
 
 	/**
-	 * 
+	 * Outputs the start message of the text based interface
 	 */
 	public void start() {
 		System.out.println("Welcome to the Petrol Station.");
 	}
 
 	/**
-	 * 
+	 * Outputs the end message of the text based interface 
 	 */
 	public void end() {
 		System.out.println("Thank you for playing!!!");
@@ -43,6 +43,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param p
+	 * Calls all methods that represent the state of the petrol station
 	 */
 	public void showAll(PetrolStation p) {
 		System.out.println("Petrol Station:");
@@ -55,6 +56,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param p
+	 * Outputs the state of all pumps by looping through the queue
 	 */
 	public void showAllPumps(PumpController p) {
 		System.out.println("Pumps");
@@ -67,6 +69,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param p
+	 * Outputs the state of a single pump 
 	 */
 	public void showPump(Pump p) {
 		System.out.println(" contains:");
@@ -78,6 +81,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param t
+	 * Outputs the state of all tills by looping through the till queue
 	 */
 	public void showAllTills(TillController t) {
 		System.out.println("Tills");
@@ -90,6 +94,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param t
+	 * Outputs the state of a single till
 	 */
 	public void showTill(Till t) {
 		System.out.println(" contains:");
@@ -101,6 +106,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param p
+	 * Outputs all customers in the shop 
 	 */
 	public void showShop(Shop p) {
 		System.out.println("The shop contains the following Customers:");
@@ -113,6 +119,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @param p
+	 * Outputs the amount of time passed in the simulation
 	 */
 	public void showTime(PetrolStation p) {
 		int time = p.getTicks() * 10;
@@ -121,6 +128,8 @@ public class TextBasedInterface {
 
 	/**
 	 * @param p
+	 * Output the income that has come from fuel and the income
+	 * that has come from the shop.
 	 */
 	public void showIncome(PetrolStation p) {
 		double fuelIncome = p.getFuelIncome();
@@ -131,6 +140,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @return
+	 * Prompt the user to enter the probability rating (p) and check the input is valid
 	 */
 	public double getP() {
 		System.out.println("Please choose the chance of small cars and motorbikes (0.01, 0.02, 0.03, 0.04, 0.05)");
@@ -155,6 +165,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @return
+	 * Prompt the user to enter the probability rating (p) and check the input is valid
 	 */
 	public double getQ() {
 		System.out.println("Please choose the chance of family sedans (0.01, 0.02, 0.03, 0.04, 0.05)");
@@ -179,6 +190,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @return
+	 * Prompt the user to decide if trucks are allowed in the simualtion
 	 */
 	public boolean getTrucksAllowed() {
 		System.out.println("Are trucks allowed in the station? y/n");
@@ -197,6 +209,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @return
+	 * Prompt the user to decide the number of pumps and check the input is valid
 	 */
 	public int getNumPumps() {
 		System.out.println("Please choose the number of pumps (1, 2, 4)");
@@ -217,6 +230,7 @@ public class TextBasedInterface {
 
 	/**
 	 * @return
+	 * Prompt the user to decide the number of tills and check the input is valid
 	 */
 	public int getNumTills() {
 		System.out.println("Please choose the number of tills (1, 2, 4)");
