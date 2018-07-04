@@ -135,4 +135,8 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 		};
 		return iterator;
 	}
+	
+	public int getSize() {
+		return size;
+	}
 }

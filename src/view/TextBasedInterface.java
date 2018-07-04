@@ -132,7 +132,7 @@ public class TextBasedInterface {
 	 * that has come from the shop.
 	 */
 	public void showIncome(PetrolStation p) {
-		double fuelIncome = p.getFuelIncome();
+		double fuelIncome = p.getGallonsSold();
 		double shopIncome = p.getShopIncome();
 		System.out.println("Fuel income: " + fuelIncome);
 		System.out.println("Shop income: " + shopIncome);

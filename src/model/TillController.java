@@ -1,5 +1,10 @@
 package model;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import exceptions.EmptyQueueException;
+
 /**
  * A controller for any number of Tills
  * @author AZJENKIN
@@ -27,15 +32,25 @@ public class TillController {
 	 * Give a Customer to the Till with the shortest queue
 	 */
 	public void enqueue() {
-		
+		int shortestQueueIndex = 0;
+		for (int i = 1; i < tills.length; i++) {
+			if (tills[i].getQueueSize() < tills[shortestQueueIndex].getQueueSize()) {
+				shortestQueueIndex = i;
+			}
+		}
 	}
 	
 	/**
 	 * Remove the Customer at the front of each Tills queue
 	 * if they have already paid
+	 * @throws EmptyQueueException 
 	 */
-	public void dequeueFullyPaid() {
-		
+	public List<Customer> dequeueFullyPaid() throws EmptyQueueException {
+		LinkedList<Customer> completedCustomers = new LinkedList<Customer>();
+		for (Till t : tills) {
+			completedCustomers.add(t.dequeueWhenDone());
+		}
+		return completedCustomers;
 	}
 	
 	/**
@@ -43,8 +58,12 @@ public class TillController {
 	 * each Tills queue if they are ready to pay
 	 * @return
 	 */
-	public Payment[] collectPayments() {
-		return null;
+	public List<Payment> collectPayments() {
+		LinkedList<Payment> payments = new LinkedList<Payment>();
+		for (Till t : tills) {
+			payments.add(t.collectPayment());
+		}
+		return payments;
 	}
 	
 	/**

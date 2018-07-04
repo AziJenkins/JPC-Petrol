@@ -74,6 +74,10 @@ public class Customer {
 		return hasPaid;
 	}
 	
+	public int reducePayTicks() {
+		return payTicks--;
+	}
+	
 	/**
 	 * Return a Payment consisting of the amount the Customer has fueled their car 
 	 * and the amount of money they spent in the shop
@@ -86,5 +90,9 @@ public class Customer {
 		fuelSpend = 0;
 		hasPaid = true;
 		return new Payment(fuel, shopMoney);
+	}
+	
+	public int getPayTicks() {
+		return payTicks;
 	}
 }

@@ -2,6 +2,8 @@ package model;
 
 import java.util.HashSet;
 
+import exceptions.CustomerAlreadyPresentException;
+
 /**
  * @author AZJENKIN
  * A model Petrol Station
@@ -29,7 +31,7 @@ public class PetrolStation {
 	/**
 	 * The total income from fuel sales
 	 */
-	private double fuelIncome = 0;
+	private int gallonsSold = 0;
 	/**
 	 * The total income from shop sales
 	 */
@@ -50,8 +52,8 @@ public class PetrolStation {
 	 * Getter for fuel income
 	 * @return
 	 */
-	public double getFuelIncome() {
-		return fuelIncome;
+	public double getGallonsSold() {
+		return gallonsSold;
 	}
 
 	/**
@@ -67,7 +69,11 @@ public class PetrolStation {
 	 * at any of the Tills in the Petrol Station
 	 */
 	public void collectPayments() {
-		
+		Payment[] payments = tills.collectPayments();
+		for (Payment p : payments) {
+			gallonsSold += p.getFuelGallons();
+			shopIncome += p.getShopMoney();
+		}
 	}
 	
 	/**
@@ -100,23 +106,28 @@ public class PetrolStation {
 	 * @return
 	 */
 	public Boolean recieveVehicle(Vehicle v) {
-		return false;
+		return pumps.enqueue(v);
 	}
 	
 	/**
 	 * Takes a Customer and passes it to either the Shop or
 	 * the Till Controller according to what the Customer wants
 	 * @param c
+	 * @throws CustomerAlreadyPresentException 
 	 */
-	public void recieveCustomer(Customer c) {
-		
+	public void recieveCustomer(Customer c) throws CustomerAlreadyPresentException {
+		if (c.getHasPaid()) {
+			//find car
+		} else {
+			shop.add(c);
+		}	
 	}
 	
 	/**
 	 * Asks the Pump Controller to dequeue any Vehicles that are ready to leave
 	 */
 	public void dispatchComplete() {
-		
+		pumps.dequeueAllFullyPaid();
 	}
 	
 	/**
@@ -125,6 +136,8 @@ public class PetrolStation {
 	 * and Shop that time has Passed;
 	 */
 	public void tick() {
+		//not ordered
+		
 		
 	}
 
