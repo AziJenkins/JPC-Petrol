@@ -26,7 +26,7 @@ public class Customer {
 	/**
 	 * The number of ticks the Customer will shop for
 	 */
-	private double shopTicks;
+	private int shopTicks;
 	/**
 	 * The amount of money the Customer will spend in the Shop
 	 */
@@ -74,10 +74,6 @@ public class Customer {
 		return hasPaid;
 	}
 	
-	public int reducePayTicks() {
-		return payTicks--;
-	}
-	
 	/**
 	 * Return a Payment consisting of the amount the Customer has fueled their car 
 	 * and the amount of money they spent in the shop
@@ -91,8 +87,24 @@ public class Customer {
 		hasPaid = true;
 		return new Payment(fuel, shopMoney);
 	}
+
+	public Boolean getWillShop() {
+		return willShop;
+	}
+
+	public void finishShopping() {
+		willShop = false;
+	}
+
+	public double getShopTicks() {
+		return shopTicks;
+	}
+
+	public int reducePayTicks() {
+		return payTicks--;
+	}
 	
-	public int getPayTicks() {
-		return payTicks;
+	public int reduceShopTicks() {
+		return shopTicks--;
 	}
 }

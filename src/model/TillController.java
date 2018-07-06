@@ -1,5 +1,8 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -43,7 +46,6 @@ public class TillController {
 	/**
 	 * Remove the Customer at the front of each Tills queue
 	 * if they have already paid
-	 * @throws EmptyQueueException 
 	 */
 	public List<Customer> dequeueFullyPaid() throws EmptyQueueException {
 		LinkedList<Customer> completedCustomers = new LinkedList<Customer>();
