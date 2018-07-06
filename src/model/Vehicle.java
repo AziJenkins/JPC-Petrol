@@ -177,4 +177,8 @@ public abstract class Vehicle {
 	public void addTick() {
 		this.ticksSinceArrival ++;
 	}
+
+	public boolean getHasPaid() {
+		return hasPaid;
+	}
 }

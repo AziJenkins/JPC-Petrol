@@ -1,6 +1,6 @@
 package model;
 
-import java.util.HashSet;
+import java.util.List;
 
 import exceptions.CustomerAlreadyPresentException;
 
@@ -31,7 +31,7 @@ public class PetrolStation {
 	/**
 	 * The total income from fuel sales
 	 */
-	private int gallonsSold = 0;
+	private double gallonsSold = 0;
 	/**
 	 * The total income from shop sales
 	 */
@@ -69,7 +69,7 @@ public class PetrolStation {
 	 * at any of the Tills in the Petrol Station
 	 */
 	public void collectPayments() {
-		Payment[] payments = tills.collectPayments();
+		List<Payment> payments = tills.collectPayments();
 		for (Payment p : payments) {
 			gallonsSold += p.getFuelGallons();
 			shopIncome += p.getShopMoney();
@@ -113,7 +113,6 @@ public class PetrolStation {
 	 * Takes a Customer and passes it to either the Shop or
 	 * the Till Controller according to what the Customer wants
 	 * @param c
-	 * @throws CustomerAlreadyPresentException 
 	 */
 	public void recieveCustomer(Customer c) throws CustomerAlreadyPresentException {
 		if (c.getHasPaid()) {
@@ -136,8 +135,6 @@ public class PetrolStation {
 	 * and Shop that time has Passed;
 	 */
 	public void tick() {
-		//not ordered
-		
 		
 	}
 

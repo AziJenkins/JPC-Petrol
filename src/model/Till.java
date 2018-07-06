@@ -1,10 +1,5 @@
 package model;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Queue;
-
 import exceptions.EmptyQueueException;
 import utils.CircularArrayQueue;
 
@@ -41,14 +36,14 @@ public class Till {
 	public void reduceTimer() {
 		queue.peek().reducePayTicks();
 	}
-
+	
 	public Customer dequeueWhenDone() throws EmptyQueueException {
 		if (queue.peek().getPayTicks() < 1) {
 			return queue.remove();
 		}
 		return null;
 	}
-	
+
 	/**
 	 * Getter for the queue of Customers
 	 * @return
