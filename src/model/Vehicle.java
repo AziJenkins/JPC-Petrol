@@ -52,7 +52,7 @@ public abstract class Vehicle implements QueueItem{
 	/**
 	 * The current amount of fuel in the Vehicle
 	 */
-	private int currentFuel;
+	private double currentFuel;
 	/**
 	 * A flag to show that the Vehicle is full
 	 */
@@ -126,7 +126,7 @@ public abstract class Vehicle implements QueueItem{
 	 * @param fuelRate The number of gallons to fuel the Vehicle
 	 * @return
 	 */
-	public Boolean tryFill(int fuelRate) {
+	public Boolean tryFill(double fuelRate) {
 		if (!isFueled) {
 			currentFuel += fuelRate;
 			return true;

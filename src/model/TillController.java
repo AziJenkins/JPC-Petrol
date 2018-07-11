@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
 
 /**
@@ -60,8 +61,9 @@ public class TillController {
 	 * Collect payments from the Customers at the front of
 	 * each Tills queue if they are ready to pay
 	 * @return
+	 * @throws CustomerAlreadyPaidException 
 	 */
-	public List<Payment> collectPayments() {
+	public List<Payment> collectPayments() throws CustomerAlreadyPaidException {
 		LinkedList<Payment> payments = new LinkedList<Payment>();
 		for (Till t : tills) {
 			payments.add(t.collectPayment());

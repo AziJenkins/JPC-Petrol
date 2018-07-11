@@ -1,5 +1,6 @@
 package model;
 
+import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
 import utils.CircularArrayQueue;
 
@@ -29,8 +30,9 @@ public class Till {
 	/**
 	 * Collect a Payment from the Customer at the front of the queue
 	 * @return
+	 * @throws CustomerAlreadyPaidException 
 	 */
-	public Payment collectPayment() {
+	public Payment collectPayment() throws CustomerAlreadyPaidException {
 		return queue.peek().pay();
 	}
 	
@@ -42,7 +44,7 @@ public class Till {
 	}
 	
 	public Customer dequeueWhenDone() throws EmptyQueueException {
-		if (queue.peek().getPayTicks() < 1) {
+		if (queue.peek().getHasPaid()) {
 			return queue.remove();
 		}
 		return null;
@@ -56,7 +58,7 @@ public class Till {
 		return this.queue;
 	}
 	
-	public int getQueueSize() {
+	public double getQueueSize() {
 		return queue.getSize();
 	}
 }

@@ -2,6 +2,7 @@ package model;
 
 import java.util.UUID;
 
+import exceptions.CustomerAlreadyPaidException;
 import interfaces.QueueItem;
 
 /**
@@ -40,23 +41,23 @@ public class Customer implements QueueItem{
 	/**
 	 * The amount of fuel the Customer will purchase
 	 */
-	private int fuelSpend;
+	private double fuelGallons;
 	
 	/**
 	 * Customer constructor
 	 * @param registration The unique registration of this Customers Vehicle
 	 * @param shopTicks The number of ticks the Customer will shop for
 	 * @param shopSpend The amount of money the Customer will spend in the Shop
-	 * @param fuelSpend The amount of fuel the Customer will purchase
+	 * @param currentFuel The amount of fuel the Customer will purchase
 	 * @param willShop A flag to show if the Customer is happy enough to visit the Shop
 	 * @param payTicks The number of ticks this Customer will take to pay
 	 */
-	public Customer(UUID registration, int shopTicks, double shopSpend, int fuelSpend, Boolean willShop, int payTicks) {
+	public Customer(UUID registration, int shopTicks, double shopSpend, double currentFuel, Boolean willShop, int payTicks) {
 		this.registration = registration;
 		this.shopTicks = shopTicks;
 		this.shopSpend = shopSpend;
 		this.willShop = willShop;
-		this.fuelSpend = fuelSpend;
+		this.fuelGallons = currentFuel;
 		this.payTicks = payTicks;
 	}
 	
@@ -81,11 +82,14 @@ public class Customer implements QueueItem{
 	 * and the amount of money they spent in the shop
 	 * @return
 	 */
-	public Payment pay() {
+	public Payment pay() throws CustomerAlreadyPaidException {
+		if (hasPaid) {
+			throw new CustomerAlreadyPaidException();
+		}
 		double shopMoney = shopSpend;
-		int fuel = fuelSpend;
+		double fuel = fuelGallons;
 		shopSpend = 0;
-		fuelSpend = 0;
+		fuelGallons = 0;
 		hasPaid = true;
 		return new Payment(fuel, shopMoney);
 	}

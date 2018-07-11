@@ -9,6 +9,7 @@ import java.util.UUID;
 import org.junit.Before;
 import org.junit.Test;
 
+import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
 import model.Customer;
 import model.Payment;
@@ -57,7 +58,7 @@ public class TestTillController {
 	}
 
 	@Test
-	public void testDequeueFullyPaid() {
+	public void testDequeueFullyPaid() throws CustomerAlreadyPaidException {
 
 		Customer c1 = new Customer(UUID.randomUUID(), 0, 0, 5, false, 0);
 		Customer c2 = new Customer(UUID.randomUUID(), 0, 0, 5, false, 0);
@@ -85,7 +86,7 @@ public class TestTillController {
 	}
 
 	@Test
-	public void testCollectPayments() {
+	public void testCollectPayments() throws CustomerAlreadyPaidException {
 
 		Customer c1 = new Customer(UUID.randomUUID(), 0, 1, 1, false, 0);
 		Customer c2 = new Customer(UUID.randomUUID(), 0, 2, 2, false, 0);
