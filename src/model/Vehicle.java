@@ -8,13 +8,14 @@ import java.util.UUID;
 
 import exceptions.CustomerCarMismatchException;
 import exceptions.MinGreaterThanMaxException;
+import interfaces.QueueItem;
 
 /**
  * A model Vehicle
  * @author AZJENKIN
  *
  */
-public abstract class Vehicle {
+public abstract class Vehicle implements QueueItem{
 	/**
 	 * The amount of space the Vehicle takes up in a queue
 	 */

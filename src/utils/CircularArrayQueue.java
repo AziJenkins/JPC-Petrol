@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Queue;
 
 import exceptions.EmptyQueueException;
+import interfaces.QueueItem;
 
 /**
  * A Circular Array Queue
@@ -12,7 +13,7 @@ import exceptions.EmptyQueueException;
  *
  * @param <T>
  */
-public class CircularArrayQueue<T> implements Iterable<T> {
+public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 
 	/**
 	 * The index of the element at the front of the queue
@@ -29,15 +30,16 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	/**
 	 * The maximum size of the queue
 	 */
-	private int size;
+	private int capacity;
+	
 
 	/**
 	 * Constructor for CircularArrayQueue
-	 * @param size The maximum size of the queue
+	 * @param capacity The maximum size of the queue
 	 */
-	public CircularArrayQueue(int size) {
-		this.size = size;
-		queue = (T[]) new Object[size];
+	public CircularArrayQueue(int capacity) {
+		this.capacity = capacity;
+		queue = (T[]) new Object[capacity];
 		front = -1;
 		rear = 0;
 	}
@@ -56,7 +58,7 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 			front++;
 		}
 		queue[rear] = t;
-		rear = (rear + 1) % size;
+		rear = (rear + 1) % capacity;
 		return true;
 	}
 
@@ -71,7 +73,7 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 		}
 		T e = queue[front];
 		queue[front] = null;
-		front = (front + 1) % size;
+		front = (front + 1) % capacity;
 		return e;
 	}
 
@@ -136,7 +138,12 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 		return iterator;
 	}
 	
-	public int getSize() {
+	public double getSize() {
+		double size = 0;
+		Iterator<T> i = iterator();
+		while (i.hasNext()) {
+			size += i.next().getSize();
+		}
 		return size;
 	}
 }
