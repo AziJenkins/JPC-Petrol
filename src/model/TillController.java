@@ -41,7 +41,7 @@ public class TillController {
 				shortestQueueIndex = i;
 			}
 		}
-		tills[shortestQueueIndex].
+		tills[shortestQueueIndex].enqueue(c);
 	}
 	
 	/**
