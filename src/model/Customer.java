@@ -49,7 +49,7 @@ public class Customer {
 	 * @param willShop A flag to show if the Customer is happy enough to visit the Shop
 	 * @param payTicks The number of ticks this Customer will take to pay
 	 */
-	public Customer(UUID registration, double shopTicks, double shopSpend, int fuelSpend, Boolean willShop, int payTicks) {
+	public Customer(UUID registration, int shopTicks, double shopSpend, int fuelSpend, Boolean willShop, int payTicks) {
 		this.registration = registration;
 		this.shopTicks = shopTicks;
 		this.shopSpend = shopSpend;
@@ -96,8 +96,12 @@ public class Customer {
 		willShop = false;
 	}
 
-	public double getShopTicks() {
+	public int getShopTicks() {
 		return shopTicks;
+	}
+	
+	public int getPayTicks() {
+		return payTicks;
 	}
 
 	public int reducePayTicks() {

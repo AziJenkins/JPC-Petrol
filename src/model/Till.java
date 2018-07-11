@@ -22,6 +22,10 @@ public class Till {
 		queue = new CircularArrayQueue<Customer>(maxQueueSize);
 	}
 	
+	public void enqueue(Customer c) {
+		queue.add(c);
+	}
+	
 	/**
 	 * Collect a Payment from the Customer at the front of the queue
 	 * @return

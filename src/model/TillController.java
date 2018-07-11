@@ -34,13 +34,14 @@ public class TillController {
 	/**
 	 * Give a Customer to the Till with the shortest queue
 	 */
-	public void enqueue() {
+	public void enqueue(Customer c) {
 		int shortestQueueIndex = 0;
 		for (int i = 1; i < tills.length; i++) {
 			if (tills[i].getQueueSize() < tills[shortestQueueIndex].getQueueSize()) {
 				shortestQueueIndex = i;
 			}
 		}
+		tills[shortestQueueIndex].
 	}
 	
 	/**
