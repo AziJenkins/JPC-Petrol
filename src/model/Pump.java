@@ -34,7 +34,7 @@ public class Pump {
 	 */
 	public Pump(double smallestVehicleSize) {
 		this.spaceUnused = PUMP_CAPACITY;
-		this.queue = new CircularArrayQueue<Vehicle>((int)Math.ceil(PUMP_CAPACITY * smallestVehicleSize));
+		this.queue = new CircularArrayQueue<Vehicle>(PUMP_CAPACITY, smallestVehicleSize);
 	}
 	
 	public boolean enqueue(Vehicle v) {
@@ -62,5 +62,9 @@ public class Pump {
 	 */
 	public CircularArrayQueue<Vehicle> getQueue() {
 		return this.queue;
+	}
+	
+	public double getQueueSize() {
+		return queue.getSize();
 	}
 }

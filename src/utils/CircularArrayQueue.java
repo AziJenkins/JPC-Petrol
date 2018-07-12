@@ -30,16 +30,19 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	/**
 	 * The maximum size of the queue
 	 */
-	private int capacity;
+	private double capacity;
+	
+	private double spaceUnused;
 	
 
 	/**
 	 * Constructor for CircularArrayQueue
 	 * @param capacity The maximum size of the queue
 	 */
-	public CircularArrayQueue(int capacity) {
+	public CircularArrayQueue(double capacity, double smallestItem) {
 		this.capacity = capacity;
-		queue = new QueueItem[capacity];
+		this.spaceUnused = capacity;
+		queue = new QueueItem[(int)Math.ceil(capacity / smallestItem)];
 		front = -1;
 		rear = 0;
 	}
@@ -51,14 +54,15 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * 
 	 */
 	public boolean add(T t) {
-		if (isFull()) {
+		if (isFull() || t.getSize() > spaceUnused) {
 			return false;
 		}
 		if(front == -1) {
 			front++;
 		}
 		queue[rear] = t;
-		rear = (rear + 1) % capacity;
+		rear = (rear + 1) % queue.length;
+		spaceUnused -= t.getSize();
 		return true;
 	}
 
@@ -74,7 +78,8 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 		}
 		QueueItem e = queue[front];
 		queue[front] = null;
-		front = (front + 1) % capacity;
+		front = (front + 1) % queue.length;
+		spaceUnused += e.getSize();
 		return (T) e;
 	}
 
@@ -152,11 +157,6 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	}
 	
 	public double getSize() {
-		double size = 0;
-		Iterator<T> i = iterator();
-		while (i.hasNext()) {
-			size += i.next().getSize();
-		}
-		return size;
+		return capacity - spaceUnused;
 	}
 }

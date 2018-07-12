@@ -21,7 +21,7 @@ public class Till {
 	 * Constructor for a Till
 	 */
 	public Till(int maxQueueSize) {
-		queue = new CircularArrayQueue<Customer>(maxQueueSize);
+		queue = new CircularArrayQueue<Customer>(maxQueueSize, 1);
 	}
 	
 	public void enqueue(Customer c) throws TillFullException{
