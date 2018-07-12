@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
@@ -46,10 +47,13 @@ public class Shop {
 	 * @return
 	 */
 	public List<Customer> remove(List<Customer> finishedShopping) {
+		List<Customer> removed = new ArrayList<Customer>();
 		for (Customer c : finishedShopping) {
-			holdingArea.remove(c);
+			if (holdingArea.remove(c)) {
+				removed.add(c);
+			}
 		}
-		return finishedShopping;
+		return removed;
 	}
 
 	/**
@@ -59,7 +63,7 @@ public class Shop {
 	public List<Customer> reduceAllTimers() {
 		List<Customer> finishedShopping = new LinkedList<Customer>();
 		for (Customer c : holdingArea) {
-			if (c.reducePayTicks() < 1) {
+			if (c.reduceShopTicks() < 1) {
 				finishedShopping.add(c);
 			}
 		}

@@ -21,7 +21,7 @@ public class Customer implements QueueItem {
 	/**
 	 * A flag to show if the Customer has paid for their fuel
 	 */
-	private Boolean hasPaid = false;
+	public Boolean hasPaid = false;
 	/**
 	 * A flag to show if the Customer is happy enough to visit the Shop
 	 */
