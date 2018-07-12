@@ -8,13 +8,14 @@ import java.util.UUID;
 
 import exceptions.CustomerCarMismatchException;
 import exceptions.MinGreaterThanMaxException;
+import interfaces.QueueItem;
 
 /**
  * A model Vehicle
  * @author AZJENKIN
  *
  */
-public abstract class Vehicle {
+public abstract class Vehicle implements QueueItem{
 	/**
 	 * The amount of space the Vehicle takes up in a queue
 	 */
@@ -51,7 +52,7 @@ public abstract class Vehicle {
 	/**
 	 * The current amount of fuel in the Vehicle
 	 */
-	private int currentFuel;
+	private double currentFuel;
 	/**
 	 * A flag to show that the Vehicle is full
 	 */
@@ -63,7 +64,7 @@ public abstract class Vehicle {
 	/**
 	 * A flag to show that the driver of the Vehicle is in it
 	 */
-	private Boolean isOccupied = true;
+	private Boolean isOccupied = true; //TODO set this
 	/**
 	 * The unique registration of the Vehicle
 	 */
@@ -125,7 +126,7 @@ public abstract class Vehicle {
 	 * @param fuelRate The number of gallons to fuel the Vehicle
 	 * @return
 	 */
-	public Boolean tryFill(int fuelRate) {
+	public Boolean tryFill(double fuelRate) {
 		if (!isFueled) {
 			currentFuel += fuelRate;
 			return true;
@@ -154,8 +155,8 @@ public abstract class Vehicle {
 	 * Choose to shop based of the number of ticks since arrival to a Petrol Station compared to a reasonable amount of time (ticksBeforeNoShop) 
 	 * @return
 	 */
-	public Boolean decideToShop() {
-		return ticksSinceArrival <= ticksBeforeNoShop;
+	private Boolean decideToShop() {
+		return ticksSinceArrival <= ticksBeforeNoShop; //TODO this doesnt account for shop probability
 	}
 
 	/**
@@ -169,6 +170,8 @@ public abstract class Vehicle {
 		} else {
 			throw new CustomerCarMismatchException();
 		}
+		
+		//TODO throw CustomerAlreadyPresentException if already occupied
 	}
 	
 	/**

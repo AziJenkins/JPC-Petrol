@@ -2,6 +2,7 @@ package model;
 
 import java.util.List;
 
+import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
 
 /**
@@ -67,8 +68,9 @@ public class PetrolStation {
 	/**
 	 * Collects payments from any Customer that is ready to pay 
 	 * at any of the Tills in the Petrol Station
+	 * @throws CustomerAlreadyPaidException 
 	 */
-	public void collectPayments() {
+	public void collectPayments() throws CustomerAlreadyPaidException {
 		List<Payment> payments = tills.collectPayments();
 		for (Payment p : payments) {
 			gallonsSold += p.getFuelGallons();

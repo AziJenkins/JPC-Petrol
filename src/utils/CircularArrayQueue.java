@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.Queue;
 
 import exceptions.EmptyQueueException;
+import interfaces.QueueItem;
 
 /**
  * A Circular Array Queue
@@ -12,7 +13,7 @@ import exceptions.EmptyQueueException;
  *
  * @param <T>
  */
-public class CircularArrayQueue<T> implements Iterable<T> {
+public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 
 	/**
 	 * The index of the element at the front of the queue
@@ -25,19 +26,23 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	/**
 	 * The array that holds queue items
 	 */
-	private T[] queue;
+	private QueueItem[] queue;
 	/**
 	 * The maximum size of the queue
 	 */
-	private int size;
+	private double capacity;
+	
+	private double spaceUnused;
+	
 
 	/**
 	 * Constructor for CircularArrayQueue
-	 * @param size The maximum size of the queue
+	 * @param capacity The maximum size of the queue
 	 */
-	public CircularArrayQueue(int size) {
-		this.size = size;
-		queue = (T[]) new Object[size];
+	public CircularArrayQueue(double capacity, double smallestItem) {
+		this.capacity = capacity;
+		this.spaceUnused = capacity;
+		queue = new QueueItem[(int)Math.ceil(capacity / smallestItem)];
 		front = -1;
 		rear = 0;
 	}
@@ -49,14 +54,15 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	 * 
 	 */
 	public boolean add(T t) {
-		if (isFull()) {
+		if (isFull() || t.getSize() > spaceUnused) {
 			return false;
 		}
 		if(front == -1) {
 			front++;
 		}
 		queue[rear] = t;
-		rear = (rear + 1) % size;
+		rear = (rear + 1) % queue.length;
+		spaceUnused -= t.getSize();
 		return true;
 	}
 
@@ -65,14 +71,16 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	 * @return
 	 * @throws EmptyQueueException 
 	 */
+	@SuppressWarnings("unchecked")
 	public T remove() throws EmptyQueueException {
 		if (isEmpty()) {
 			throw new EmptyQueueException();
 		}
-		T e = queue[front];
+		QueueItem e = queue[front];
 		queue[front] = null;
-		front = (front + 1) % size;
-		return e;
+		front = (front + 1) % queue.length;
+		spaceUnused += e.getSize();
+		return (T) e;
 	}
 
 	/**
@@ -95,8 +103,12 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	 * Return the first element in the queue without removing it
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public T peek() {
-		return queue[front];
+		if (front < 0) {
+			return null;
+		}
+		return (T) queue[front];
 	}
 
 	/**
@@ -105,7 +117,7 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	 * @return
 	 */
 	public boolean contains(T t) {
-		for (T thing : queue) {
+		for (QueueItem thing : queue) {
 			if (thing == t) {
 				return true;
 			}
@@ -122,21 +134,29 @@ public class CircularArrayQueue<T> implements Iterable<T> {
 	public Iterator<T> iterator() {
 		Iterator<T> iterator = new Iterator<T>() {
 			private int next = front;
+			private int iFront = front;
+			private boolean hasStarted = false;
 
 			@Override
 			public boolean hasNext() {
-				return !isEmpty() && queue[next] != null;
+				return !isEmpty() && queue[next] != null && !(hasStarted && next == iFront);
 			}
 
+			@SuppressWarnings("unchecked")
 			@Override
 			public T next() {
-				return queue[next];
+				if (!hasStarted) {
+					hasStarted = true;
+				}
+				T ret = (T) queue[next];
+				next = (next + 1 ) % queue.length;
+				return ret;
 			}
 		};
 		return iterator;
 	}
 	
-	public int getSize() {
-		return size;
+	public double getSize() {
+		return capacity - spaceUnused;
 	}
 }

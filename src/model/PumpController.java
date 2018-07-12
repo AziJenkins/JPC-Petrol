@@ -2,9 +2,9 @@ package model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.List;
 
-import javax.swing.text.html.HTMLDocument.Iterator;
 
 /**
  * A controller for any number of Pumps
@@ -35,21 +35,13 @@ public class PumpController {
 	 * @return
 	 */
 	public Boolean enqueue(Vehicle v) {
-		List<Integer> size = new ArrayList<Integer>();
-		int x = 0;
+		int shortestQueueIndex = 0;
 		for(int i = 0; i < pumps.length; i++) {
-			java.util.Iterator<Vehicle> it = pumps[i].getQueue().iterator();
-			while (it.hasNext()) {
-				x++;
+			if(pumps[i].getQueueSize() < pumps[shortestQueueIndex].getQueueSize()) {
+				shortestQueueIndex = i;
 			}
-			size.add(x);
 		}
-		
-		x = size.get(Collections.min(size));
-		
-		pumps[x].getQueue().add(v);
-		
-		return false;
+		return pumps[shortestQueueIndex].enqueue(v);
 	}
 	
 	/**
@@ -63,7 +55,7 @@ public class PumpController {
 					it.remove();
 				}
 			}
-		}
+		} //TODO refactor to use the pump.dequeueFullyPaid()
 	}
 	
 	/**

@@ -1,4 +1,4 @@
-package Tests;
+import org.junit.Test;
 
 public class TestPump {
 
@@ -12,4 +12,13 @@ public class TestPump {
 		
 	}
 	
+	@Test
+	public void testFill() {
+		
+	}
+	
+	@Test
+	public void testDequeueWhenDone() {
+		
+	}
 }

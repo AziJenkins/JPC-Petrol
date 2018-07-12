@@ -10,7 +10,7 @@ public class Payment {
 	/**
 	 * The number of gallons of fuel to be bought
 	 */
-	private int fuelGallons;
+	private double fuelGallons;
 
 	/**
 	 * The amount of money spent in the shop
@@ -22,12 +22,12 @@ public class Payment {
 	 * @param fuelGallons
 	 * @param shopMoney
 	 */
-	public Payment(int fuelGallons, double shopMoney) {
+	public Payment(double fuelGallons, double shopMoney) {
 		this.fuelGallons = fuelGallons;
 		this.shopMoney = shopMoney;
 	}	
 	
-	public int getFuelGallons() {
+	public double getFuelGallons() {
 		return fuelGallons;
 	}
 

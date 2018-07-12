@@ -1,6 +1,8 @@
 package model;
 
+import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
+import exceptions.TillFullException;
 import utils.CircularArrayQueue;
 
 /**
@@ -19,29 +21,36 @@ public class Till {
 	 * Constructor for a Till
 	 */
 	public Till(int maxQueueSize) {
-		queue = new CircularArrayQueue<Customer>(maxQueueSize);
+		queue = new CircularArrayQueue<Customer>(maxQueueSize, 1);
+	}
+	
+	public void enqueue(Customer c) throws TillFullException{
+		if(!queue.add(c)) {
+			throw new TillFullException();
+		}
 	}
 	
 	/**
 	 * Collect a Payment from the Customer at the front of the queue
 	 * @return
+	 * @throws CustomerAlreadyPaidException 
 	 */
-	public Payment collectPayment() {
+	public Payment collectPayment() throws CustomerAlreadyPaidException {
+		if (queue.peek() != null) {
 		return queue.peek().pay();
-	}
-	
-	/**
-	 * Reduce the payment timer of the Customer at the front of the queue
-	 */
-	public void reduceTimer() {
-		queue.peek().reducePayTicks();
-	}
-	
-	public Customer dequeueWhenDone() throws EmptyQueueException {
-		if (queue.peek().getPayTicks() < 1) {
-			return queue.remove();
 		}
 		return null;
+	}
+	
+	public Customer dequeueWhenDone() {
+		if(queue.isEmpty() || !queue.peek().getHasPaid()) {
+			return null;
+		}
+		try {
+			return queue.remove();
+		} catch (EmptyQueueException e) {
+			return null;
+		}
 	}
 
 	/**
@@ -52,7 +61,7 @@ public class Till {
 		return this.queue;
 	}
 	
-	public int getQueueSize() {
+	public double getQueueSize() {
 		return queue.getSize();
 	}
 }

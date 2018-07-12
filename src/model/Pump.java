@@ -17,6 +17,8 @@ public class Pump {
 	 * The capacity of the queue for the Pump
 	 */
 	public final static double PUMP_CAPACITY = 3;
+	
+	public final static double FUEL_RATE = 1;
 
 	/**
 	 * The amount of space still unused in the Pumps queue
@@ -32,9 +34,20 @@ public class Pump {
 	 */
 	public Pump(double smallestVehicleSize) {
 		this.spaceUnused = PUMP_CAPACITY;
-		this.queue = new CircularArrayQueue<Vehicle>((int)Math.ceil(PUMP_CAPACITY * smallestVehicleSize));
+		this.queue = new CircularArrayQueue<Vehicle>(PUMP_CAPACITY, smallestVehicleSize);
+	}
+	
+	public boolean enqueue(Vehicle v) {
+		if (queue.add(v)) {
+			spaceUnused -= v.getSize();
+			return true;
+		}
+		return false;
 	}
 
+	private boolean fill() {
+		return queue.peek().tryFill(FUEL_RATE);
+	}
 	/**
 	 * Progress time at the pump
 	 * This will alert the Vehicle at the front of the queue that time has passed
@@ -50,4 +63,10 @@ public class Pump {
 	public CircularArrayQueue<Vehicle> getQueue() {
 		return this.queue;
 	}
+	
+	public double getQueueSize() {
+		return queue.getSize();
+	}
+	
+	//TODO add dequeueWhenFullyPaid method
 }
