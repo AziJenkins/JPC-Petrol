@@ -55,7 +55,7 @@ public class PumpController {
 					it.remove();
 				}
 			}
-		}
+		} //TODO refactor to use the pump.dequeueFullyPaid()
 	}
 	
 	/**

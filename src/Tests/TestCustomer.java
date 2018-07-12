@@ -12,11 +12,6 @@ import model.Customer;
 import model.Payment;
 
 public class TestCustomer {
-
-	@Test
-	public void testConstructor() {
-		
-	}
 	
 	@Test
 	public void testPay() throws CustomerAlreadyPaidException {

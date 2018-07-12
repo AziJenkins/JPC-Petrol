@@ -64,7 +64,7 @@ public abstract class Vehicle implements QueueItem{
 	/**
 	 * A flag to show that the driver of the Vehicle is in it
 	 */
-	private Boolean isOccupied = true;
+	private Boolean isOccupied = true; //TODO set this
 	/**
 	 * The unique registration of the Vehicle
 	 */
@@ -155,8 +155,8 @@ public abstract class Vehicle implements QueueItem{
 	 * Choose to shop based of the number of ticks since arrival to a Petrol Station compared to a reasonable amount of time (ticksBeforeNoShop) 
 	 * @return
 	 */
-	public Boolean decideToShop() {
-		return ticksSinceArrival <= ticksBeforeNoShop;
+	private Boolean decideToShop() {
+		return ticksSinceArrival <= ticksBeforeNoShop; //TODO this doesnt account for shop probability
 	}
 
 	/**
@@ -170,6 +170,8 @@ public abstract class Vehicle implements QueueItem{
 		} else {
 			throw new CustomerCarMismatchException();
 		}
+		
+		//TODO throw CustomerAlreadyPresentException if already occupied
 	}
 	
 	/**
