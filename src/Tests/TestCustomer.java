@@ -23,7 +23,10 @@ public class TestCustomer {
 		Customer readyToPay = new Customer(UUID.randomUUID(), 0, 5.25, 7, false, 0);
 		Customer notReadyToPay = new Customer(UUID.randomUUID(), 0, 2, 5, false, 3);
 		
-		assertEquals(new Payment(7, 5.25), readyToPay.pay());
+		Payment p = readyToPay.pay();
+		assertEquals(5.25, p.getShopMoney(), 0.01); //method deprecated 0.01 seems sensible considering no calculations should have happened
+		assertEquals(7, p.getFuelGallons(), 0.01);
+		
 		boolean flag = false;
 		try {
 			readyToPay.pay();
@@ -35,6 +38,9 @@ public class TestCustomer {
 		assertNull(notReadyToPay.pay());
 		assertNull(notReadyToPay.pay());
 		assertNull(notReadyToPay.pay());
-		assertEquals(new Payment(5, 2), notReadyToPay.pay());
+		
+		p = notReadyToPay.pay();
+		assertEquals(2, p.getShopMoney(), 0.01);
+		assertEquals(5, p.getFuelGallons(), 0.01);
 	}
 }

@@ -2,6 +2,7 @@ package model;
 
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
+import exceptions.TillFullException;
 import utils.CircularArrayQueue;
 
 /**
@@ -23,8 +24,10 @@ public class Till {
 		queue = new CircularArrayQueue<Customer>(maxQueueSize);
 	}
 	
-	public void enqueue(Customer c) {
-		queue.add(c);
+	public void enqueue(Customer c) throws TillFullException{
+		if(!queue.add(c)) {
+			throw new TillFullException();
+		}
 	}
 	
 	/**
@@ -33,21 +36,21 @@ public class Till {
 	 * @throws CustomerAlreadyPaidException 
 	 */
 	public Payment collectPayment() throws CustomerAlreadyPaidException {
+		if (queue.peek() != null) {
 		return queue.peek().pay();
-	}
-	
-	/**
-	 * Reduce the payment timer of the Customer at the front of the queue
-	 */
-	public void reduceTimer() {
-		queue.peek().reducePayTicks();
-	}
-	
-	public Customer dequeueWhenDone() throws EmptyQueueException {
-		if (queue.peek().getHasPaid()) {
-			return queue.remove();
 		}
 		return null;
+	}
+	
+	public Customer dequeueWhenDone() {
+		if(queue.isEmpty() || !queue.peek().getHasPaid()) {
+			return null;
+		}
+		try {
+			return queue.remove();
+		} catch (EmptyQueueException e) {
+			return null;
+		}
 	}
 
 	/**

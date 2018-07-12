@@ -12,4 +12,13 @@ public class TestPump {
 		
 	}
 	
+	@Test
+	public void testFill() {
+		
+	}
+	
+	@Test
+	public void testDequeueWhenDone() {
+		
+	}
 }

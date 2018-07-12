@@ -26,7 +26,7 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	/**
 	 * The array that holds queue items
 	 */
-	private T[] queue;
+	private QueueItem[] queue;
 	/**
 	 * The maximum size of the queue
 	 */
@@ -39,7 +39,7 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 */
 	public CircularArrayQueue(int capacity) {
 		this.capacity = capacity;
-		queue = (T[]) new Object[capacity];
+		queue = new QueueItem[capacity];
 		front = -1;
 		rear = 0;
 	}
@@ -67,14 +67,15 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * @return
 	 * @throws EmptyQueueException 
 	 */
+	@SuppressWarnings("unchecked")
 	public T remove() throws EmptyQueueException {
 		if (isEmpty()) {
 			throw new EmptyQueueException();
 		}
-		T e = queue[front];
+		QueueItem e = queue[front];
 		queue[front] = null;
 		front = (front + 1) % capacity;
-		return e;
+		return (T) e;
 	}
 
 	/**
@@ -97,8 +98,12 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * Return the first element in the queue without removing it
 	 * @return
 	 */
+	@SuppressWarnings("unchecked")
 	public T peek() {
-		return queue[front];
+		if (front < 0) {
+			return null;
+		}
+		return (T) queue[front];
 	}
 
 	/**
@@ -107,7 +112,7 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * @return
 	 */
 	public boolean contains(T t) {
-		for (T thing : queue) {
+		for (QueueItem thing : queue) {
 			if (thing == t) {
 				return true;
 			}
@@ -124,15 +129,23 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	public Iterator<T> iterator() {
 		Iterator<T> iterator = new Iterator<T>() {
 			private int next = front;
+			private int iFront = front;
+			private boolean hasStarted = false;
 
 			@Override
 			public boolean hasNext() {
-				return !isEmpty() && queue[next] != null;
+				return !isEmpty() && queue[next] != null && !(hasStarted && next == iFront);
 			}
 
+			@SuppressWarnings("unchecked")
 			@Override
 			public T next() {
-				return queue[next];
+				if (!hasStarted) {
+					hasStarted = true;
+				}
+				T ret = (T) queue[next];
+				next = (next + 1 ) % queue.length;
+				return ret;
 			}
 		};
 		return iterator;

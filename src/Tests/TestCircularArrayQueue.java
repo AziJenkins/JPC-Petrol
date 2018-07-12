@@ -38,7 +38,7 @@ class TestCircularArrayQueue {
 	 */
 	@Test
 	void testAddRemove() throws EmptyQueueException {
-		CircularArrayQueue<StringItem> stringQueue = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> stringQueue = new CircularArrayQueue<StringItem>(3);
 		assertTrue(stringQueue.add(new StringItem("First")));
 		assertTrue(stringQueue.add(new StringItem("Second")));
 		assertTrue(stringQueue.add(new StringItem("Third")));
@@ -73,7 +73,7 @@ class TestCircularArrayQueue {
 	 */
 	@Test
 	void testIterable() {
-		CircularArrayQueue<StringItem> s = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> s = new CircularArrayQueue<StringItem>(3);
 		s.add(new StringItem("1"));
 		Iterator<StringItem> i = s.iterator();
 		assertTrue(i.hasNext());
@@ -82,7 +82,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testIsEmpty() throws EmptyQueueException {
-		CircularArrayQueue<StringItem> q = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> q = new CircularArrayQueue<StringItem>(3);
 		assertTrue(q.isEmpty());
 		q.add(new StringItem("First"));
 		assertFalse(q.isEmpty());
@@ -102,7 +102,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testIsFull() throws EmptyQueueException {
-		CircularArrayQueue<StringItem> q = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> q = new CircularArrayQueue<StringItem>(3);
 		assertFalse(q.isFull());
 		q.add(new StringItem("First"));
 		assertFalse(q.isFull());
@@ -130,7 +130,7 @@ class TestCircularArrayQueue {
 	
 	@Test 
 	public void testPeek() throws EmptyQueueException {
-		CircularArrayQueue<StringItem> q = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> q = new CircularArrayQueue<StringItem>(3);
 		assertNull(q.peek());
 		q.add(new StringItem("First"));
 		assertEquals("First", q.peek().s);
@@ -140,7 +140,7 @@ class TestCircularArrayQueue {
 		assertEquals("First", q.peek().s);
 		
 		q.remove();
-		assertEquals("Second", q.peek());
+		assertEquals("Second", q.peek().s);
 		
 		q.add(new StringItem("Third"));
 		assertEquals("Second", q.peek().s);
@@ -160,13 +160,13 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testContains() throws EmptyQueueException {
-		CircularArrayQueue<StringItem> q = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> q = new CircularArrayQueue<StringItem>(3);
 		StringItem first = new StringItem("First");
 		StringItem second = new StringItem("Second");
 		StringItem third = new StringItem("Third");
 		StringItem fourth = new StringItem("Fourth");
 		assertFalse(q.contains(first));
-		q.add(second);
+		q.add(first);
 		assertTrue(q.contains(first));
 		q.add(second);
 		q.add(third);
@@ -187,7 +187,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testGetSize() throws EmptyQueueException {
-		CircularArrayQueue<StringItem> q = new CircularArrayQueue<>(3);
+		CircularArrayQueue<StringItem> q = new CircularArrayQueue<StringItem>(3);
 		StringItem small = new StringItem("small", 0.2);
 		StringItem medium = new StringItem("medium", 0.5);
 		StringItem large = new StringItem("large", 2);
