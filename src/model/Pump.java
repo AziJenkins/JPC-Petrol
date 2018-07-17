@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Queue;
 
+import exceptions.EmptyQueueException;
 import utils.CircularArrayQueue;
 
 /**
@@ -69,4 +70,19 @@ public class Pump {
 	}
 	
 	//TODO add dequeueWhenFullyPaid method
+	
+	public void dequeueWhenFullyPaid () {
+		boolean b;
+		
+		b = queue.peek().getHasPaid();
+		
+		if (b == true && queue.peek().getIsOccupied() == true) {
+			try {
+				queue.remove();
+			} catch (EmptyQueueException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
 }

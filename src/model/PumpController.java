@@ -49,14 +49,10 @@ public class PumpController {
 	 */
 	public void dequeueAllFullyPaid() {
 		for(int i = 0; i < pumps.length; i++) {
-			java.util.Iterator<Vehicle> it = pumps[i].getQueue().iterator();
-			while(it.hasNext()) {
-				if(it.next().getHasPaid() == true) {
-					it.remove();
-				}
+				pumps[i].dequeueWhenFullyPaid();
 			}
 		} //TODO refactor to use the pump.dequeueFullyPaid()
-	}
+	
 	
 	/**
 	 * Progress time
