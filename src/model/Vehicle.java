@@ -6,6 +6,7 @@ package model;
 import java.util.Random;
 import java.util.UUID;
 
+import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
 import exceptions.MinGreaterThanMaxException;
 import interfaces.QueueItem;
@@ -162,12 +163,16 @@ public abstract class Vehicle implements QueueItem{
 	/**
 	 * Set the hasPaid and isOccupied flags when the drive reenters their Vehicle
 	 * @param c A Customer
-	 * @throws CustomerCarMismatchException
+	 * @throws CustomerAlreadyPresentException 
 	 */
-	public void reEnterCar(Customer c) throws CustomerCarMismatchException {
+	public void reEnterCar(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException {
 		if (c.getRegistration().equals(registration)) {
 			hasPaid = c.getHasPaid();
-		} else {
+			setIsOccupied(true);
+		} else if (getIsOccupied() == true) {
+			throw new CustomerAlreadyPresentException();
+		}
+		else {
 			throw new CustomerCarMismatchException();
 		}
 		
@@ -183,5 +188,13 @@ public abstract class Vehicle implements QueueItem{
 
 	public boolean getHasPaid() {
 		return hasPaid;
+	}
+
+	public Boolean getIsOccupied() {
+		return isOccupied;
+	}
+
+	public void setIsOccupied(Boolean isOccupied) {
+		this.isOccupied = isOccupied;
 	}
 }
