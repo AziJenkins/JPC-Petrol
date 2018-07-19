@@ -2,6 +2,7 @@ package model;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Queue;
 
 import exceptions.EmptyQueueException;
@@ -24,7 +25,7 @@ public class Pump {
 	/**
 	 * The amount of space still unused in the Pumps queue
 	 */
-	public double spaceUnused;
+	private double spaceUnused;
 	/**
 	 * The queue of Vehicles for the Pump
 	 */
@@ -46,7 +47,7 @@ public class Pump {
 		return false;
 	}
 
-	private boolean fill() {
+	public boolean fill() {
 		return queue.peek().tryFill(FUEL_RATE);
 	}
 	/**
@@ -55,6 +56,10 @@ public class Pump {
 	 */
 	public void tick() {
 		
+	}
+	
+	public double getSpaceUnused() {
+		return spaceUnused;
 	}
 
 	/**
@@ -71,18 +76,17 @@ public class Pump {
 	
 	//TODO add dequeueWhenFullyPaid method
 	
-	public void dequeueWhenFullyPaid () {
-		boolean b;
-		
-		b = queue.peek().getHasPaid();
-		
-		if (b == true && queue.peek().getIsOccupied() == true) {
+	public Vehicle dequeueWhenFullyPaid () {
+		Vehicle v = queue.peek();
+		if (v != null && v.getHasPaid() && v.getIsOccupied()) {
 			try {
-				queue.remove();
+				v = queue.remove();
+				spaceUnused = PUMP_CAPACITY - queue.getSize();
+				return v;
 			} catch (EmptyQueueException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+
 			}
 		}
+		return null;
 	}
 }
