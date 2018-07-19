@@ -3,6 +3,7 @@ package model;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -47,11 +48,16 @@ public class PumpController {
 	/**
 	 * Remove all Vehicles that have paid for fuel and any Shop purchases
 	 */
-	public void dequeueAllFullyPaid() {
+	public List<Vehicle> dequeueAllFullyPaid() {
+		List<Vehicle> complete = new LinkedList<Vehicle>();
 		for(int i = 0; i < pumps.length; i++) {
-				pumps[i].dequeueWhenFullyPaid();
+				Vehicle v = pumps[i].dequeueWhenFullyPaid();
+				if (v != null) {
+					complete.add(v);
+				}
 			}
-		} //TODO refactor to use the pump.dequeueFullyPaid()
+		return complete;
+		} 
 	
 	
 	/**

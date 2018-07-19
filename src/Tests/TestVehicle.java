@@ -4,6 +4,7 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
+import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
 import exceptions.CustomerHasNotPaidException;
 import exceptions.MinGreaterThanMaxException;
@@ -25,22 +26,22 @@ public class TestVehicle {
 		FamilySedan fs = new FamilySedan();
 		Truck tr = new Truck();
 		
-		for (int i = 0; i < mb.fuelCapacity; i++) {
+		for (int i = 0; i < mb.getFuelCapacity(); i++) {
 			assertTrue(mb.tryFill(1));
 		}
 		assertFalse(mb.tryFill(1));
 		
-		for (int i = 0; i < sc.fuelCapacity; i++) {
+		for (int i = 0; i < sc.getFuelCapacity(); i++) {
 			assertTrue(sc.tryFill(1));
 		}
 		assertFalse(sc.tryFill(1));
 		
-		for (int i = 0; i < fs.fuelCapacity; i++) {
+		for (int i = 0; i < fs.getFuelCapacity(); i++) {
 			assertTrue(fs.tryFill(1));
 		}
 		assertFalse(fs.tryFill(1));
 		
-		for (int i = 0; i < tr.fuelCapacity; i++) {
+		for (int i = 0; i < tr.getFuelCapacity(); i++) {
 			assertTrue(tr.tryFill(1));
 		}
 		assertFalse(tr.tryFill(1));
@@ -76,7 +77,7 @@ public class TestVehicle {
 		
 		fs.tryFill(100);
 		tr.tryFill(100);
-		tr.hasPaid = true;
+		tr.setHasPaid(true);
 		
 		fsc = fs.leaveVehicle();
 		i = 0;
@@ -87,7 +88,7 @@ public class TestVehicle {
 		}
 		assertEquals(1, i);
 		
-		tr.hasPaid = false;
+		tr.setHasPaid(false);
 		trc = tr.leaveVehicle();
 		
 		assertEquals(mb.getRegistration(), mbc.getRegistration());
@@ -122,7 +123,7 @@ public class TestVehicle {
 	}
 	
 	@Test
-	public void testReenterCar() throws MinGreaterThanMaxException, VehicleIsNotOccupiedException, VehicleNotFullException, VehicleAlreadyPaidException, CustomerCarMismatchException, CustomerHasNotPaidException {
+	public void testReenterCar() throws MinGreaterThanMaxException, VehicleIsNotOccupiedException, VehicleNotFullException, VehicleAlreadyPaidException, CustomerCarMismatchException, CustomerHasNotPaidException, CustomerAlreadyPresentException {
 		Motorbike mb = new Motorbike();
 		SmallCar sc = new SmallCar();
 		FamilySedan fs = new FamilySedan();
@@ -138,8 +139,8 @@ public class TestVehicle {
 		Customer fsc = fs.leaveVehicle();
 		Customer trc = tr.leaveVehicle();
 		
-		fsc.hasPaid = true;
-		trc.hasPaid = true;
+		fsc.setHasPaid(true);
+		trc.setHasPaid(true);
 		
 		int i = 0;
 		try {
@@ -154,8 +155,8 @@ public class TestVehicle {
 		}
 		assertEquals(2, i);
 		
-		mbc.hasPaid = true;
-		scc.hasPaid = true;
+		mbc.setHasPaid(true);
+		scc.setHasPaid(true);
 		
 		i = 0;
 		try {
@@ -182,6 +183,28 @@ public class TestVehicle {
 			tr.reEnterCar(trc);
 		} catch (CustomerCarMismatchException e) {
 			assertTrue(false);
+		}
+		
+		i = 0;
+		try {
+			sc.reEnterCar(scc);
+		} catch (CustomerAlreadyPresentException e) {
+			i++;
+		}
+		try {
+			mb.reEnterCar(mbc);
+		} catch (CustomerAlreadyPresentException e) {
+			i++;
+		}
+		try {
+			fs.reEnterCar(fsc);
+		} catch (CustomerAlreadyPresentException e) {
+			i++;
+		}
+		try {
+			tr.reEnterCar(trc);
+		} catch (CustomerAlreadyPresentException e) {
+			i++;
 		}
 		
 	}

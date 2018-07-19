@@ -127,4 +127,12 @@ public class Customer implements QueueItem {
 	public int reduceShopTicks() {
 		return shopTicks--;
 	}
+	
+	/*
+	 * Test method. Needs to be removed
+	 */
+	public void setHasPaid(boolean b) {
+		hasPaid = b;
+		
+	}
 }

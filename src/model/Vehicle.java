@@ -8,7 +8,11 @@ import java.util.UUID;
 
 import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
+import exceptions.CustomerHasNotPaidException;
 import exceptions.MinGreaterThanMaxException;
+import exceptions.VehicleAlreadyPaidException;
+import exceptions.VehicleIsNotOccupiedException;
+import exceptions.VehicleNotFullException;
 import interfaces.QueueItem;
 
 /**
@@ -130,6 +134,9 @@ public abstract class Vehicle implements QueueItem{
 	public Boolean tryFill(double fuelRate) {
 		if (!isFueled) {
 			currentFuel += fuelRate;
+			if (currentFuel >= fuelCapacity) {
+				isFueled = true;
+			}
 			return true;
 		} else {
 			return false;
@@ -147,9 +154,21 @@ public abstract class Vehicle implements QueueItem{
 	/**
 	 * Create a driver to leave the Vehicle
 	 * @return
+	 * @throws VehicleIsNotOccupiedException 
+	 * @throws VehicleAlreadyPaidException 
+	 * @throws VehicleNotFullException 
 	 */
-	public Customer leaveVehicle() {
-		return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop(), payTicks);
+	public Customer leaveVehicle() throws VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException {
+		if (!isFueled) {
+			throw new VehicleNotFullException();
+		} else if (!isOccupied) {
+			throw new VehicleIsNotOccupiedException();
+		} else if (hasPaid) {
+			throw new VehicleAlreadyPaidException();
+		} else {
+			isOccupied = false;
+			return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop(), payTicks);
+		}
 	}
 	
 	/**
@@ -162,12 +181,18 @@ public abstract class Vehicle implements QueueItem{
 
 	/**
 	 * Set the hasPaid and isOccupied flags when the drive reenters their Vehicle
+	 * 
 	 * @param c A Customer
-	 * @throws CustomerAlreadyPresentException 
+	 * @throws CustomerAlreadyPresentException
+	 * @throws CustomerHasNotPaidException
 	 */
-	public void reEnterCar(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException {
+	public void reEnterCar(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException {
 		if (c.getRegistration().equals(registration)) {
+			if (c.getHasPaid()) {
 			hasPaid = c.getHasPaid();
+			} else {
+				throw new CustomerHasNotPaidException();
+			}
 			setIsOccupied(true);
 		} else if (getIsOccupied() == true) {
 			throw new CustomerAlreadyPresentException();
@@ -179,15 +204,23 @@ public abstract class Vehicle implements QueueItem{
 		//TODO throw CustomerAlreadyPresentException if already occupied
 	}
 	
+	public int getFuelCapacity() {
+		return fuelCapacity;
+	}
+	
+	public boolean getHasPaid() {
+		return hasPaid;
+	}
+	
+	public UUID getRegistration() {
+		return registration;
+	}
+	
 	/**
 	 * Increase the number of ticks since arrival
 	 */
 	public void addTick() {
 		this.ticksSinceArrival ++;
-	}
-
-	public boolean getHasPaid() {
-		return hasPaid;
 	}
 
 	public Boolean getIsOccupied() {
@@ -196,5 +229,13 @@ public abstract class Vehicle implements QueueItem{
 
 	public void setIsOccupied(Boolean isOccupied) {
 		this.isOccupied = isOccupied;
+	}
+	
+	/*
+	 * Test method. Needs to be removed
+	 */
+	public void setHasPaid(boolean b) {
+		hasPaid = b;
+		
 	}
 }
