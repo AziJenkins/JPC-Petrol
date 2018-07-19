@@ -1,5 +1,7 @@
 package model;
 
+import java.util.List;
+
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
@@ -63,5 +65,10 @@ public class Till {
 	
 	public double getQueueSize() {
 		return queue.getSize();
+	}
+	
+	public List<Customer> tick() {
+		//dequeue
+		//try pay
 	}
 }

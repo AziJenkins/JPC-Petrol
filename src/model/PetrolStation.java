@@ -137,7 +137,14 @@ public class PetrolStation {
 	 * and Shop that time has Passed;
 	 */
 	public void tick() {
-		
+		/*
+		 * dequeue all paid
+		 * dequeue paid customers
+		 * tick TillQueue
+		 * tick shop
+		 * tick pumps
+		 * add vehicle
+		 */
 	}
 
 	/**

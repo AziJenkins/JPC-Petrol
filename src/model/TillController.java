@@ -92,4 +92,8 @@ public class TillController {
 	public Till[] getTills() {
 		return this.tills;
 	}
+	
+	public void tick() {
+		//call tick on each till
+	}
 }
