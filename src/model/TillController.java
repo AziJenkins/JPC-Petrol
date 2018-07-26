@@ -93,7 +93,10 @@ public class TillController {
 		return this.tills;
 	}
 	
-	public void tick() {
+	public void tick() throws CustomerAlreadyPaidException {
+		for(int i = 0; i < tills.length; i++) {
+			tills[i].tick();
+		}
 		//call tick on each till
 	}
 }

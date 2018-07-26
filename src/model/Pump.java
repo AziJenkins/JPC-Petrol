@@ -1,11 +1,15 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Queue;
 
 import exceptions.EmptyQueueException;
+import exceptions.VehicleAlreadyPaidException;
+import exceptions.VehicleIsNotOccupiedException;
+import exceptions.VehicleNotFullException;
 import utils.CircularArrayQueue;
 
 /**
@@ -53,8 +57,15 @@ public class Pump {
 	/**
 	 * Progress time at the pump
 	 * This will alert the Vehicle at the front of the queue that time has passed
+	 * @throws VehicleNotFullException 
+	 * @throws VehicleAlreadyPaidException 
+	 * @throws VehicleIsNotOccupiedException 
 	 */
-	public List<Customer> tick(List<Customer> finishedPaying) {
+	public List<Customer> tick(List<Customer> finishedPaying) throws VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException {
+		ArrayList<Customer> finishedPaying1 = new ArrayList<Customer>();
+		fill();
+		finishedPaying1.add(queue.peek().leaveVehicle());
+		return finishedPaying1;
 		//tryfill
 		//leave car
 	}

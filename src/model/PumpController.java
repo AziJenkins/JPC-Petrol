@@ -6,6 +6,13 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
+import exceptions.CustomerAlreadyPresentException;
+import exceptions.CustomerCarMismatchException;
+import exceptions.CustomerHasNotPaidException;
+import exceptions.VehicleAlreadyPaidException;
+import exceptions.VehicleIsNotOccupiedException;
+import exceptions.VehicleNotFullException;
+
 
 /**
  * A controller for any number of Pumps
@@ -63,8 +70,22 @@ public class PumpController {
 	/**
 	 * Progress time
 	 * This will alert each Pump that time has passed
+	 * @throws VehicleNotFullException 
+	 * @throws VehicleAlreadyPaidException 
+	 * @throws VehicleIsNotOccupiedException 
+	 * @throws CustomerHasNotPaidException 
+	 * @throws CustomerAlreadyPresentException 
+	 * @throws CustomerCarMismatchException 
 	 */
-	public void tick() {
+	public void tick() throws VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException {
+		ArrayList<Customer> ready = new ArrayList<Customer>();
+		for(int i = 0; i < pumps.length; i++) {
+			ready = (ArrayList<Customer>) pumps[i].tick(ready);
+		}
+		
+		for(int i = 0; i < ready.size(); i++) {
+			pumps[i].getQueue().peek().reEnterCar(ready.get(i));
+		}
 		//call tick on each pump
 		//put customers back in car
 	}
