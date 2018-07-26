@@ -50,8 +50,8 @@ public class TextBasedInterface {
 		showIncome(p);
 		showTime(p);
 		showShop(p.getShop());
-		showAllTills(p.getTills());
-		showAllPumps(p.getPumps());
+		showAllTills(p.getTillController());
+		showAllPumps(p.getPumpController());
 	}
 
 	/**

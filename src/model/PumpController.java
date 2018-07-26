@@ -65,7 +65,8 @@ public class PumpController {
 	 * This will alert each Pump that time has passed
 	 */
 	public void tick() {
-		
+		//call tick on each pump
+		//put customers back in car
 	}
 	
 	/**

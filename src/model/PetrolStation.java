@@ -90,7 +90,7 @@ public class PetrolStation {
 	 * Getter for the Pump Controller
 	 * @return
 	 */
-	public PumpController getPumps() {
+	public PumpController getPumpController() {
 		return this.pumps;
 	}
 	
@@ -98,7 +98,7 @@ public class PetrolStation {
 	 * Getter for the Till Controller
 	 * @return
 	 */
-	public TillController getTills() {
+	public TillController getTillController() {
 		return this.tills;
 	}
 	
@@ -137,7 +137,14 @@ public class PetrolStation {
 	 * and Shop that time has Passed;
 	 */
 	public void tick() {
-		
+		/*
+		 * dequeue all paid
+		 * dequeue paid customers
+		 * tick TillQueue
+		 * tick shop
+		 * tick pumps
+		 * add vehicle
+		 */
 	}
 
 	/**

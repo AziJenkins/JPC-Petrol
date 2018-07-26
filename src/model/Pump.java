@@ -54,8 +54,9 @@ public class Pump {
 	 * Progress time at the pump
 	 * This will alert the Vehicle at the front of the queue that time has passed
 	 */
-	public void tick() {
-		
+	public List<Customer> tick(List<Customer> finishedPaying) {
+		//tryfill
+		//leave car
 	}
 	
 	public double getSpaceUnused() {
