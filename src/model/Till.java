@@ -1,5 +1,6 @@
 package model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import exceptions.CustomerAlreadyPaidException;
@@ -67,7 +68,13 @@ public class Till {
 		return queue.getSize();
 	}
 	
-	public List<Customer> tick() {
+	public List<Customer> tick() throws CustomerAlreadyPaidException {
+		ArrayList<Customer> lc = new ArrayList<Customer>();
+		queue.peek().pay();
+		if (queue.peek().getHasPaid() == true) {
+			lc.add(dequeueWhenDone());
+		}
+		return lc;
 		//dequeue
 		//try pay
 	}

@@ -135,8 +135,14 @@ public class PetrolStation {
 	 * Progress time at the Petrol Station by 1 tick
 	 * This will alert the Pump Controller, Till Controller 
 	 * and Shop that time has Passed;
+	 * @throws CustomerAlreadyPaidException 
 	 */
-	public void tick() {
+	public void tick() throws CustomerAlreadyPaidException {
+		pumps.dequeueAllFullyPaid();
+		tills.dequeueFullyPaid();
+		tills.tick();
+		shop.tick();
+		pumps.tick();
 		/*
 		 * dequeue all paid
 		 * dequeue paid customers
