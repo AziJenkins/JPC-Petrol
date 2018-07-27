@@ -188,16 +188,16 @@ public abstract class Vehicle implements QueueItem{
 	 */
 	public void reEnterCar(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException {
 		if (c.getRegistration().equals(registration)) {
+			if (isOccupied) {
+				throw new CustomerAlreadyPresentException();
+			}
 			if (c.getHasPaid()) {
 			hasPaid = c.getHasPaid();
 			} else {
 				throw new CustomerHasNotPaidException();
 			}
 			setIsOccupied(true);
-		} else if (getIsOccupied() == true) {
-			throw new CustomerAlreadyPresentException();
-		}
-		else {
+		} else {
 			throw new CustomerCarMismatchException();
 		}
 		

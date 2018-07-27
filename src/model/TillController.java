@@ -7,6 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import exceptions.CustomerAlreadyPaidException;
+import exceptions.CustomerAlreadyPresentException;
 import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
 
@@ -39,15 +40,25 @@ public class TillController {
 	 * Give a Customer to the Till with the shortest queue
 	 * 
 	 * @throws TillFullException
+	 * @throws CustomerAlreadyPresentException
 	 */
-	public void enqueue(Customer c) throws TillFullException {
+	public void enqueue(Customer c) throws TillFullException, CustomerAlreadyPresentException {
 		int shortestQueueIndex = 0;
-		for (int i = 1; i < tills.length; i++) {
+		for (int i = 0; i < tills.length; i++) {
+			if (tills[i].getQueue().contains(c)) {
+				throw new CustomerAlreadyPresentException();
+			}
 			if (tills[i].getQueueSize() < tills[shortestQueueIndex].getQueueSize()) {
 				shortestQueueIndex = i;
 			}
 		}
 		tills[shortestQueueIndex].enqueue(c);
+	}
+
+	public void enqueue(List<Customer> customers) throws TillFullException, CustomerAlreadyPresentException {
+		for (Customer c : customers) {
+			enqueue(c);
+		}
 	}
 
 	/**
@@ -92,11 +103,16 @@ public class TillController {
 	public Till[] getTills() {
 		return this.tills;
 	}
-	
-	public void tick() throws CustomerAlreadyPaidException {
-		for(int i = 0; i < tills.length; i++) {
-			tills[i].tick();
+
+	public List<Customer> tick() throws CustomerAlreadyPaidException {
+		LinkedList<Customer> finishedPaying = new LinkedList<Customer>();
+		for (int i = 0; i < tills.length; i++) {
+			Customer c = tills[i].tick();
+			if (c != null) {
+				finishedPaying.add(c);
+			}
 		}
-		//call tick on each till
+		return finishedPaying;
+		// call tick on each till
 	}
 }

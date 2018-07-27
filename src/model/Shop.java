@@ -39,6 +39,8 @@ public class Shop {
 		}
 		return false;
 	}
+	
+	
 
 	/**
 	 * Remove a Customer from the Shop
