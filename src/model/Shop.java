@@ -66,6 +66,7 @@ public class Shop {
 		for (Customer c : holdingArea) {
 			if (c.reduceShopTicks() < 1) {
 				finishedShopping.add(c);
+				c.finishShopping();
 			}
 		}
 		return finishedShopping;

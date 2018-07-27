@@ -193,6 +193,7 @@ public abstract class Vehicle implements QueueItem{
 			}
 			if (c.getHasPaid()) {
 			hasPaid = c.getHasPaid();
+			isOccupied = true;
 			} else {
 				throw new CustomerHasNotPaidException();
 			}

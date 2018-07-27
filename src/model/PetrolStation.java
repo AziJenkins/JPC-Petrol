@@ -178,10 +178,11 @@ public class PetrolStation {
 			VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException,
 			CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException {
 		pumps.dequeueAllFullyPaid();
-		recieveCustomers(tills.dequeueFullyPaid());
+		List<Customer> finishedPaying = tills.dequeueFullyPaid();
 		collectPayments();
-		tills.enqueue(shop.tick());
+		recieveCustomers(shop.tick());
 		recieveCustomers(pumps.tick());
+		recieveCustomers(finishedPaying);
 		if (v != null) {
 			recieveVehicle(v);
 		}
