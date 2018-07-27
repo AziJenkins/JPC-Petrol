@@ -51,7 +51,7 @@ public class PetrolStation {
 	 */
 	public PetrolStation(int numPumps, int numTills, double smallestVehicle, int maxQueueSize) {
 		this.pumps = new PumpController(numPumps, smallestVehicle);
-		this.tills = new TillController(numTills, maxQueueSize);
+		this.tills = new TillController(numTills, maxQueueSize);   
 
 	}
 
