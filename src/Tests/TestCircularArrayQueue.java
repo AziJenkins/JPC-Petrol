@@ -29,6 +29,7 @@ class TestCircularArrayQueue {
 			this.s = s;
 			this.size = size;
 		}
+		@Override
 		public double getSize() {
 			return size;
 		}

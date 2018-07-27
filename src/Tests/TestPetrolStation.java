@@ -6,9 +6,6 @@ import java.util.List;
 import java.util.UUID;
 
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
@@ -27,7 +24,6 @@ import model.Payment;
 import model.PetrolStation;
 import model.Pump;
 import model.SmallCar;
-import model.Truck;
 import model.Vehicle;
 
 public class TestPetrolStation {
@@ -148,6 +144,7 @@ public class TestPetrolStation {
 		}
 		assertTrue(fullyFueledFlag);
 		assertTrue(customerInShopFlag);
+		assertTrue(dispatchedVehicles.contains(readyToLeave));
 	}
 
 	@Test

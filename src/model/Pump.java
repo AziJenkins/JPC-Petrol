@@ -1,11 +1,6 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Queue;
-
 import exceptions.EmptyQueueException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;

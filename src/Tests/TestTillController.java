@@ -6,14 +6,11 @@ import static org.junit.Assert.assertTrue;
 import java.util.List;
 import java.util.UUID;
 
-import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
-import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
 import model.Customer;
 import model.Payment;

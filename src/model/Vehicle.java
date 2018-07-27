@@ -3,9 +3,9 @@
  */
 package model;
 
-import java.util.Random;
 import java.util.UUID;
 
+import controller.Simulator;
 import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
 import exceptions.CustomerHasNotPaidException;
@@ -80,10 +80,6 @@ public abstract class Vehicle implements QueueItem{
 	 * The number of ticks the Vehicle has been at the Petrol Station
 	 */
 	private int ticksSinceArrival = 0;
-	/**
-	 * A Randomiser for deciding the value of; fuelCapacity, shoppingTicks, shoppingSpend, payTicks
-	 */
-	private Random rand = new Random();
 
 	/**
 	 * Constructor for a Vehicle 
@@ -125,7 +121,7 @@ public abstract class Vehicle implements QueueItem{
 		else if (capacityDifference == 0) 
 			return maxValue;
 		else 
-			return (rand.nextDouble() * (maxValue - minValue)) + minValue;
+			return (Simulator.rand.nextDouble() * (maxValue - minValue)) + minValue;
 	}
 
 	/**
@@ -149,6 +145,7 @@ public abstract class Vehicle implements QueueItem{
 	 * Getter for the size of the Vehicle
 	 * @return
 	 */
+	@Override
 	public double getSize() {
 		return size;
 	}
@@ -186,7 +183,7 @@ public abstract class Vehicle implements QueueItem{
 	 */
 	private void decideToShop() {
 		if (ticksSinceArrival <= ticksBeforeNoShop) {
-			didShop = rand.nextDouble() < shopProbability;
+			didShop = Simulator.rand.nextDouble() < shopProbability;
 		}
 		didShop = false;
 	}
@@ -240,12 +237,12 @@ public abstract class Vehicle implements QueueItem{
 		return isOccupied;
 	}
 
-	public void setIsOccupied(Boolean isOccupied) {
+	private void setIsOccupied(Boolean isOccupied) {
 		this.isOccupied = isOccupied;
 	}
 	
 	/*
-	 * Test method. Needs to be removed
+	 * TODO Test method. Needs to be removed
 	 */
 	public void setHasPaid(boolean b) {
 		hasPaid = b;

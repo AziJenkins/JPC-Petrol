@@ -1,14 +1,10 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
-import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
 
 /**
@@ -104,15 +100,4 @@ public class TillController {
 		return this.tills;
 	}
 
-	public List<Customer> tick() throws CustomerAlreadyPaidException {
-		LinkedList<Customer> finishedPaying = new LinkedList<Customer>();
-		for (int i = 0; i < tills.length; i++) {
-			Customer c = tills[i].tick();
-			if (c != null) {
-				finishedPaying.add(c);
-			}
-		}
-		return finishedPaying;
-		// call tick on each till
-	}
 }

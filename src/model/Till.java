@@ -1,8 +1,5 @@
 package model;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
@@ -71,14 +68,4 @@ public class Till {
 		return queue.getSize();
 	}
 
-	public Customer tick() throws CustomerAlreadyPaidException {
-		if (queue.iterator().hasNext()) {
-			if (queue.peek().getHasPaid() == true) {
-				return dequeueWhenDone();
-			} 
-		}
-		return null;
-		// dequeue
-		// try pay
-	}
 }
