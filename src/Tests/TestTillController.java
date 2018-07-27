@@ -12,6 +12,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 
 import exceptions.CustomerAlreadyPaidException;
+import exceptions.CustomerAlreadyPresentException;
 import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
 import model.Customer;
@@ -28,7 +29,7 @@ public class TestTillController {
 	}
 
 	@Test
-	public void testEnqueue() {
+	public void testEnqueue() throws CustomerAlreadyPresentException, TillFullException {
 		setUp();
 		Customer c = new Customer(UUID.randomUUID(), 0, 0, 5, false, 1);
 		try {
@@ -40,22 +41,29 @@ public class TestTillController {
 
 		for (int i = 0; i < 29; i++) {
 			try {
-				tc.enqueue(c);
+				tc.enqueue(new Customer(UUID.randomUUID(), 0, 0, 0, false, 0));
 			} catch (TillFullException e) {
 				assertTrue(false);
 			}
 		}
 		boolean flag = false;
 		try {
-			tc.enqueue(c);
+			tc.enqueue(new Customer(UUID.randomUUID(), 0, 0, 0, false, 0));
 		} catch (TillFullException e) {
+			flag = true;
+		}
+		assertTrue(flag);
+		flag = false;
+		try {
+			tc.enqueue(c);
+		} catch (CustomerAlreadyPresentException e) {
 			flag = true;
 		}
 		assertTrue(flag);
 	}
 
 	@Test
-	public void testEnqueueOrder() throws TillFullException, CustomerAlreadyPaidException {
+	public void testEnqueueOrder() throws TillFullException, CustomerAlreadyPaidException, CustomerAlreadyPresentException {
 		setUp();
 		Customer c1 = new Customer(UUID.randomUUID(), 0, 0, 5, false, 1);
 		Customer c2 = new Customer(UUID.randomUUID(), 0, 0, 5, false, 0);
@@ -81,7 +89,7 @@ public class TestTillController {
 	}
 
 	@Test
-	public void testDequeueFullyPaid() throws CustomerAlreadyPaidException, TillFullException {
+	public void testDequeueFullyPaid() throws CustomerAlreadyPaidException, TillFullException, CustomerAlreadyPresentException {
 		setUp();
 		Customer c1 = new Customer(UUID.randomUUID(), 0, 0, 5, false, 0);
 		Customer c2 = new Customer(UUID.randomUUID(), 0, 0, 5, false, 0);
@@ -112,7 +120,7 @@ public class TestTillController {
 	}
 
 	@Test
-	public void testCollectPayments() throws TillFullException {
+	public void testCollectPayments() throws TillFullException, CustomerAlreadyPresentException {
 		setUp();
 		Customer c1 = new Customer(UUID.randomUUID(), 0, 1, 1, false, 0);
 		Customer c2 = new Customer(UUID.randomUUID(), 0, 2, 2, false, 1);

@@ -71,6 +71,10 @@ public class Pump {
 	 */
 	public Customer tick()
 			throws VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException {
+		Iterator<Vehicle> i = queue.iterator();
+		while (i.hasNext()) {
+			i.next().addTick();
+		}
 		if(!fill()) {
 			if (queue.iterator().hasNext() && queue.peek().getIsOccupied()) {
 				return queue.peek().leaveVehicle();

@@ -154,40 +154,41 @@ public class TestPetrolStation {
 	public void testTick() throws MinGreaterThanMaxException, CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException {
 		setup();	//must replace random number generation with constant
 		Vehicle v = new SmallCar();
-		ps.tick(v);	
+		ps.tick(v);	//v enters queue for pumps
 		
 		for (int i = 0; i < v.getFuelCapacity(); i++) { // v is being fuelled
-			ps.tick(null);
+			ps.tick(null); //v fuels
 			assertTrue(v.getIsOccupied());
 		}
-		ps.tick(null);
+		ps.tick(null); //v is full, customer leaves, enters shop or tills
 		assertFalse(v.getIsOccupied());
 		
-		if (ps.getShop().getContents().iterator().hasNext()) {	// make sure to re run test to be sure it went into this block
-			Customer c = ps.getShop().getContents().iterator().next();
+		if (ps.getShop().getContents().iterator().hasNext()) {	// make sure to re run test to be sure it went into this block or remove random element from Vehicle.leaveVehicle()
+			Customer c = ps.getShop().getContents().iterator().next(); //customer is in shop
 			assertEquals(v.getRegistration(), c.getRegistration());
 			int ticks = c.getShopTicks();
 			for (int i = 0; i < ticks; i++) {
-				ps.tick(null);
+				ps.tick(null); //c's shop timer is reduced
 				assertTrue(ps.getShop().getContents().contains(c));
 			}
+			ps.tick(null); //c leaves shop to tills
 		}
-		ps.tick(null);
+		
 		Customer c = ps.getTillController().getTills()[0].getQueue().peek();
 		double spend = c.getShopSpend();
 		int ticks = c.getPayTicks();
 		for (int i = 0; i < ticks; i++) {
-			ps.tick(null);
+			ps.tick(null); //c's pay timer is reduced
 			assertEquals(0, ps.getGallonsSold());
 			assertEquals(0, ps.getShopIncome());
 		}
-		ps.tick(null);
+		ps.tick(null); //c pays
 		assertEquals(v.getFuelCapacity(), ps.getGallonsSold());
 		assertEquals(spend, ps.getShopIncome());
-		ps.tick(null);
+		ps.tick(null); //c leaves tills, goes to v
 		assertTrue(v.getIsOccupied());
 		assertTrue(ps.getPumpController().getPumps()[0].getQueue().contains(v));
-		ps.tick(null);
+		ps.tick(null); //v leaves
 		assertFalse(ps.getPumpController().getPumps()[0].getQueue().contains(v));
 	}
 

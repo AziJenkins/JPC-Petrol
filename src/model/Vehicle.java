@@ -73,6 +73,8 @@ public abstract class Vehicle implements QueueItem{
 	/**
 	 * The unique registration of the Vehicle
 	 */
+	private Boolean didShop;
+	
 	private UUID registration;
 	/**
 	 * The number of ticks the Vehicle has been at the Petrol Station
@@ -105,7 +107,7 @@ public abstract class Vehicle implements QueueItem{
 		this.ticksBeforeNoShop = ticksBeforeNoShop;		
 		this.fuelCapacity = (int)Math.round(randomiseBetweenLimits(minCapacity, maxCapacity));
 		this.shoppingTicks = (int)Math.round(randomiseBetweenLimits(minShopTicks, maxShopTicks));
-		this.shoppingSpend = randomiseBetweenLimits(minShopSpend, maxShopSpend);
+		this.shoppingSpend = (double) Math.round(randomiseBetweenLimits(minShopSpend, maxShopSpend) * 100) / 100;
 		this.payTicks = (int)Math.round(randomiseBetweenLimits(Customer.MINIMUM_PAY_TICKS, Customer.MAXIMUM_PAY_TICKS));
 	}
 
@@ -167,7 +169,14 @@ public abstract class Vehicle implements QueueItem{
 			throw new VehicleAlreadyPaidException();
 		} else {
 			isOccupied = false;
-			return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop(), payTicks);
+			decideToShop();
+			int adjustedShopTicks = shoppingTicks;
+			double adjustedShopSpend = shoppingSpend;
+			if (!didShop) {
+				adjustedShopTicks = 0;
+				adjustedShopSpend = 0;
+			}
+			return new Customer(registration, adjustedShopTicks, adjustedShopSpend, currentFuel, didShop, payTicks);
 		}
 	}
 	
@@ -175,8 +184,11 @@ public abstract class Vehicle implements QueueItem{
 	 * Choose to shop based of the number of ticks since arrival to a Petrol Station compared to a reasonable amount of time (ticksBeforeNoShop) 
 	 * @return
 	 */
-	private Boolean decideToShop() {
-		return ticksSinceArrival <= ticksBeforeNoShop; //TODO this doesnt account for shop probability
+	private void decideToShop() {
+		if (ticksSinceArrival <= ticksBeforeNoShop) {
+			didShop = rand.nextDouble() < shopProbability;
+		}
+		didShop = false;
 	}
 
 	/**
