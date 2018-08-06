@@ -80,7 +80,7 @@ public class PumpController {
 	 * @throws CustomerCouldNotFindVehicleException
 	 */
 	public List<Customer> tick()
-			throws VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException {
+			throws VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException{
 		ArrayList<Customer> ready = new ArrayList<Customer>();
 		for (int i = 0; i < pumps.length; i++) {
 			Customer c = pumps[i].tick();
