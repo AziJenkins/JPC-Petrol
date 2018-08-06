@@ -3,9 +3,9 @@
  */
 package model;
 
-import java.util.Random;
 import java.util.UUID;
 
+import controller.Simulator;
 import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
 import exceptions.CustomerHasNotPaidException;
@@ -73,15 +73,13 @@ public abstract class Vehicle implements QueueItem{
 	/**
 	 * The unique registration of the Vehicle
 	 */
+	private Boolean didShop;
+	
 	private UUID registration;
 	/**
 	 * The number of ticks the Vehicle has been at the Petrol Station
 	 */
 	private int ticksSinceArrival = 0;
-	/**
-	 * A Randomiser for deciding the value of; fuelCapacity, shoppingTicks, shoppingSpend, payTicks
-	 */
-	private Random rand = new Random();
 
 	/**
 	 * Constructor for a Vehicle 
@@ -105,7 +103,7 @@ public abstract class Vehicle implements QueueItem{
 		this.ticksBeforeNoShop = ticksBeforeNoShop;		
 		this.fuelCapacity = (int)Math.round(randomiseBetweenLimits(minCapacity, maxCapacity));
 		this.shoppingTicks = (int)Math.round(randomiseBetweenLimits(minShopTicks, maxShopTicks));
-		this.shoppingSpend = randomiseBetweenLimits(minShopSpend, maxShopSpend);
+		this.shoppingSpend = (double) Math.round(randomiseBetweenLimits(minShopSpend, maxShopSpend) * 100) / 100;
 		this.payTicks = (int)Math.round(randomiseBetweenLimits(Customer.MINIMUM_PAY_TICKS, Customer.MAXIMUM_PAY_TICKS));
 	}
 
@@ -123,7 +121,7 @@ public abstract class Vehicle implements QueueItem{
 		else if (capacityDifference == 0) 
 			return maxValue;
 		else 
-			return (rand.nextDouble() * (maxValue - minValue)) + minValue;
+			return (Simulator.rand.nextDouble() * (maxValue - minValue)) + minValue;
 	}
 
 	/**
@@ -147,6 +145,7 @@ public abstract class Vehicle implements QueueItem{
 	 * Getter for the size of the Vehicle
 	 * @return
 	 */
+	@Override
 	public double getSize() {
 		return size;
 	}
@@ -167,7 +166,14 @@ public abstract class Vehicle implements QueueItem{
 			throw new VehicleAlreadyPaidException();
 		} else {
 			isOccupied = false;
-			return new Customer(registration, shoppingTicks, shoppingSpend, currentFuel, decideToShop(), payTicks);
+			decideToShop();
+			int adjustedShopTicks = shoppingTicks;
+			double adjustedShopSpend = shoppingSpend;
+			if (!didShop) {
+				adjustedShopTicks = 0;
+				adjustedShopSpend = 0;
+			}
+			return new Customer(registration, adjustedShopTicks, adjustedShopSpend, currentFuel, didShop, payTicks);
 		}
 	}
 	
@@ -175,8 +181,11 @@ public abstract class Vehicle implements QueueItem{
 	 * Choose to shop based of the number of ticks since arrival to a Petrol Station compared to a reasonable amount of time (ticksBeforeNoShop) 
 	 * @return
 	 */
-	private Boolean decideToShop() {
-		return ticksSinceArrival <= ticksBeforeNoShop; //TODO this doesnt account for shop probability
+	private void decideToShop() {
+		if (ticksSinceArrival <= ticksBeforeNoShop) {
+			didShop = Simulator.rand.nextDouble() < shopProbability;
+		}
+		didShop = false;
 	}
 
 	/**
@@ -188,16 +197,17 @@ public abstract class Vehicle implements QueueItem{
 	 */
 	public void reEnterCar(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException {
 		if (c.getRegistration().equals(registration)) {
+			if (isOccupied) {
+				throw new CustomerAlreadyPresentException();
+			}
 			if (c.getHasPaid()) {
 			hasPaid = c.getHasPaid();
+			isOccupied = true;
 			} else {
 				throw new CustomerHasNotPaidException();
 			}
 			setIsOccupied(true);
-		} else if (getIsOccupied() == true) {
-			throw new CustomerAlreadyPresentException();
-		}
-		else {
+		} else {
 			throw new CustomerCarMismatchException();
 		}
 		
@@ -227,12 +237,12 @@ public abstract class Vehicle implements QueueItem{
 		return isOccupied;
 	}
 
-	public void setIsOccupied(Boolean isOccupied) {
+	private void setIsOccupied(Boolean isOccupied) {
 		this.isOccupied = isOccupied;
 	}
 	
 	/*
-	 * Test method. Needs to be removed
+	 * TODO Test method. Needs to be removed
 	 */
 	public void setHasPaid(boolean b) {
 		hasPaid = b;

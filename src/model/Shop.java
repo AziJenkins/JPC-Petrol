@@ -3,8 +3,6 @@ package model;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
-
 import exceptions.CustomerAlreadyPresentException;
 
 /**
@@ -39,6 +37,8 @@ public class Shop {
 		}
 		return false;
 	}
+	
+	
 
 	/**
 	 * Remove a Customer from the Shop
@@ -64,6 +64,7 @@ public class Shop {
 		for (Customer c : holdingArea) {
 			if (c.reduceShopTicks() < 1) {
 				finishedShopping.add(c);
+				c.finishShopping();
 			}
 		}
 		return finishedShopping;

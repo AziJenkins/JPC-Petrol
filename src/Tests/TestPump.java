@@ -5,8 +5,6 @@ import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
-import com.sun.management.jmx.Trace;
-
 import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
 import exceptions.CustomerHasNotPaidException;

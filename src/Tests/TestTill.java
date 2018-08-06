@@ -7,7 +7,6 @@ import java.util.UUID;
 import org.junit.Test;
 
 import exceptions.CustomerAlreadyPaidException;
-import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
 import model.Customer;
 import model.Payment;

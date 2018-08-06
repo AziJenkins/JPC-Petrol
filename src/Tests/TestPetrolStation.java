@@ -6,14 +6,14 @@ import java.util.List;
 import java.util.UUID;
 
 import org.junit.Test;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
-
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
 import exceptions.CustomerCarMismatchException;
+import exceptions.CustomerCouldNotFindVehicleException;
 import exceptions.CustomerHasNotPaidException;
+import exceptions.EmptyQueueException;
 import exceptions.MinGreaterThanMaxException;
+import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
@@ -24,7 +24,6 @@ import model.Payment;
 import model.PetrolStation;
 import model.Pump;
 import model.SmallCar;
-import model.Truck;
 import model.Vehicle;
 
 public class TestPetrolStation {
@@ -34,7 +33,7 @@ public class TestPetrolStation {
 
 
 	@Test
-	public void testCollectPayments() throws CustomerAlreadyPresentException, CustomerAlreadyPaidException {
+	public void testCollectPayments() throws CustomerAlreadyPresentException, CustomerAlreadyPaidException, CustomerCarMismatchException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException, TillFullException, EmptyQueueException {
 		setup();
 		Customer c1 = new Customer(UUID.randomUUID(), 0, 1, 1, false, 2);
 		Customer c2 = new Customer(UUID.randomUUID(), 0, 2, 2, false, 1);
@@ -52,6 +51,8 @@ public class TestPetrolStation {
 		ps.collectPayments();
 		assertEquals(5, ps.getGallonsSold());
 		assertEquals(5, ps.getShopIncome());
+		ps.getTillController().getTills()[1].getQueue().remove();
+		ps.getTillController().getTills()[2].getQueue().remove();
 		ps.collectPayments();
 		assertEquals(6, ps.getGallonsSold());
 		assertEquals(6, ps.getShopIncome());
@@ -60,7 +61,7 @@ public class TestPetrolStation {
 	@Test
 	public void testRecieveCustomer()
 			throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException,
-			VehicleNotFullException, MinGreaterThanMaxException, CustomerAlreadyPresentException {
+			VehicleNotFullException, MinGreaterThanMaxException, CustomerAlreadyPresentException, CustomerCarMismatchException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException, TillFullException {
 		setup();
 		Customer toShop = new Customer(UUID.randomUUID(), 5, 5, 3, true, 2);
 		Customer toTills = new Customer(UUID.randomUUID(), 0, 0, 4, false, 5);
@@ -143,46 +144,48 @@ public class TestPetrolStation {
 		}
 		assertTrue(fullyFueledFlag);
 		assertTrue(customerInShopFlag);
+		assertTrue(dispatchedVehicles.contains(readyToLeave));
 	}
 
 	@Test
-	public void testTick() throws MinGreaterThanMaxException {
+	public void testTick() throws MinGreaterThanMaxException, CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException {
 		setup();	//must replace random number generation with constant
-		ps.tick();	//edit method to only create a vehicle first time
-		Vehicle v = ps.getPumpController().getPumps()[0].getQueue().peek();
+		Vehicle v = new SmallCar();
+		ps.tick(v);	//v enters queue for pumps
 		
 		for (int i = 0; i < v.getFuelCapacity(); i++) { // v is being fuelled
-			ps.tick();
+			ps.tick(null); //v fuels
 			assertTrue(v.getIsOccupied());
 		}
-		ps.tick();
+		ps.tick(null); //v is full, customer leaves, enters shop or tills
 		assertFalse(v.getIsOccupied());
 		
-		if (ps.getShop().getContents().iterator().hasNext()) {	// make sure to re run test to be sure it went into this block
-			Customer c = ps.getShop().getContents().iterator().next();
+		if (ps.getShop().getContents().iterator().hasNext()) {	// make sure to re run test to be sure it went into this block or remove random element from Vehicle.leaveVehicle()
+			Customer c = ps.getShop().getContents().iterator().next(); //customer is in shop
 			assertEquals(v.getRegistration(), c.getRegistration());
 			int ticks = c.getShopTicks();
 			for (int i = 0; i < ticks; i++) {
-				ps.tick();
+				ps.tick(null); //c's shop timer is reduced
 				assertTrue(ps.getShop().getContents().contains(c));
 			}
+			ps.tick(null); //c leaves shop to tills
 		}
-		ps.tick();
+		
 		Customer c = ps.getTillController().getTills()[0].getQueue().peek();
 		double spend = c.getShopSpend();
 		int ticks = c.getPayTicks();
 		for (int i = 0; i < ticks; i++) {
-			ps.tick();
+			ps.tick(null); //c's pay timer is reduced
 			assertEquals(0, ps.getGallonsSold());
 			assertEquals(0, ps.getShopIncome());
 		}
-		ps.tick();
+		ps.tick(null); //c pays
 		assertEquals(v.getFuelCapacity(), ps.getGallonsSold());
 		assertEquals(spend, ps.getShopIncome());
-		
+		ps.tick(null); //c leaves tills, goes to v
 		assertTrue(v.getIsOccupied());
 		assertTrue(ps.getPumpController().getPumps()[0].getQueue().contains(v));
-		ps.tick();
+		ps.tick(null); //v leaves
 		assertFalse(ps.getPumpController().getPumps()[0].getQueue().contains(v));
 	}
 

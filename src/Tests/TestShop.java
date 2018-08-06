@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import org.hamcrest.CustomTypeSafeMatcher;
 import org.junit.Test;
 
 import exceptions.CustomerAlreadyPresentException;
@@ -69,7 +68,7 @@ public class TestShop {
 	@Test
 	public void testReduceAllTimers() throws CustomerAlreadyPresentException {
 		Shop s = new Shop();
-		assertEquals((List<Customer>) new ArrayList<Customer>(), s.reduceAllTimers());
+		assertEquals(new ArrayList<Customer>(), s.reduceAllTimers());
 		
 		Customer first = new Customer(UUID.randomUUID(), 0, 0, 0, true, 0);
 		Customer second1 = new Customer(UUID.randomUUID(), 1, 0, 0, true, 0);

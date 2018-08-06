@@ -135,4 +135,8 @@ public class Customer implements QueueItem {
 		hasPaid = b;
 		
 	}
+
+	public double getShopSpend() {
+		return shopSpend;
+	}
 }
