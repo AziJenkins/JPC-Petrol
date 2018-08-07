@@ -65,12 +65,7 @@ public class Simulator {
 	 * be
 	 */
 	public static Random rand = new Random();
-	/**
-	 * The text based interface for the application
-	 */
-	public TextBasedInterface view;
 	
-	private int ticksElapsed;
 
 	/**
 	 * Initializing a simulator will initialize a model Petrol Station and a User
@@ -83,7 +78,6 @@ public class Simulator {
 		this.q = q;
 		this.t = INITIAL_T;
 		this.station = new PetrolStation(numPumps, numTills, SMALLEST_VEHICLE, MAX_QUEUE_SIZE);
-		ticksElapsed = 0;
 	}
 
 	/**
@@ -105,7 +99,6 @@ public class Simulator {
 			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		for (int i = 0; i < ticks; i ++) {
 			station.tick(rollForVehicle());
-			ticksElapsed++;
 			TimeUnit.SECONDS.sleep(1);
 		}
 	}
@@ -139,10 +132,6 @@ public class Simulator {
 	 */
 	public PetrolStation getStation() {
 		return this.station;
-	}
-	
-	public int getTicks() {
-		return ticksElapsed;
 	}
 
 }

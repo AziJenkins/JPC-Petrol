@@ -4,6 +4,8 @@ import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
 import exceptions.CustomerAlreadyPresentException;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableSet;
 
 /**
  * A Shop
@@ -16,13 +18,13 @@ public class Shop {
 	/**
 	 * A set of all Customers in the Shop
 	 */
-	private HashSet<Customer> holdingArea;
+	private ObservableSet<Customer> holdingArea;
 
 	/**
 	 * Constructor for a Shop
 	 */
 	public Shop() {
-		this.holdingArea = new HashSet<Customer>();
+		this.holdingArea = FXCollections.observableSet();
 	}
 
 	/**
@@ -79,7 +81,7 @@ public class Shop {
 	 * 
 	 * @return
 	 */
-	public HashSet<Customer> getContents() {
+	public ObservableSet<Customer> getContents() {
 		return this.holdingArea;
 	}
 }

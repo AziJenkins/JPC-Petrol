@@ -11,6 +11,8 @@ import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.value.ObservableNumberValue;
 
 /**
  * @author AZJENKIN A model Petrol Station
@@ -33,7 +35,7 @@ public class PetrolStation {
 	/**
 	 * The number of ticks that have passed at this Petrol Station
 	 */
-	private int ticksPassed = 0;
+	private SimpleIntegerProperty ticksPassed;
 	/**
 	 * The total income from fuel sales
 	 */
@@ -52,7 +54,7 @@ public class PetrolStation {
 	public PetrolStation(int numPumps, int numTills, double smallestVehicle, int maxQueueSize) {
 		this.pumps = new PumpController(numPumps, smallestVehicle);
 		this.tills = new TillController(numTills, maxQueueSize);   
-
+		ticksPassed = new SimpleIntegerProperty(0);
 	}
 
 	/**
@@ -186,6 +188,7 @@ public class PetrolStation {
 		if (v != null) {
 			recieveVehicle(v);
 		}
+		ticksPassed.set(ticksPassed.get()+1);
 		/*
 		 * dequeue all paid dequeue paid customers tick TillQueue tick shop tick pumps
 		 * add vehicle
@@ -197,7 +200,7 @@ public class PetrolStation {
 	 * 
 	 * @return
 	 */
-	public int getTicks() {
+	public SimpleIntegerProperty getTicks() {
 		return this.ticksPassed;
 	}
 }

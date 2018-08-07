@@ -8,7 +8,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="897.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <left>
-      <GridPane BorderPane.alignment="CENTER">
+      <GridPane fx:id="simSettings" BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -23,7 +23,7 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Chance of (0-1)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+            <Label text="Chance of (0-1)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP" />
             <Label alignment="TOP_LEFT" text="Small Cars &amp; Motorbikes" wrapText="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <padding>
                   <Insets left="10.0" />
@@ -38,18 +38,13 @@
             <Label text="Number of Tills" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
             <Label text="Number of Pumps" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
             <TextField fx:id="txtNumTills" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
-               <children>
-                  <Button fx:id="btnCreateSim" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#createSimulation" text="Create Simulation" VBox.vgrow="ALWAYS" />
-                  <Button fx:id="btnDeleteSim" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteSimulation" text="New Simulation" VBox.vgrow="ALWAYS" />
-               </children>
-            </VBox>
             <TextField fx:id="txtNumPumps" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="btnCreateSim" mnemonicParsing="false" onAction="#createSimulation" text="Create Simulation" />
          </children>
       </GridPane>
    </left>
    <center>
-      <GridPane BorderPane.alignment="CENTER">
+      <GridPane fx:id="simView" BorderPane.alignment="CENTER">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -91,6 +86,7 @@
                                     <TextField id="ticksView" fx:id="txtTicks" alignment="CENTER" />
                                  </children>
                               </VBox>
+                              <Button fx:id="btnDeleteSim" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteSimulation" text="New Simulation" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                            </children>
                         </GridPane>
                      </children></AnchorPane>

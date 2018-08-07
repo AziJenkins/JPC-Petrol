@@ -11,13 +11,19 @@ import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
+import javafx.beans.InvalidationListener;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableNumberValue;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.SetChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
+import model.Customer;
 
 public class MainController {
 	@FXML
@@ -38,9 +44,15 @@ public class MainController {
 	private TextField txtNumTills;
 	@FXML
 	private TextField txtNumPumps;
+	@FXML
+	private GridPane simSettings;
+	@FXML
+	private GridPane simView;
+	@FXML
+	private ListView<Customer> shopContentsView;
 	
 	private Simulator sim;
-	private SimpleIntegerProperty numTicks;
+
 
 	public void initialize() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		txtChanceOfSmallVehicle.setText("0.01");
@@ -49,10 +61,11 @@ public class MainController {
 		txtChanceOfTrucks.setDisable(true);
 		txtNumPumps.setText("2");
 		txtNumTills.setText("2");
+		simView.setDisable(true);
+
 	}
 	
 	
-	public void startSimulation() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		//needs to create a simulator using these user inputs, simulator needs to be changed slightly and we can get rid of textbasedinterface
 		//and then we can write some other methods in this to calculate ticks etc
 		//carbike.getText
@@ -63,9 +76,7 @@ public class MainController {
 		//
 		//
 		//		
-		sim.runSimulation(2);
-		sim.runSimulation(2);
-	}
+
 	
 	
 	public void tick() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
@@ -74,17 +85,38 @@ public class MainController {
 	
 	public void createSimulation() {
 		sim = new Simulator(Double.parseDouble(txtChanceOfSmallVehicle.getText()), Double.parseDouble(txtChanceOfFamilySedan.getText()), Double.parseDouble(txtChanceOfTrucks.getText()), cbxTrucksAllowed.isSelected(), Integer.parseInt(txtNumPumps.getText()), Integer.parseInt(txtNumTills.getText()));
-		txtChanceOfSmallVehicle.setDisable(true);
-		txtChanceOfFamilySedan.setDisable(true);
-		txtNumPumps.setDisable(true);
-		txtNumTills.setDisable(true);
+		simSettings.setDisable(true);
+		simView.setDisable(false);
+		setupListeners();
 	}
 
 	public void deleteSimulation() {
 		sim = null;
-		txtChanceOfSmallVehicle.setDisable(false);
-		txtChanceOfFamilySedan.setDisable(false);
-		txtNumPumps.setDisable(false);
-		txtNumTills.setDisable(false);
+		simSettings.setDisable(false);
+		simView.setDisable(true);
+		clearSimView();
+	}
+	
+	public void setupListeners() {
+		sim.getStation().getTicks().addListener(new ChangeListener<Number>() {
+
+			@Override
+			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
+				txtTicks.setText(newValue.toString());
+			}
+			
+		});
+		sim.getStation().getShop().getContents().addListener(new SetChangeListener<Customer>() {
+
+			@Override
+			public void onChanged(Change<? extends Customer> change) {
+				shopContentsView.getItems().setAll(change.getSet());
+			}
+			
+		});
+	}
+	
+	public void clearSimView() {
+		txtTicks.setText("");
 	}
 }
