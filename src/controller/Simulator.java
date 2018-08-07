@@ -69,6 +69,8 @@ public class Simulator {
 	 * The text based interface for the application
 	 */
 	public TextBasedInterface view;
+	
+	private int ticksElapsed;
 
 	/**
 	 * Initializing a simulator will initialize a model Petrol Station and a User
@@ -76,16 +78,12 @@ public class Simulator {
 	 * variables
 	 */
 	public Simulator() {
-		this.view = new TextBasedInterface();
-		view.start();
-		this.p = view.getP();
-		this.q = view.getQ();
-		if (view.getTrucksAllowed()) {
-			t = INITIAL_T;
-		}
-		int numPumps = view.getNumPumps();
-		int numTills = view.getNumTills();
-		this.station = new PetrolStation(numPumps, numTills, SMALLEST_VEHICLE, MAX_QUEUE_SIZE);
+		
+		p = 0.2;
+		q = 0.2;
+		t = 0.2;
+		this.station = new PetrolStation(2, 2, SMALLEST_VEHICLE, MAX_QUEUE_SIZE);
+		ticksElapsed = 0;
 	}
 
 	/**
@@ -107,6 +105,7 @@ public class Simulator {
 			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		for (int i = 0; i < ticks; i ++) {
 			station.tick(rollForVehicle());
+			ticksElapsed++;
 			TimeUnit.SECONDS.sleep(1);
 		}
 	}
@@ -140,6 +139,10 @@ public class Simulator {
 	 */
 	public PetrolStation getStation() {
 		return this.station;
+	}
+	
+	public int getTicks() {
+		return ticksElapsed;
 	}
 
 }

@@ -6,8 +6,7 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
    <left>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -58,14 +57,17 @@
             </TitledPane>
             <TitledPane animated="false" text="untitled" GridPane.columnIndex="1" GridPane.rowIndex="1">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" >
+                     <children>
+                        <TextField id="ticksView" layoutX="26.0" layoutY="75.0" fx:id="txtTicks"/>
+                     </children></AnchorPane>
               </content>
             </TitledPane>
             <TitledPane animated="false" text="Shop" GridPane.rowIndex="1">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <ListView id="ShopContentsView" layoutY="-13.0" prefHeight="200.0" prefWidth="200.0" />
+                        <ListView id="ShopContentsView" fx:id="shopContentsView" layoutY="-13.0" prefHeight="200.0" prefWidth="200.0" />
                      </children>
                   </AnchorPane>
               </content>

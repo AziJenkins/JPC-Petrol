@@ -5,8 +5,7 @@ import javafx.fxml.FXML;
 
 public class TillsViewController {
 
-	@FXML
-	private ObservableSet<String> contents;
+	
 	
 	
 }
