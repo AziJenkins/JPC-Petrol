@@ -139,4 +139,8 @@ public class Customer implements QueueItem {
 	public double getShopSpend() {
 		return shopSpend;
 	}
+	
+	public String toString() {
+		return registration.toString();
+	}
 }

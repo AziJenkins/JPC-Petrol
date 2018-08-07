@@ -1,5 +1,9 @@
 package application;
 
+import java.util.LinkedList;
+
+import javax.swing.event.AncestorEvent;
+
 import controller.Simulator;
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
@@ -22,7 +26,10 @@ import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import model.Customer;
 
 public class MainController {
@@ -50,6 +57,8 @@ public class MainController {
 	private GridPane simView;
 	@FXML
 	private ListView<Customer> shopContentsView;
+	@FXML
+	private VBox tillContainer;
 	
 	private Simulator sim;
 
@@ -62,7 +71,6 @@ public class MainController {
 		txtNumPumps.setText("2");
 		txtNumTills.setText("2");
 		simView.setDisable(true);
-
 	}
 	
 	
@@ -80,11 +88,12 @@ public class MainController {
 	
 	
 	public void tick() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
-		sim.runSimulation(1);
+		sim.runSimulation(10);
 	}
 	
 	public void createSimulation() {
 		sim = new Simulator(Double.parseDouble(txtChanceOfSmallVehicle.getText()), Double.parseDouble(txtChanceOfFamilySedan.getText()), Double.parseDouble(txtChanceOfTrucks.getText()), cbxTrucksAllowed.isSelected(), Integer.parseInt(txtNumPumps.getText()), Integer.parseInt(txtNumTills.getText()));
+		createTillView();
 		simSettings.setDisable(true);
 		simView.setDisable(false);
 		setupListeners();
@@ -118,5 +127,13 @@ public class MainController {
 	
 	public void clearSimView() {
 		txtTicks.setText("");
+	}
+	
+	private void createTillView() {
+		LinkedList<ListView<Customer>> tills = new LinkedList<ListView<Customer>>();
+		for (int i = 0; i < Integer.parseInt(txtNumTills.getText()); i++) {
+			tillContainer.getChildren().add(new ListView<Customer>());
+		}
+		
 	}
 }
