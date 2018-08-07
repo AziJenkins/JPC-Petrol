@@ -77,12 +77,12 @@ public class Simulator {
 	 * Interface It will prompt the User Interface to gather the user chosen
 	 * variables
 	 */
-	public Simulator() {
+	public Simulator(double p, double q, double t, boolean trucksAllowed, int numPumps, int numTills) {
 		
-		p = 0.2;
-		q = 0.2;
-		t = 0.2;
-		this.station = new PetrolStation(2, 2, SMALLEST_VEHICLE, MAX_QUEUE_SIZE);
+		this.p = p;
+		this.q = q;
+		this.t = INITIAL_T;
+		this.station = new PetrolStation(numPumps, numTills, SMALLEST_VEHICLE, MAX_QUEUE_SIZE);
 		ticksElapsed = 0;
 	}
 
