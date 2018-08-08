@@ -1,9 +1,8 @@
 package model;
 
 import exceptions.CustomerAlreadyPaidException;
-import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
-import utils.ObservableCircularArrayQueue;
+import utils.ObservableListQueue;
 
 /**
  * A Till
@@ -16,13 +15,13 @@ public class Till {
 	/**
 	 * A queue of Customers for the Till
 	 */
-	private ObservableCircularArrayQueue<Customer> queue;
+	private ObservableListQueue<Customer> queue;
 
 	/**
 	 * Constructor for a Till
 	 */
 	public Till(int maxQueueSize) {
-		queue = new ObservableCircularArrayQueue<Customer>(maxQueueSize, 1);
+		queue = new ObservableListQueue<Customer>(maxQueueSize);
 	}
 
 	public void enqueue(Customer c) throws TillFullException {
@@ -48,11 +47,7 @@ public class Till {
 		if (queue.isEmpty() || !queue.peek().getHasPaid()) {
 			return null;
 		}
-		try {
-			return queue.remove();
-		} catch (EmptyQueueException e) {
-			return null;
-		}
+		return queue.remove();
 	}
 
 	/**
@@ -60,7 +55,7 @@ public class Till {
 	 * 
 	 * @return
 	 */
-	public ObservableCircularArrayQueue<Customer> getQueue() {
+	public ObservableListQueue<Customer> getQueue() {
 		return this.queue;
 	}
 

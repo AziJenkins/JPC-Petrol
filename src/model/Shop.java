@@ -1,8 +1,8 @@
 package model;
 
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+
 import exceptions.CustomerAlreadyPresentException;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableSet;

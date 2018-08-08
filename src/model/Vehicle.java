@@ -74,7 +74,7 @@ public abstract class Vehicle implements QueueItem {
 	/**
 	 * The unique registration of the Vehicle
 	 */
-	private Boolean didShop;
+	private boolean didShop;
 
 	private UUID registration;
 	/**
@@ -194,9 +194,9 @@ public abstract class Vehicle implements QueueItem {
 	 * 
 	 * @return
 	 */
-	private void decideToShop() {
+	protected void decideToShop() {
 		if (ticksSinceArrival <= ticksBeforeNoShop) {
-			didShop = true; //Simulator.rand.nextDouble() < shopProbability;
+			didShop = Simulator.rand.nextDouble() < shopProbability;
 		} else {
 			didShop = false;
 		}
@@ -261,5 +261,9 @@ public abstract class Vehicle implements QueueItem {
 	public void setHasPaid(boolean b) {
 		hasPaid = b;
 
+	}
+	
+	public boolean getDidShop() {
+		return didShop;
 	}
 }
