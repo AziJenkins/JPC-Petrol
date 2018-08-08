@@ -8,10 +8,10 @@ import org.junit.jupiter.api.Test;
 
 import exceptions.EmptyQueueException;
 import interfaces.QueueItem;
-import utils.ObservableCircularArrayQueue;
+import utils.ObservableListQueue;
 
 /**
- * Tests for the {@link ObservableCircularArrayQueue} 
+ * Tests for the {@link ObservableListQueue} 
  * @author AZJENKIN
  *
  */
@@ -34,12 +34,12 @@ class TestCircularArrayQueue {
 			return size;
 		}
 	}
-	/** Tests for the add and remove methods of the {@link ObservableCircularArrayQueue}
+	/** Tests for the add and remove methods of the {@link ObservableListQueue}
 	 * @throws EmptyQueueException
 	 */
 	@Test
 	void testAddRemove() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> stringQueue = new ObservableCircularArrayQueue<StringItem>(3, 1);
+		ObservableListQueue<StringItem> stringQueue = new ObservableListQueue<StringItem>(3);
 		assertTrue(stringQueue.add(new StringItem("First")));
 		assertTrue(stringQueue.add(new StringItem("Second")));
 		assertTrue(stringQueue.add(new StringItem("Third")));
@@ -62,7 +62,7 @@ class TestCircularArrayQueue {
 		boolean flag = false;
 		try {
 			stringQueue.remove();
-		} catch (EmptyQueueException e) {
+		} catch (IndexOutOfBoundsException e) {
 			flag = true;
 		}
 		assertTrue(flag);
@@ -71,7 +71,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	void testAddRemoveWithSize() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> stringQueue = new ObservableCircularArrayQueue<StringItem>(3, 0.5);
+		ObservableListQueue<StringItem> stringQueue = new ObservableListQueue<StringItem>(3);
 		StringItem s1 = new StringItem("s1", 0.5);
 		StringItem s2 = new StringItem("s2", 1);
 		StringItem s3 = new StringItem("s3", 2);
@@ -96,11 +96,11 @@ class TestCircularArrayQueue {
 	}
 
 	/**
-	 * Tests for the iterator method of the {@link ObservableCircularArrayQueue}
+	 * Tests for the iterator method of the {@link ObservableListQueue}
 	 */
 	@Test
 	void testIterable() {
-		ObservableCircularArrayQueue<StringItem> s = new ObservableCircularArrayQueue<StringItem>(3, 1);
+		ObservableListQueue<StringItem> s = new ObservableListQueue<StringItem>(3);
 		s.add(new StringItem("1"));
 		Iterator<StringItem> i = s.iterator();
 		assertTrue(i.hasNext());
@@ -109,7 +109,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testIsEmpty() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> q = new ObservableCircularArrayQueue<StringItem>(3, 1);
+		ObservableListQueue<StringItem> q = new ObservableListQueue<StringItem>(3);
 		assertTrue(q.isEmpty());
 		q.add(new StringItem("First"));
 		assertFalse(q.isEmpty());
@@ -129,7 +129,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testIsFull() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> q = new ObservableCircularArrayQueue<StringItem>(3, 1);
+		ObservableListQueue<StringItem> q = new ObservableListQueue<StringItem>(3);
 		assertFalse(q.isFull());
 		q.add(new StringItem("First"));
 		assertFalse(q.isFull());
@@ -157,7 +157,7 @@ class TestCircularArrayQueue {
 	
 	@Test 
 	public void testPeek() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> q = new ObservableCircularArrayQueue<StringItem>(3, 1);
+		ObservableListQueue<StringItem> q = new ObservableListQueue<StringItem>(3);
 		assertNull(q.peek());
 		q.add(new StringItem("First"));
 		assertEquals("First", q.peek().s);
@@ -187,7 +187,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testContains() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> q = new ObservableCircularArrayQueue<StringItem>(3, 1);
+		ObservableListQueue<StringItem> q = new ObservableListQueue<StringItem>(3);
 		StringItem first = new StringItem("First");
 		StringItem second = new StringItem("Second");
 		StringItem third = new StringItem("Third");
@@ -214,7 +214,7 @@ class TestCircularArrayQueue {
 	
 	@Test
 	public void testGetSize() throws EmptyQueueException {
-		ObservableCircularArrayQueue<StringItem> q = new ObservableCircularArrayQueue<StringItem>(3, 0.2);
+		ObservableListQueue<StringItem> q = new ObservableListQueue<StringItem>(3);
 		StringItem small = new StringItem("small", 0.2);
 		StringItem medium = new StringItem("medium", 0.5);
 		StringItem large = new StringItem("large", 2);

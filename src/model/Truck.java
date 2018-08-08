@@ -1,6 +1,7 @@
 package model;
 
 import exceptions.MinGreaterThanMaxException;
+import javafx.beans.property.SimpleBooleanProperty;
 
 /**
  * @author AZJENKIN
@@ -47,12 +48,27 @@ public class Truck extends Vehicle {
 	 */
 	private static final int TRUCK_MAXIMUM_SHOPPING_SPEND = 20;
 	
+	private SimpleBooleanProperty isHappy;
+	
 	/**
 	 * Constructor for a Truck
 	 * @throws MinGreaterThanMaxException
 	 */
 	public Truck() throws MinGreaterThanMaxException {
 		super(TRUCK_SIZE, TRUCK_MINIMUM_FUEL_CAPACITY, TRUCK_MAXIMUM_FUEL_CAPACITY, TRUCK_PROBABILITY_TO_SHOP, TRUCK_TICKS_BEFORE_NO_SHOPPING, TRUCK_MINIMUM_SHOPPING_TICKS, TRUCK_MAXIMUM_SHOPPING_TICKS, TRUCK_MINIMUM_SHOPPING_SPEND, TRUCK_MAXIMUM_SHOPPING_SPEND);
+		isHappy = new SimpleBooleanProperty(true);
 	}
 
+	@Override
+	protected void decideToShop() {
+		super.decideToShop();
+		if (getDidShop() == false) {
+			isHappy.set(false);
+		}
+		
+	}
+	
+	public SimpleBooleanProperty getIsHappy() {
+		return isHappy;
+	}
 }

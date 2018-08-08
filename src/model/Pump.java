@@ -2,19 +2,10 @@ package model;
 
 import java.util.Iterator;
 
-import javax.swing.event.ChangeEvent;
-
-import exceptions.EmptyQueueException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
-import javafx.beans.InvalidationListener;
-import javafx.beans.Observable;
-import javafx.beans.property.SimpleListProperty;
-import javafx.beans.property.SimpleObjectProperty;
-import javafx.collections.ObservableList;
-import javafx.collections.ObservableListBase;
-import utils.ObservableCircularArrayQueue;
+import utils.ObservableListQueue;
 
 /**
  * A fuel Pump
@@ -38,14 +29,14 @@ public class Pump {
 	/**
 	 * The queue of Vehicles for the Pump
 	 */
-	private ObservableCircularArrayQueue<Vehicle> queue;
+	private ObservableListQueue<Vehicle> queue;
 
 	/**
 	 * Constructor for a Pump
 	 */
 	public Pump(double smallestVehicleSize) {
 		this.spaceUnused = PUMP_CAPACITY;
-		this.queue = new ObservableCircularArrayQueue<Vehicle>(PUMP_CAPACITY, smallestVehicleSize);
+		this.queue = new ObservableListQueue<Vehicle>(PUMP_CAPACITY);
 	}
 
 	public boolean enqueue(Vehicle v) {
@@ -98,7 +89,7 @@ public class Pump {
 	 * 
 	 * @return
 	 */
-	public ObservableCircularArrayQueue<Vehicle> getQueue() {
+	public ObservableListQueue<Vehicle> getQueue() {
 		return this.queue;
 	}
 
@@ -109,13 +100,9 @@ public class Pump {
 	public Vehicle dequeueWhenFullyPaid() {
 		Vehicle v = queue.peek();
 		if (v != null && v.getHasPaid() && v.getIsOccupied()) {
-			try {
-				v = queue.remove();
-				spaceUnused = PUMP_CAPACITY - queue.getSize();
-				return v;
-			} catch (EmptyQueueException e) {
-
-			}
+			v = queue.remove();
+			spaceUnused = PUMP_CAPACITY - queue.getSize();
+			return v;
 		}
 		return null;
 	}
