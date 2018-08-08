@@ -20,11 +20,13 @@ import javafx.collections.SetChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
+import javafx.scene.control.ListCell;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import javafx.util.Callback;
 import model.Customer;
 import model.Pump;
 import model.Till;
@@ -167,6 +169,13 @@ public class MainController {
 		Pump[] pumps = sim.getStation().getPumpController().getPumps();
 		for (int i = 0; i < Integer.parseInt(txtNumPumps.getText()); i++) {
 			ListView<Vehicle> lv = new ListView<Vehicle>(pumps[i].getQueue().getObservable());
+			lv.setCellFactory(new Callback<ListView<Vehicle>, ListCell<Vehicle>>() {
+				
+				@Override
+				public ListCell<Vehicle> call(ListView<Vehicle> param) {
+					return new VehicleCell();
+				}
+			});
 			pumpViews.add(lv);
 		}
 		pumpContainer.getChildren().addAll(pumpViews);
