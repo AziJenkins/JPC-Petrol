@@ -106,7 +106,7 @@ public class PumpController {
 	public void recieveCustomer(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException {
 		boolean found = false;
 		for (Pump p : pumps) {
-			if (p.getQueue().peek().getRegistration() != null && p.getQueue().peek().getRegistration() == c.getRegistration()) {
+			if (p.getQueue().peek() != null && p.getQueue().peek().getRegistration() == c.getRegistration()) {
 				p.getQueue().peek().reEnterCar(c);
 				found = true;
 				break;

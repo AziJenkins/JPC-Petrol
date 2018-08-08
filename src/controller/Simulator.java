@@ -1,7 +1,6 @@
 package controller;
 
 import java.util.Random;
-import java.util.concurrent.TimeUnit;
 
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.CustomerAlreadyPresentException;
@@ -13,7 +12,8 @@ import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
-import view.TextBasedInterface;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import model.FamilySedan;
 import model.Motorbike;
 import model.PetrolStation;
@@ -39,7 +39,7 @@ public class Simulator {
 	/**
 	 * A constant to store the initial value of variable t
 	 */
-	public static final double INITIAL_T = 0.02;
+	private static final double INITIAL_T = 0.02;
 	/**
 	 * The Petrol Station model
 	 */
@@ -72,11 +72,12 @@ public class Simulator {
 	 * Interface It will prompt the User Interface to gather the user chosen
 	 * variables
 	 */
-	public Simulator(double p, double q, double t, boolean trucksAllowed, int numPumps, int numTills) {
+	public Simulator(double p, double q, boolean trucksAllowed, int numPumps, int numTills) {
 		
 		this.p = p;
 		this.q = q;
 		this.t = INITIAL_T;
+		this.trucksAllowed = trucksAllowed;
 		this.station = new PetrolStation(numPumps, numTills, SMALLEST_VEHICLE, MAX_QUEUE_SIZE);
 	}
 
@@ -99,7 +100,6 @@ public class Simulator {
 			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		for (int i = 0; i < ticks; i ++) {
 			station.tick(rollForVehicle());
-			TimeUnit.SECONDS.sleep(1);
 		}
 	}
 
@@ -111,7 +111,8 @@ public class Simulator {
 	 */
 	private Vehicle rollForVehicle() throws MinGreaterThanMaxException {
 		double chance = rand.nextDouble();
-	
+		return new Motorbike();
+		/*
 		if (chance <= p) {
 			return new SmallCar();
 		} else if (chance <= 2*p) {
@@ -119,10 +120,22 @@ public class Simulator {
 		} else if (chance <= (2*p)+q) {
 			return new FamilySedan();
 		} else if (trucksAllowed && chance <= (2*p)+q+t) {
-			return new Truck();
+			Truck truck = new Truck();
+			truck.getIsHappy().addListener(new ChangeListener<Boolean>() {
+
+				@Override
+				public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
+					if (!newValue) {
+						t *= 0.8;
+					}
+				}
+			});
+			
+			return truck;
 		} else {
 			return null;
 		}
+		*/
 	}
 
 	/**

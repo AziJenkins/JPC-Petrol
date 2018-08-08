@@ -20,7 +20,7 @@ import model.Pump;
 import model.SmallCar;
 import model.Truck;
 import model.Vehicle;
-import utils.CircularArrayQueue;
+import utils.ObservableListQueue;
 
 public class TestPump {
 
@@ -43,7 +43,7 @@ public class TestPump {
 		}
 		assertFalse(p.fill());
 
-		CircularArrayQueue<Vehicle> q = p.getQueue();
+		ObservableListQueue<Vehicle> q = p.getQueue();
 		q.remove();
 
 		for (int i = 0; i < v2.getFuelCapacity(); i++) {

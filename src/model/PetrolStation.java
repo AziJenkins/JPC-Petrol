@@ -11,8 +11,8 @@ import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
+import javafx.beans.property.SimpleDoubleProperty;
 import javafx.beans.property.SimpleIntegerProperty;
-import javafx.beans.value.ObservableNumberValue;
 
 /**
  * @author AZJENKIN A model Petrol Station
@@ -39,11 +39,11 @@ public class PetrolStation {
 	/**
 	 * The total income from fuel sales
 	 */
-	private double gallonsSold = 0;
+	private SimpleDoubleProperty gallonsSold;
 	/**
 	 * The total income from shop sales
 	 */
-	private double shopIncome = 0;
+	private SimpleDoubleProperty shopIncome;
 
 	/**
 	 * Constructor for a petrol station
@@ -55,6 +55,8 @@ public class PetrolStation {
 		this.pumps = new PumpController(numPumps, smallestVehicle);
 		this.tills = new TillController(numTills, maxQueueSize);   
 		ticksPassed = new SimpleIntegerProperty(0);
+		gallonsSold = new SimpleDoubleProperty(0);
+		shopIncome = new SimpleDoubleProperty(0);
 	}
 
 	/**
@@ -62,7 +64,7 @@ public class PetrolStation {
 	 * 
 	 * @return
 	 */
-	public double getGallonsSold() {
+	public SimpleDoubleProperty getGallonsSold() {
 		return gallonsSold;
 	}
 
@@ -71,7 +73,7 @@ public class PetrolStation {
 	 * 
 	 * @return
 	 */
-	public double getShopIncome() {
+	public SimpleDoubleProperty getShopIncome() {
 		return shopIncome;
 	}
 
@@ -84,8 +86,8 @@ public class PetrolStation {
 	public void collectPayments() throws CustomerAlreadyPaidException {
 		List<Payment> payments = tills.collectPayments();
 		for (Payment p : payments) {
-			gallonsSold += p.getFuelGallons();
-			shopIncome += p.getShopMoney();
+			gallonsSold.add(p.getFuelGallons());
+			shopIncome.add(p.getShopMoney());
 		}
 	}
 

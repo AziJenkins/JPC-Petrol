@@ -1,11 +1,11 @@
 package model;
 
 import java.util.Iterator;
-import exceptions.EmptyQueueException;
+
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
-import utils.CircularArrayQueue;
+import utils.ObservableListQueue;
 
 /**
  * A fuel Pump
@@ -29,14 +29,14 @@ public class Pump {
 	/**
 	 * The queue of Vehicles for the Pump
 	 */
-	private CircularArrayQueue<Vehicle> queue;
+	private ObservableListQueue<Vehicle> queue;
 
 	/**
 	 * Constructor for a Pump
 	 */
 	public Pump(double smallestVehicleSize) {
 		this.spaceUnused = PUMP_CAPACITY;
-		this.queue = new CircularArrayQueue<Vehicle>(PUMP_CAPACITY, smallestVehicleSize);
+		this.queue = new ObservableListQueue<Vehicle>(PUMP_CAPACITY);
 	}
 
 	public boolean enqueue(Vehicle v) {
@@ -89,7 +89,7 @@ public class Pump {
 	 * 
 	 * @return
 	 */
-	public CircularArrayQueue<Vehicle> getQueue() {
+	public ObservableListQueue<Vehicle> getQueue() {
 		return this.queue;
 	}
 
@@ -97,18 +97,12 @@ public class Pump {
 		return queue.getSize();
 	}
 
-	// TODO add dequeueWhenFullyPaid method
-
 	public Vehicle dequeueWhenFullyPaid() {
 		Vehicle v = queue.peek();
 		if (v != null && v.getHasPaid() && v.getIsOccupied()) {
-			try {
-				v = queue.remove();
-				spaceUnused = PUMP_CAPACITY - queue.getSize();
-				return v;
-			} catch (EmptyQueueException e) {
-
-			}
+			v = queue.remove();
+			spaceUnused = PUMP_CAPACITY - queue.getSize();
+			return v;
 		}
 		return null;
 	}

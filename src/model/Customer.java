@@ -11,8 +11,8 @@ import interfaces.QueueItem;
  */
 public class Customer implements QueueItem {
 
-	public static final int MAXIMUM_PAY_TICKS = 0;
-	public static final int MINIMUM_PAY_TICKS = 0;
+	public static final int MAXIMUM_PAY_TICKS = 18;
+	public static final int MINIMUM_PAY_TICKS = 12;
 	/**
 	 * The unique registration of this Customers Vehicle
 	 */
@@ -138,5 +138,9 @@ public class Customer implements QueueItem {
 
 	public double getShopSpend() {
 		return shopSpend;
+	}
+	
+	public String toString() {
+		return registration.toString();
 	}
 }
