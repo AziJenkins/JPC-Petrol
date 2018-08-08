@@ -45,6 +45,10 @@ public class PetrolStation {
 	 */
 	private SimpleDoubleProperty shopIncome;
 
+	private SimpleDoubleProperty lostGallons;
+
+	private SimpleDoubleProperty lostShopIncome;
+
 	/**
 	 * Constructor for a petrol station
 	 * 
@@ -53,10 +57,12 @@ public class PetrolStation {
 	 */
 	public PetrolStation(int numPumps, int numTills, double smallestVehicle, int maxQueueSize) {
 		this.pumps = new PumpController(numPumps, smallestVehicle);
-		this.tills = new TillController(numTills, maxQueueSize);   
+		this.tills = new TillController(numTills, maxQueueSize);
 		ticksPassed = new SimpleIntegerProperty(0);
 		gallonsSold = new SimpleDoubleProperty(0);
 		shopIncome = new SimpleDoubleProperty(0);
+		lostGallons = new SimpleDoubleProperty(0);
+		lostShopIncome = new SimpleDoubleProperty(0);
 	}
 
 	/**
@@ -66,6 +72,14 @@ public class PetrolStation {
 	 */
 	public SimpleDoubleProperty getGallonsSold() {
 		return gallonsSold;
+	}
+	
+	public SimpleDoubleProperty getLostGallons() {
+		return lostGallons;
+	}
+	
+	public SimpleDoubleProperty getLostShopIncome() {
+		return lostShopIncome;
 	}
 
 	/**
@@ -86,8 +100,8 @@ public class PetrolStation {
 	public void collectPayments() throws CustomerAlreadyPaidException {
 		List<Payment> payments = tills.collectPayments();
 		for (Payment p : payments) {
-			gallonsSold.add(p.getFuelGallons());
-			shopIncome.add(p.getShopMoney());
+			gallonsSold.setValue(gallonsSold.get() + p.getFuelGallons());
+			shopIncome.setValue(shopIncome.get() + p.getShopMoney());
 		}
 	}
 
@@ -138,8 +152,7 @@ public class PetrolStation {
 	 * @throws CustomerCarMismatchException
 	 * @throws TillFullException
 	 */
-	public void recieveCustomer(Customer c) throws CustomerAlreadyPresentException, CustomerCarMismatchException,
-			CustomerHasNotPaidException, CustomerCouldNotFindVehicleException, TillFullException {
+	public void recieveCustomer(Customer c) throws CustomerAlreadyPresentException, CustomerCarMismatchException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException, TillFullException {
 		if (c.getHasPaid()) {
 			pumps.recieveCustomer(c);
 		} else if (c.getWillShop()) {
@@ -148,9 +161,9 @@ public class PetrolStation {
 			tills.enqueue(c);
 		}
 	}
-	
+
 	public void recieveCustomers(List<Customer> customers) throws CustomerAlreadyPresentException, CustomerCarMismatchException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException, TillFullException {
-		for (Customer c: customers) {
+		for (Customer c : customers) {
 			recieveCustomer(c);
 		}
 	}
@@ -175,13 +188,16 @@ public class PetrolStation {
 	 * @throws VehicleNotFullException
 	 * @throws VehicleAlreadyPaidException
 	 * @throws VehicleIsNotOccupiedException
-	 * @throws TillFullException 
-	 * @throws CustomerCouldNotFindVehicleException 
+	 * @throws TillFullException
+	 * @throws CustomerCouldNotFindVehicleException
 	 */
-	public void tick(Vehicle v) throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException,
-			VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException,
-			CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException {
-		pumps.dequeueAllFullyPaid();
+	public void tick(Vehicle v) throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException,
+			TillFullException, CustomerCouldNotFindVehicleException {
+		for (Vehicle leaving: pumps.dequeueAllFullyPaid()) {
+			if (!leaving.getDidShop()) {
+				lostShopIncome.set(lostShopIncome.get() + leaving.getShoppingSpend());
+			}
+		}
 		List<Customer> finishedPaying = tills.dequeueFullyPaid();
 		collectPayments();
 		recieveCustomers(shop.tick());
@@ -190,11 +206,7 @@ public class PetrolStation {
 		if (v != null) {
 			recieveVehicle(v);
 		}
-		ticksPassed.set(ticksPassed.get()+1);
-		/*
-		 * dequeue all paid dequeue paid customers tick TillQueue tick shop tick pumps
-		 * add vehicle
-		 */
+		ticksPassed.set(ticksPassed.get() + 1);
 	}
 
 	/**

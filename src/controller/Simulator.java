@@ -111,8 +111,7 @@ public class Simulator {
 	 */
 	private Vehicle rollForVehicle() throws MinGreaterThanMaxException {
 		double chance = rand.nextDouble();
-		return new Motorbike();
-		/*
+
 		if (chance <= p) {
 			return new SmallCar();
 		} else if (chance <= 2*p) {
@@ -135,7 +134,6 @@ public class Simulator {
 		} else {
 			return null;
 		}
-		*/
 	}
 
 	/**

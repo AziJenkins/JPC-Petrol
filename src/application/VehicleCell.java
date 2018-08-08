@@ -24,11 +24,15 @@ public class VehicleCell extends ListCell<Vehicle> {
 				imageView.setPreserveRatio(true);
 				imageView.setFitWidth(50);
 				setGraphic(imageView);
+				setText(item.getRegistration().toString() + " Capacity:" + item.getFuelCapacity());
 				
 			} catch (FileNotFoundException e) {
-				System.out.println("nope");
+
 			}
 			
+		} else {
+			setText("");
+			setGraphic(null);
 		}
 	}
 }

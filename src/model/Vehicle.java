@@ -266,4 +266,8 @@ public abstract class Vehicle implements QueueItem {
 	public boolean getDidShop() {
 		return didShop;
 	}
+	
+	public double getShoppingSpend() {
+		return shoppingSpend;
+	}
 }
