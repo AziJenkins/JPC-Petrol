@@ -1,11 +1,27 @@
 package utils;
 
 
+import java.util.Collection;
 import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
 
+import com.sun.javafx.property.adapter.PropertyDescriptor.Listener;
 
 import exceptions.EmptyQueueException;
 import interfaces.QueueItem;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.beans.property.SimpleListProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.collections.ListChangeListener;
+import javafx.collections.ObservableArray;
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableSet;
+import javafx.scene.shape.ObservableFaceArray;
+import jdk.jfr.events.FileReadEvent;
 
 /**
  * A Circular Array Queue
@@ -13,7 +29,7 @@ import interfaces.QueueItem;
  *
  * @param <T>
  */
-public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
+public class ObservableCircularArrayQueue<T extends QueueItem> implements Iterable<T>, ObservableValue<T[]> {
 
 	/**
 	 * The index of the element at the front of the queue
@@ -26,7 +42,7 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	/**
 	 * The array that holds queue items
 	 */
-	private QueueItem[] queue;
+	private T[] queue;
 	/**
 	 * The maximum size of the queue
 	 */
@@ -34,15 +50,18 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	
 	private double spaceUnused;
 	
+	private ChangeListener<? super T[]> changeListener;
+	
 
 	/**
 	 * Constructor for CircularArrayQueue
 	 * @param capacity The maximum size of the queue
 	 */
-	public CircularArrayQueue(double capacity, double smallestItem) {
+	@SuppressWarnings("unchecked")
+	public ObservableCircularArrayQueue(double capacity, double smallestItem) {
 		this.capacity = capacity;
 		this.spaceUnused = capacity;
-		queue = new QueueItem[(int)Math.ceil(capacity / smallestItem)];
+		queue = (T[]) new QueueItem[(int)Math.ceil(capacity / smallestItem)];
 		front = -1;
 		rear = 0;
 	}
@@ -60,9 +79,12 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 		if(front == -1) {
 			front++;
 		}
+		T[] oldValue = getValue();
 		queue[rear] = t;
 		rear = (rear + 1) % queue.length;
 		spaceUnused -= t.getSize();
+		T[] newValue = getValue(); //TODO do this gud
+		//changeListener.changed(this, oldValue, newValue);
 		return true;
 	}
 
@@ -71,16 +93,15 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * @return
 	 * @throws EmptyQueueException 
 	 */
-	@SuppressWarnings("unchecked")
 	public T remove() throws EmptyQueueException {
 		if (isEmpty()) {
 			throw new EmptyQueueException();
 		}
-		QueueItem e = queue[front];
+		T e = queue[front];
 		queue[front] = null;
 		front = (front + 1) % queue.length;
 		spaceUnused += e.getSize();
-		return (T) e;
+		return e;
 	}
 
 	/**
@@ -103,12 +124,11 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * Return the first element in the queue without removing it
 	 * @return
 	 */
-	@SuppressWarnings("unchecked")
 	public T peek() {
 		if (front < 0) {
 			return null;
 		}
-		return (T) queue[front];
+		return queue[front];
 	}
 
 	/**
@@ -117,7 +137,7 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	 * @return
 	 */
 	public boolean contains(T t) {
-		for (QueueItem thing : queue) {
+		for (T thing : queue) {
 			if (thing == t) {
 				return true;
 			}
@@ -142,13 +162,12 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 				return !isEmpty() && queue[next] != null && !(hasStarted && next == iFront);
 			}
 
-			@SuppressWarnings("unchecked")
 			@Override
 			public T next() {
 				if (!hasStarted) {
 					hasStarted = true;
 				}
-				T ret = (T) queue[next];
+				T ret = queue[next];
 				next = (next + 1 ) % queue.length;
 				return ret;
 			}
@@ -159,4 +178,38 @@ public class CircularArrayQueue<T extends QueueItem> implements Iterable<T>{
 	public double getSize() {
 		return capacity - spaceUnused;
 	}
+
+	@Override
+	public void addListener(InvalidationListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeListener(InvalidationListener listener) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public T[] getValue() {
+		@SuppressWarnings("unchecked")
+		T[] value = (T[]) new QueueItem[queue.length];
+		for(int i = 0; i < queue.length; i++) {
+			value[i] = queue[i+front%queue.length];
+		}
+		return value;
+	}
+
+	@Override
+	public void addListener(ChangeListener<? super T[]> arg0) {
+		changeListener = arg0;
+	}
+
+	@Override
+	public void removeListener(ChangeListener<? super T[]> arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

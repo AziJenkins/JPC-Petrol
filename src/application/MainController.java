@@ -1,6 +1,10 @@
 package application;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 import javax.swing.event.AncestorEvent;
 
@@ -15,11 +19,14 @@ import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
+import interfaces.QueueItem;
 import javafx.beans.InvalidationListener;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableNumberValue;
 import javafx.beans.value.ObservableValue;
+import javafx.collections.ListChangeListener;
 import javafx.collections.SetChangeListener;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -31,6 +38,10 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import model.Customer;
+import model.Pump;
+import model.Vehicle;
+import utils.ObservableCircularArrayQueue;
+import view.PumpsViewController;
 
 public class MainController {
 	@FXML
@@ -60,10 +71,16 @@ public class MainController {
 	@FXML
 	private VBox tillContainer;
 	
+	private List<ListView<Customer>> tillViews;
+	@FXML
+	private HBox pumpContainer;
+	
+	private List<ListView<Vehicle>> pumpViews;
+
 	private Simulator sim;
 
-
-	public void initialize() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
+	public void initialize() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException,
+			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		txtChanceOfSmallVehicle.setText("0.01");
 		txtChanceOfFamilySedan.setText("0.01");
 		txtChanceOfTrucks.setText("0.02");
@@ -71,29 +88,20 @@ public class MainController {
 		txtNumPumps.setText("2");
 		txtNumTills.setText("2");
 		simView.setDisable(true);
+		tillViews = new ArrayList<ListView<Customer>>();
+		pumpViews = new ArrayList<ListView<Vehicle>>();
 	}
-	
-	
-		//needs to create a simulator using these user inputs, simulator needs to be changed slightly and we can get rid of textbasedinterface
-		//and then we can write some other methods in this to calculate ticks etc
-		//carbike.getText
-		//family.getText
-		//truckBut.get this is a radiobutton
-		//pumpsText.getText
-		//tillsText.getText
-		//
-		//
-		//		
 
-	
-	
-	public void tick() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
-		sim.runSimulation(10);
+	public void tick() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException,
+			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
+		sim.runSimulation(1);
 	}
-	
+
 	public void createSimulation() {
-		sim = new Simulator(Double.parseDouble(txtChanceOfSmallVehicle.getText()), Double.parseDouble(txtChanceOfFamilySedan.getText()), Double.parseDouble(txtChanceOfTrucks.getText()), cbxTrucksAllowed.isSelected(), Integer.parseInt(txtNumPumps.getText()), Integer.parseInt(txtNumTills.getText()));
+		sim = new Simulator(Double.parseDouble(txtChanceOfSmallVehicle.getText()), Double.parseDouble(txtChanceOfFamilySedan.getText()), Double.parseDouble(txtChanceOfTrucks.getText()), cbxTrucksAllowed.isSelected(),
+				Integer.parseInt(txtNumPumps.getText()), Integer.parseInt(txtNumTills.getText()));
 		createTillView();
+		createPumpView();
 		simSettings.setDisable(true);
 		simView.setDisable(false);
 		setupListeners();
@@ -105,7 +113,7 @@ public class MainController {
 		simView.setDisable(true);
 		clearSimView();
 	}
-	
+
 	public void setupListeners() {
 		sim.getStation().getTicks().addListener(new ChangeListener<Number>() {
 
@@ -113,7 +121,7 @@ public class MainController {
 			public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
 				txtTicks.setText(newValue.toString());
 			}
-			
+
 		});
 		sim.getStation().getShop().getContents().addListener(new SetChangeListener<Customer>() {
 
@@ -121,19 +129,36 @@ public class MainController {
 			public void onChanged(Change<? extends Customer> change) {
 				shopContentsView.getItems().setAll(change.getSet());
 			}
-			
+
 		});
-	}
-	
-	public void clearSimView() {
-		txtTicks.setText("");
-	}
-	
-	private void createTillView() {
-		LinkedList<ListView<Customer>> tills = new LinkedList<ListView<Customer>>();
-		for (int i = 0; i < Integer.parseInt(txtNumTills.getText()); i++) {
-			tillContainer.getChildren().add(new ListView<Customer>());
+		Pump[] pumps = sim.getStation().getPumpController().getPumps();
+		for (int i = 0; i < pumps.length; i++) {
+			pumps[i].getQueue().addListener(new ChangeListener<Vehicle[]>() {
+
+				@Override
+				public void changed(ObservableValue<? extends Vehicle[]> observable, Vehicle[] oldValue, Vehicle[] newValue) {
+					System.out.println(oldValue);
+				}
+			});
 		}
-		
+	}
+
+	public void clearSimView() {
+		tillContainer.getChildren().clear();
+		pumpContainer.getChildren().clear();
+	}
+
+	private void createTillView() {
+		for (int i = 0; i < Integer.parseInt(txtNumTills.getText()); i++) {
+			tillViews.add(new ListView<Customer>());
+		}
+		tillContainer.getChildren().addAll(tillViews);
+	}
+
+	private void createPumpView() {
+		for (int i = 0; i < Integer.parseInt(txtNumPumps.getText()); i++) {
+			pumpViews.add(new ListView<Vehicle>());
+		}
+		pumpContainer.getChildren().addAll(pumpViews);
 	}
 }

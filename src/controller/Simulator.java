@@ -99,7 +99,6 @@ public class Simulator {
 			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
 		for (int i = 0; i < ticks; i ++) {
 			station.tick(rollForVehicle());
-			TimeUnit.SECONDS.sleep(1);
 		}
 	}
 

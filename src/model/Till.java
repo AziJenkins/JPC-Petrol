@@ -3,7 +3,7 @@ package model;
 import exceptions.CustomerAlreadyPaidException;
 import exceptions.EmptyQueueException;
 import exceptions.TillFullException;
-import utils.CircularArrayQueue;
+import utils.ObservableCircularArrayQueue;
 
 /**
  * A Till
@@ -16,13 +16,13 @@ public class Till {
 	/**
 	 * A queue of Customers for the Till
 	 */
-	private CircularArrayQueue<Customer> queue;
+	private ObservableCircularArrayQueue<Customer> queue;
 
 	/**
 	 * Constructor for a Till
 	 */
 	public Till(int maxQueueSize) {
-		queue = new CircularArrayQueue<Customer>(maxQueueSize, 1);
+		queue = new ObservableCircularArrayQueue<Customer>(maxQueueSize, 1);
 	}
 
 	public void enqueue(Customer c) throws TillFullException {
@@ -60,7 +60,7 @@ public class Till {
 	 * 
 	 * @return
 	 */
-	public CircularArrayQueue<Customer> getQueue() {
+	public ObservableCircularArrayQueue<Customer> getQueue() {
 		return this.queue;
 	}
 

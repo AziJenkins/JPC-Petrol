@@ -1,11 +1,20 @@
 package model;
 
 import java.util.Iterator;
+
+import javax.swing.event.ChangeEvent;
+
 import exceptions.EmptyQueueException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
-import utils.CircularArrayQueue;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.beans.property.SimpleListProperty;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.collections.ObservableList;
+import javafx.collections.ObservableListBase;
+import utils.ObservableCircularArrayQueue;
 
 /**
  * A fuel Pump
@@ -29,14 +38,14 @@ public class Pump {
 	/**
 	 * The queue of Vehicles for the Pump
 	 */
-	private CircularArrayQueue<Vehicle> queue;
+	private ObservableCircularArrayQueue<Vehicle> queue;
 
 	/**
 	 * Constructor for a Pump
 	 */
 	public Pump(double smallestVehicleSize) {
 		this.spaceUnused = PUMP_CAPACITY;
-		this.queue = new CircularArrayQueue<Vehicle>(PUMP_CAPACITY, smallestVehicleSize);
+		this.queue = new ObservableCircularArrayQueue<Vehicle>(PUMP_CAPACITY, smallestVehicleSize);
 	}
 
 	public boolean enqueue(Vehicle v) {
@@ -89,15 +98,13 @@ public class Pump {
 	 * 
 	 * @return
 	 */
-	public CircularArrayQueue<Vehicle> getQueue() {
+	public ObservableCircularArrayQueue<Vehicle> getQueue() {
 		return this.queue;
 	}
 
 	public double getQueueSize() {
 		return queue.getSize();
 	}
-
-	// TODO add dequeueWhenFullyPaid method
 
 	public Vehicle dequeueWhenFullyPaid() {
 		Vehicle v = queue.peek();
