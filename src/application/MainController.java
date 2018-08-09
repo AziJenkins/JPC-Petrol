@@ -1,5 +1,7 @@
 package application;
 
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -87,8 +89,9 @@ public class MainController {
 	private HBox pumpContainer;
 
 	private List<ListView<Vehicle>> pumpViews;
-
-	@FXML
+	
+	private FileWriter writer;
+	
 
 	private Simulator sim;
 
@@ -284,7 +287,8 @@ public class MainController {
 	}
 
 	public void runAll() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException,
-			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
+			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException, IOException {
+		writer = new FileWriter("Full-Simulation.txt", false);
 		Double[] probabilities = { 0.01, 0.02, 0.03, 0.04, 0.05 };
 		int[] numQueues = { 1, 2, 4 };
 		for (int trucks = 0; trucks < 2; trucks++) {
@@ -294,11 +298,19 @@ public class MainController {
 						for (int numPumps = 0; numPumps < 3; numPumps++) {
 							Simulator s = new Simulator(probabilities[smallVehicle], probabilities[familyVehicle], trucks < 1 ? true : false, numQueues[numPumps], numQueues[numTills]);
 							s.runSimulation(1440);
-							// write outputs to file
+							appendToFile(s.toString());
 						}
 					}
 				}
 			}
 		}
+	}
+	
+	private void appendToFile(String data) throws IOException {
+		writer.append(data);
+	}
+	
+	public void flushRemaining() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException {
+		sim.flush();
 	}
 }

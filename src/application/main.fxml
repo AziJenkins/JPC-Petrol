@@ -74,7 +74,7 @@
               <content>
                 <AnchorPane>
                      <children>
-                        <GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="422.0" prefWidth="449.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <GridPane hgap="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="422.0" prefWidth="449.0" vgap="5.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -84,10 +84,10 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <VBox>
+                              <VBox alignment="CENTER">
                                  <children>
                                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Ticks Passed" VBox.vgrow="ALWAYS" />
-                                    <TextField id="ticksView" fx:id="txtTicks" alignment="CENTER" />
+                                    <TextField id="ticksView" fx:id="txtTicks" alignment="CENTER" maxWidth="75.0" />
                                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Minutes m" VBox.vgrow="ALWAYS" />
                                     <TextField fx:id="txtTimeMin" alignment="CENTER" promptText="time (minutes)" />
                                     <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Hours h" VBox.vgrow="ALWAYS" />
@@ -95,7 +95,7 @@
                                  </children>
                               </VBox>
                               <Button fx:id="btnDeleteSim" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#deleteSimulation" text="New Simulation" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
+                              <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" GridPane.columnIndex="1">
                                  <children>
                                     <Button fx:id="btnProgressTime" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#tick" text="Progress time (10 s)" VBox.vgrow="ALWAYS" />
                                     <Button fx:id="btnRunFor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#runForMin" text="Progress Time (m min)" VBox.vgrow="ALWAYS" />
@@ -104,10 +104,10 @@
                               </VBox>
                               <VBox GridPane.rowIndex="1">
                                  <children>
-                                    <Button mnemonicParsing="false" text="Flush Remaining Customers" wrapText="true" GridPane.rowIndex="1" />
-                                    <Label text="Lost Potential Shop Income (£)" />
+                                    <Button fx:id="btnFlush" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#flushRemaining" text="Flush Remaining Customers" wrapText="true" GridPane.rowIndex="1" VBox.vgrow="ALWAYS" />
+                                    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Lost Potential Shop Income (£)" textAlignment="CENTER" />
                                     <TextField fx:id="txtLostShopIncome" />
-                                    <Label text="Lost Potential Fuel (Gallons)" />
+                                    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Lost Potential Fuel (Gallons)" textAlignment="CENTER" />
                                     <TextField fx:id="txtLostGallons" />
                                  </children>
                               </VBox>
@@ -119,7 +119,7 @@
             </TitledPane>
          </children>
       </GridPane>
-      <GridPane fx:id="simSettings">
+      <GridPane fx:id="simSettings" hgap="10.0" vgap="10.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
           <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -151,21 +151,13 @@
             <Label text="Number of Pumps" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.rowIndex="6" GridPane.valignment="CENTER" />
             <TextField fx:id="txtNumTills" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <TextField fx:id="txtNumPumps" GridPane.columnIndex="1" GridPane.rowIndex="6" />
-            <SplitPane dividerPositions="0.2857142857142857" orientation="VERTICAL" GridPane.columnIndex="1">
-              <items>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                     <children>
-                        <Label alignment="CENTER" layoutX="36.0" layoutY="4.0" text="Fuel Price (£)" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-                     </children>
-                  </AnchorPane>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                     <children>
-                        <TextField fx:id="txtFuelPrice" layoutX="-24.0" layoutY="21.0" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="-0.0" />
-                     </children>
-                  </AnchorPane>
-              </items>
-            </SplitPane>
-            <VBox prefHeight="200.0" prefWidth="100.0">
+            <VBox GridPane.columnIndex="1">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Fuel Price (£)" textAlignment="CENTER" VBox.vgrow="ALWAYS" />
+                  <TextField fx:id="txtFuelPrice" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
                <children>
                   <Button fx:id="btnCreateSim" mnemonicParsing="false" onAction="#createSimulation" text="Create Simulation" textAlignment="CENTER" wrapText="true" />
                   <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#runAll" text="Run All &amp; Export" textAlignment="CENTER" wrapText="true" />

@@ -65,7 +65,6 @@ public class Simulator {
 	 * be
 	 */
 	public static Random rand = new Random();
-	
 
 	/**
 	 * Initializing a simulator will initialize a model Petrol Station and a User
@@ -73,7 +72,7 @@ public class Simulator {
 	 * variables
 	 */
 	public Simulator(double p, double q, boolean trucksAllowed, int numPumps, int numTills) {
-		
+
 		this.p = p;
 		this.q = q;
 		this.t = INITIAL_T;
@@ -93,32 +92,34 @@ public class Simulator {
 	 * @throws VehicleAlreadyPaidException
 	 * @throws VehicleIsNotOccupiedException
 	 * @throws CustomerAlreadyPaidException
-	 * @throws MinGreaterThanMaxException 
-	 * @throws InterruptedException 
+	 * @throws MinGreaterThanMaxException
+	 * @throws InterruptedException
 	 */
-	public void runSimulation(int ticks) throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException,
-			TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
-		for (int i = 0; i < ticks; i ++) {
+	public void runSimulation(int ticks) throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException,
+			CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException, MinGreaterThanMaxException, InterruptedException {
+		for (int i = 0; i < ticks; i++) {
 			station.tick(rollForVehicle());
 		}
 	}
 
 	/**
-	 * Generates a random number and based on the result compared to the chances of Vehicles spawning will either return a
-	 * new Vehicle of the appropriate type or null
+	 * Generates a random number and based on the result compared to the chances of
+	 * Vehicles spawning will either return a new Vehicle of the appropriate type or
+	 * null
+	 * 
 	 * @return Either null or a Vehicle
-	 * @throws MinGreaterThanMaxException 
+	 * @throws MinGreaterThanMaxException
 	 */
 	private Vehicle rollForVehicle() throws MinGreaterThanMaxException {
 		double chance = rand.nextDouble();
 
 		if (chance <= p) {
 			return new SmallCar();
-		} else if (chance <= 2*p) {
+		} else if (chance <= 2 * p) {
 			return new Motorbike();
-		} else if (chance <= (2*p)+q) {
+		} else if (chance <= (2 * p) + q) {
 			return new FamilySedan();
-		} else if (trucksAllowed && chance <= (2*p)+q+t) {
+		} else if (trucksAllowed && chance <= (2 * p) + q + t) {
 			Truck truck = new Truck();
 			truck.getIsHappy().addListener(new ChangeListener<Boolean>() {
 
@@ -129,7 +130,7 @@ public class Simulator {
 					}
 				}
 			});
-			
+
 			return truck;
 		} else {
 			return null;
@@ -143,6 +144,35 @@ public class Simulator {
 	 */
 	public PetrolStation getStation() {
 		return this.station;
+	}
+
+	public void flush() throws CustomerAlreadyPaidException, VehicleIsNotOccupiedException, VehicleAlreadyPaidException, VehicleNotFullException, CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, TillFullException, CustomerCouldNotFindVehicleException {
+		for (int i = 0; i < 50; i++) {
+			station.tick(null);
+		}
+	}
+
+	public String toString() {
+		StringBuilder output = new StringBuilder();
+		int ticks = station.getTicks().intValue();
+		output.append("Simulation run for " + ticks);
+		output.append(" ticks (" + ticks * 10 + " sec)\r\n");
+		output.append("Probabilities : ");
+		output.append("(Small Vehicles " + p + ") ");
+		output.append("(Family Sedans " + q + ") ");
+		output.append("(Trucks final " + (trucksAllowed ? t : "Restricted"));
+		output.append(")\r\n");
+		output.append("Income : ");
+		double gallons = station.getGallonsSold().doubleValue();
+		double shopIncome = station.getShopIncome().doubleValue();
+		double lostGallons = station.getLostGallons().doubleValue();
+		double lostShopIncome = station.getLostShopIncome().doubleValue();
+		output.append("(" + gallons + " gallons sold) ");
+		output.append("(£" + shopIncome + " in shop sales) ");
+		output.append("(" + lostGallons + " gallons turned away) ");
+		output.append("(£" + lostShopIncome + " potential income lost) ");
+		output.append("\r\n\r\n");
+		return output.toString();
 	}
 
 }
