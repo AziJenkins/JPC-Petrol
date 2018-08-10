@@ -16,6 +16,7 @@ import exceptions.TillFullException;
 import exceptions.VehicleAlreadyPaidException;
 import exceptions.VehicleIsNotOccupiedException;
 import exceptions.VehicleNotFullException;
+import javafx.animation.FillTransition;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.ListChangeListener;
@@ -33,7 +34,9 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
 import javafx.util.Callback;
+import javafx.util.Duration;
 import javafx.util.converter.NumberStringConverter;
 import model.Customer;
 import model.Pump;
@@ -105,6 +108,7 @@ public class MainController {
 		txtNumPumps.setText("2");
 		txtNumTills.setText("2");
 		simView.setDisable(true);
+		txtTicks.setEditable(false);
 		txtFuelGallons.setEditable(false);
 		txtShopIncome.setEditable(false);
 		tillViews = new ArrayList<ListView<Customer>>();
@@ -242,7 +246,7 @@ public class MainController {
 
 				@Override
 				public ListCell<Customer> call(ListView<Customer> param) {
-					return new ListCell<Customer>();
+					return new CustomerCell();
 				}
 
 			});

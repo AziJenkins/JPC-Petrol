@@ -127,6 +127,8 @@ public class Simulator {
 				public void changed(ObservableValue<? extends Boolean> observable, Boolean oldValue, Boolean newValue) {
 					if (!newValue) {
 						t *= 0.8;
+					} else if (t <= INITIAL_T) {
+						t *= 1.05;
 					}
 				}
 			});

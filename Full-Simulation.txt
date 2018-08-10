@@ -1,1775 +1,1779 @@
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (470.0 gallons sold) (£147.34000000000003 in shop sales) (0.0 gallons turned away) (£131.19 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (717.0 gallons sold) (£219.99 in shop sales) (0.0 gallons turned away) (£177.56 potential income lost) 
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.016)
+Income : (469.0 gallons sold) (£127.81 in shop sales) (0.0 gallons turned away) (£156.91999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (962.0 gallons sold) (£352.13 in shop sales) (0.0 gallons turned away) (£247.83000000000004 potential income lost) 
+Income : (791.0 gallons sold) (£219.24 in shop sales) (0.0 gallons turned away) (£226.69999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (467.0 gallons sold) (£104.59 in shop sales) (0.0 gallons turned away) (£158.00000000000003 potential income lost) 
+Income : (1056.0 gallons sold) (£431.40000000000003 in shop sales) (0.0 gallons turned away) (£177.25000000000003 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.016)
+Income : (463.0 gallons sold) (£187.23000000000002 in shop sales) (0.0 gallons turned away) (£68.02 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.01024)
+Income : (736.0 gallons sold) (£228.86 in shop sales) (0.0 gallons turned away) (£169.94 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
+Income : (1144.0 gallons sold) (£368.09000000000003 in shop sales) (0.0 gallons turned away) (£250.77 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (767.0 gallons sold) (£268.04 in shop sales) (0.0 gallons turned away) (£158.76999999999998 potential income lost) 
+Income : (484.0 gallons sold) (£165.46999999999997 in shop sales) (0.0 gallons turned away) (£110.26 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.01024)
+Income : (737.0 gallons sold) (£208.81999999999996 in shop sales) (0.0 gallons turned away) (£215.91000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.02)
-Income : (983.0 gallons sold) (£402.7300000000001 in shop sales) (0.0 gallons turned away) (£166.63 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.02)
-Income : (428.0 gallons sold) (£136.39999999999998 in shop sales) (0.0 gallons turned away) (£86.49 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (562.0 gallons sold) (£179.81 in shop sales) (0.0 gallons turned away) (£143.75 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (906.0 gallons sold) (£298.33000000000004 in shop sales) (0.0 gallons turned away) (£238.82000000000005 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (503.0 gallons sold) (£84.83999999999999 in shop sales) (0.0 gallons turned away) (£233.16000000000003 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (778.0 gallons sold) (£217.19 in shop sales) (0.0 gallons turned away) (£282.56000000000006 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (989.0 gallons sold) (£327.96 in shop sales) (0.0 gallons turned away) (£258.27000000000004 potential income lost) 
+Income : (1102.0 gallons sold) (£466.79 in shop sales) (0.0 gallons turned away) (£153.57000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (492.0 gallons sold) (£75.98 in shop sales) (0.0 gallons turned away) (£234.75 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (901.0 gallons sold) (£276.34999999999997 in shop sales) (0.0 gallons turned away) (£252.67000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (1267.0 gallons sold) (£470.45000000000016 in shop sales) (0.0 gallons turned away) (£328.79 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.0128)
-Income : (442.0 gallons sold) (£107.61 in shop sales) (0.0 gallons turned away) (£154.94 potential income lost) 
+Income : (437.0 gallons sold) (£128.32999999999998 in shop sales) (0.0 gallons turned away) (£216.52000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (888.0 gallons sold) (£204.76999999999998 in shop sales) (0.0 gallons turned away) (£366.97 potential income lost) 
+Income : (923.0 gallons sold) (£183.95 in shop sales) (0.0 gallons turned away) (£381.1299999999999 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.016)
+Income : (1293.0 gallons sold) (£491.10999999999996 in shop sales) (0.0 gallons turned away) (£290.19 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.0128)
-Income : (1226.0 gallons sold) (£411.87 in shop sales) (0.0 gallons turned away) (£378.45000000000005 potential income lost) 
+Income : (451.0 gallons sold) (£124.89999999999999 in shop sales) (0.0 gallons turned away) (£147.35999999999996 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.01024)
+Income : (786.0 gallons sold) (£304.96 in shop sales) (0.0 gallons turned away) (£197.45999999999995 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.0128)
+Income : (1318.0 gallons sold) (£423.07000000000005 in shop sales) (0.0 gallons turned away) (£356.95 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.016)
+Income : (423.0 gallons sold) (£115.12000000000002 in shop sales) (0.0 gallons turned away) (£175.76 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.016)
+Income : (888.0 gallons sold) (£301.81 in shop sales) (0.0 gallons turned away) (£247.56000000000006 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final 0.016)
+Income : (1090.0 gallons sold) (£355.10999999999996 in shop sales) (0.0 gallons turned away) (£307.4000000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.016)
+Income : (490.0 gallons sold) (£64.01 in shop sales) (0.0 gallons turned away) (£291.14000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (486.0 gallons sold) (£136.46 in shop sales) (0.0 gallons turned away) (£179.94 potential income lost) 
+Income : (803.0 gallons sold) (£191.42000000000002 in shop sales) (0.0 gallons turned away) (£358.7999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.01024)
-Income : (769.0 gallons sold) (£230.47000000000003 in shop sales) (0.0 gallons turned away) (£279.38 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (1210.0 gallons sold) (£442.65 in shop sales) (0.0 gallons turned away) (£345.74999999999994 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (416.0 gallons sold) (£159.22 in shop sales) (0.0 gallons turned away) (£110.80000000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (854.0 gallons sold) (£290.37 in shop sales) (0.0 gallons turned away) (£246.06999999999996 potential income lost) 
+Income : (1214.0 gallons sold) (£372.82000000000005 in shop sales) (0.0 gallons turned away) (£413.08000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (1440.0 gallons sold) (£454.31999999999994 in shop sales) (0.0 gallons turned away) (£467.93000000000006 potential income lost) 
+Income : (512.0 gallons sold) (£114.63000000000001 in shop sales) (0.0 gallons turned away) (£201.82 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (447.0 gallons sold) (£115.19 in shop sales) (0.0 gallons turned away) (£191.01999999999998 potential income lost) 
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.01024)
+Income : (943.0 gallons sold) (£260.88000000000005 in shop sales) (0.0 gallons turned away) (£286.38 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.02)
+Income : (1271.0 gallons sold) (£490.9099999999999 in shop sales) (0.0 gallons turned away) (£304.81000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (795.0 gallons sold) (£215.70000000000002 in shop sales) (0.0 gallons turned away) (£345.2100000000001 potential income lost) 
+Income : (489.0 gallons sold) (£140.71 in shop sales) (0.0 gallons turned away) (£163.57000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (1523.0 gallons sold) (£477.56000000000006 in shop sales) (0.0 gallons turned away) (£514.2299999999999 potential income lost) 
+Income : (869.0 gallons sold) (£324.2 in shop sales) (0.0 gallons turned away) (£248.52000000000007 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (485.0 gallons sold) (£121.38 in shop sales) (0.0 gallons turned away) (£176.98999999999998 potential income lost) 
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final 0.0128)
+Income : (1412.0 gallons sold) (£482.8300000000001 in shop sales) (0.0 gallons turned away) (£370.27 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (827.0 gallons sold) (£206.96000000000004 in shop sales) (0.0 gallons turned away) (£370.80000000000007 potential income lost) 
+Income : (465.0 gallons sold) (£115.64 in shop sales) (0.0 gallons turned away) (£207.33 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.0065536000000000014)
-Income : (1165.0 gallons sold) (£277.33000000000004 in shop sales) (0.0 gallons turned away) (£491.64999999999975 potential income lost) 
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
+Income : (879.0 gallons sold) (£209.56 in shop sales) (0.0 gallons turned away) (£411.2300000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
+Income : (1330.0 gallons sold) (£280.93000000000006 in shop sales) (0.0 gallons turned away) (£669.4199999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (476.0 gallons sold) (£138.95 in shop sales) (0.0 gallons turned away) (£213.57000000000005 potential income lost) 
+Income : (481.0 gallons sold) (£143.14000000000001 in shop sales) (0.0 gallons turned away) (£174.7 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (970.0 gallons sold) (£187.29999999999998 in shop sales) (0.0 gallons turned away) (£516.4300000000001 potential income lost) 
+Income : (1011.0 gallons sold) (£208.48000000000002 in shop sales) (0.0 gallons turned away) (£503.95000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (1391.0 gallons sold) (£443.72999999999996 in shop sales) (0.0 gallons turned away) (£530.1600000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (470.0 gallons sold) (£136.14 in shop sales) (0.0 gallons turned away) (£191.95000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (942.0 gallons sold) (£327.73999999999995 in shop sales) (0.0 gallons turned away) (£244.79000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (1543.0 gallons sold) (£510.6300000000001 in shop sales) (0.0 gallons turned away) (£504.53999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (1329.0 gallons sold) (£501.69999999999993 in shop sales) (0.0 gallons turned away) (£407.8599999999999 potential income lost) 
+Income : (531.0 gallons sold) (£129.5 in shop sales) (0.0 gallons turned away) (£225.31999999999996 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (933.0 gallons sold) (£250.88000000000005 in shop sales) (0.0 gallons turned away) (£361.64000000000004 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (1587.0 gallons sold) (£557.02 in shop sales) (0.0 gallons turned away) (£449.19 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (522.0 gallons sold) (£83.88999999999999 in shop sales) (0.0 gallons turned away) (£275.34 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (497.0 gallons sold) (£112.34 in shop sales) (0.0 gallons turned away) (£232.69 potential income lost) 
+Income : (955.0 gallons sold) (£170.02 in shop sales) (0.0 gallons turned away) (£552.78 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (1233.0 gallons sold) (£239.44999999999996 in shop sales) (0.0 gallons turned away) (£623.7399999999999 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (523.0 gallons sold) (£101.52 in shop sales) (0.0 gallons turned away) (£253.37000000000003 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (916.0 gallons sold) (£316.65000000000003 in shop sales) (0.0 gallons turned away) (£317.2300000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (1603.0 gallons sold) (£497.35 in shop sales) (0.0 gallons turned away) (£585.6499999999999 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.016)
+Income : (483.0 gallons sold) (£126.01 in shop sales) (0.0 gallons turned away) (£142.92999999999998 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (912.0 gallons sold) (£260.76000000000005 in shop sales) (0.0 gallons turned away) (£359.68 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (865.0 gallons sold) (£173.49 in shop sales) (0.0 gallons turned away) (£446.74 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.0065536000000000014)
-Income : (1246.0 gallons sold) (£329.41999999999996 in shop sales) (0.0 gallons turned away) (£551.3900000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (501.0 gallons sold) (£72.16 in shop sales) (0.0 gallons turned away) (£269.63 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (987.0 gallons sold) (£214.52 in shop sales) (0.0 gallons turned away) (£509.15999999999997 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (1716.0 gallons sold) (£538.1300000000001 in shop sales) (0.0 gallons turned away) (£662.0099999999996 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (478.0 gallons sold) (£176.71 in shop sales) (0.0 gallons turned away) (£219.88000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (977.0 gallons sold) (£306.46999999999997 in shop sales) (0.0 gallons turned away) (£359.35999999999996 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (1692.0 gallons sold) (£475.4999999999999 in shop sales) (0.0 gallons turned away) (£689.34 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.02)
-Income : (411.0 gallons sold) (£103.95 in shop sales) (0.0 gallons turned away) (£150.71 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.0065536000000000014)
-Income : (818.0 gallons sold) (£132.1 in shop sales) (0.0 gallons turned away) (£313.46 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (1004.0 gallons sold) (£291.95 in shop sales) (0.0 gallons turned away) (£319.62000000000006 potential income lost) 
+Income : (1728.0 gallons sold) (£504.4599999999999 in shop sales) (0.0 gallons turned away) (£674.0599999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (389.0 gallons sold) (£68.77 in shop sales) (0.0 gallons turned away) (£148.66 potential income lost) 
+Income : (450.0 gallons sold) (£15.93 in shop sales) (0.0 gallons turned away) (£261.51 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.0065536000000000014)
+Income : (749.0 gallons sold) (£131.86999999999998 in shop sales) (0.0 gallons turned away) (£257.21000000000004 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
+Income : (1089.0 gallons sold) (£363.99999999999994 in shop sales) (0.0 gallons turned away) (£338.5400000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.0128)
+Income : (450.0 gallons sold) (£93.14 in shop sales) (0.0 gallons turned away) (£139.13 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
+Income : (836.0 gallons sold) (£223.40999999999997 in shop sales) (0.0 gallons turned away) (£235.47 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.0128)
+Income : (1093.0 gallons sold) (£322.59 in shop sales) (0.0 gallons turned away) (£291.96999999999997 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.0065536000000000014)
+Income : (504.0 gallons sold) (£58.42999999999999 in shop sales) (0.0 gallons turned away) (£231.05 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (802.0 gallons sold) (£252.43 in shop sales) (0.0 gallons turned away) (£200.05999999999997 potential income lost) 
+Income : (757.0 gallons sold) (£130.73 in shop sales) (0.0 gallons turned away) (£288.82000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (1309.0 gallons sold) (£462.38 in shop sales) (0.0 gallons turned away) (£283.41 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (421.0 gallons sold) (£74.47 in shop sales) (0.0 gallons turned away) (£147.1 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.005242880000000002)
-Income : (962.0 gallons sold) (£189.67000000000002 in shop sales) (0.0 gallons turned away) (£410.87000000000006 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.016)
-Income : (1444.0 gallons sold) (£495.52000000000004 in shop sales) (0.0 gallons turned away) (£289.2200000000001 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
+Income : (1418.0 gallons sold) (£520.3600000000001 in shop sales) (0.0 gallons turned away) (£244.51 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (455.0 gallons sold) (£115.41 in shop sales) (0.0 gallons turned away) (£179.51 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (754.0 gallons sold) (£209.32 in shop sales) (0.0 gallons turned away) (£284.05 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (971.0 gallons sold) (£133.12 in shop sales) (0.0 gallons turned away) (£460.4999999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.0128)
-Income : (431.0 gallons sold) (£105.78999999999999 in shop sales) (0.0 gallons turned away) (£140.92 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (866.0 gallons sold) (£198.75 in shop sales) (0.0 gallons turned away) (£290.8500000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (1114.0 gallons sold) (£254.29000000000002 in shop sales) (0.0 gallons turned away) (£422.8100000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (507.0 gallons sold) (£50.92 in shop sales) (0.0 gallons turned away) (£275.98 potential income lost) 
+Income : (409.0 gallons sold) (£65.25 in shop sales) (0.0 gallons turned away) (£191.77999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.0065536000000000014)
-Income : (914.0 gallons sold) (£184.88999999999996 in shop sales) (0.0 gallons turned away) (£384.98999999999995 potential income lost) 
+Income : (857.0 gallons sold) (£85.43999999999998 in shop sales) (0.0 gallons turned away) (£460.90000000000003 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
+Income : (1091.0 gallons sold) (£272.35 in shop sales) (0.0 gallons turned away) (£409.91000000000014 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.01024)
+Income : (450.0 gallons sold) (£77.49 in shop sales) (0.0 gallons turned away) (£197.22999999999996 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.01024)
+Income : (890.0 gallons sold) (£165.8 in shop sales) (0.0 gallons turned away) (£341.65000000000003 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
+Income : (1301.0 gallons sold) (£404.7900000000001 in shop sales) (0.0 gallons turned away) (£402.67999999999984 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.016)
+Income : (426.0 gallons sold) (£25.340000000000003 in shop sales) (0.0 gallons turned away) (£225.17 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.005242880000000002)
+Income : (815.0 gallons sold) (£98.79 in shop sales) (0.0 gallons turned away) (£388.3 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final 0.0128)
-Income : (1373.0 gallons sold) (£329.75 in shop sales) (0.0 gallons turned away) (£538.39 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
-Income : (481.0 gallons sold) (£73.26 in shop sales) (0.0 gallons turned away) (£214.41 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
-Income : (761.0 gallons sold) (£114.91 in shop sales) (0.0 gallons turned away) (£369.42 potential income lost) 
+Income : (1239.0 gallons sold) (£362.37 in shop sales) (0.0 gallons turned away) (£410.7800000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.01024)
-Income : (1049.0 gallons sold) (£150.56 in shop sales) (0.0 gallons turned away) (£521.39 potential income lost) 
+Income : (526.0 gallons sold) (£63.82 in shop sales) (0.0 gallons turned away) (£287.9 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (434.0 gallons sold) (£62.62 in shop sales) (0.0 gallons turned away) (£199.51000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
+Income : (757.0 gallons sold) (£116.57 in shop sales) (0.0 gallons turned away) (£350.29 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.0065536000000000014)
-Income : (958.0 gallons sold) (£200.88 in shop sales) (0.0 gallons turned away) (£440.77000000000004 potential income lost) 
+Income : (1077.0 gallons sold) (£128.35 in shop sales) (0.0 gallons turned away) (£520.9400000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.005242880000000002)
-Income : (1320.0 gallons sold) (£242.23999999999995 in shop sales) (0.0 gallons turned away) (£572.2600000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (438.0 gallons sold) (£132.15 in shop sales) (0.0 gallons turned away) (£144.95000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.0065536000000000014)
+Income : (507.0 gallons sold) (£49.81 in shop sales) (0.0 gallons turned away) (£251.81000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (902.0 gallons sold) (£236.18999999999997 in shop sales) (0.0 gallons turned away) (£346.95 potential income lost) 
+Income : (909.0 gallons sold) (£205.16 in shop sales) (0.0 gallons turned away) (£426.4699999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (1688.0 gallons sold) (£546.7 in shop sales) (0.0 gallons turned away) (£499.96999999999986 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
+Income : (1413.0 gallons sold) (£438.43999999999994 in shop sales) (0.0 gallons turned away) (£538.0500000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (500.0 gallons sold) (£108.16 in shop sales) (0.0 gallons turned away) (£168.31 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.016)
+Income : (462.0 gallons sold) (£73.18 in shop sales) (0.0 gallons turned away) (£237.25 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (814.0 gallons sold) (£186.31 in shop sales) (0.0 gallons turned away) (£348.71 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.01024)
+Income : (862.0 gallons sold) (£218.95999999999998 in shop sales) (0.0 gallons turned away) (£348.36000000000007 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
-Income : (1013.0 gallons sold) (£91.08999999999999 in shop sales) (0.0 gallons turned away) (£603.0000000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (434.0 gallons sold) (£94.33000000000001 in shop sales) (0.0 gallons turned away) (£189.24999999999997 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final 0.0065536000000000014)
+Income : (1511.0 gallons sold) (£506.7699999999999 in shop sales) (0.0 gallons turned away) (£504.43999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (902.0 gallons sold) (£231.73999999999998 in shop sales) (0.0 gallons turned away) (£368.0 potential income lost) 
+Income : (476.0 gallons sold) (£124.64999999999999 in shop sales) (0.0 gallons turned away) (£165.77 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.005242880000000002)
-Income : (1624.0 gallons sold) (£424.44000000000005 in shop sales) (0.0 gallons turned away) (£671.0099999999998 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (436.0 gallons sold) (£79.98 in shop sales) (0.0 gallons turned away) (£190.02 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.0065536000000000014)
+Income : (850.0 gallons sold) (£124.46 in shop sales) (0.0 gallons turned away) (£398.0799999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (930.0 gallons sold) (£204.18 in shop sales) (0.0 gallons turned away) (£370.33000000000004 potential income lost) 
+Income : (937.0 gallons sold) (£120.18 in shop sales) (0.0 gallons turned away) (£553.9200000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
-Income : (1553.0 gallons sold) (£486.40000000000003 in shop sales) (0.0 gallons turned away) (£509.4699999999999 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (454.0 gallons sold) (£76.85000000000001 in shop sales) (0.0 gallons turned away) (£242.86 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (438.0 gallons sold) (£60.35 in shop sales) (0.0 gallons turned away) (£188.48999999999998 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (901.0 gallons sold) (£229.61999999999998 in shop sales) (0.0 gallons turned away) (£339.84 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (842.0 gallons sold) (£137.69000000000003 in shop sales) (0.0 gallons turned away) (£409.21000000000004 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.005242880000000002)
+Income : (1628.0 gallons sold) (£404.43000000000006 in shop sales) (0.0 gallons turned away) (£660.9300000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (1061.0 gallons sold) (£169.39000000000001 in shop sales) (0.0 gallons turned away) (£568.4500000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.0128)
+Income : (483.0 gallons sold) (£127.29999999999998 in shop sales) (0.0 gallons turned away) (£208.77000000000004 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.0065536000000000014)
+Income : (935.0 gallons sold) (£155.15 in shop sales) (0.0 gallons turned away) (£490.34 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (1715.0 gallons sold) (£483.27000000000004 in shop sales) (0.0 gallons turned away) (£771.22 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (457.0 gallons sold) (£113.82 in shop sales) (0.0 gallons turned away) (£186.31000000000003 potential income lost) 
+Income : (458.0 gallons sold) (£60.07 in shop sales) (0.0 gallons turned away) (£235.93999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (921.0 gallons sold) (£106.84 in shop sales) (0.0 gallons turned away) (£483.38000000000017 potential income lost) 
+Income : (874.0 gallons sold) (£143.56999999999996 in shop sales) (0.0 gallons turned away) (£448.7900000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (1613.0 gallons sold) (£411.7500000000001 in shop sales) (0.0 gallons turned away) (£631.08 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.008192000000000001)
+Income : (1069.0 gallons sold) (£130.30999999999997 in shop sales) (0.0 gallons turned away) (£586.1 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (438.0 gallons sold) (£98.53999999999999 in shop sales) (0.0 gallons turned away) (£205.38000000000002 potential income lost) 
+Income : (483.0 gallons sold) (£98.72 in shop sales) (0.0 gallons turned away) (£268.42 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (873.0 gallons sold) (£215.95 in shop sales) (0.0 gallons turned away) (£390.94 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (1532.0 gallons sold) (£385.82 in shop sales) (0.0 gallons turned away) (£701.9199999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (1012.0 gallons sold) (£234.49000000000004 in shop sales) (0.0 gallons turned away) (£417.2899999999999 potential income lost) 
+Income : (517.0 gallons sold) (£93.91 in shop sales) (0.0 gallons turned away) (£241.10999999999993 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (1675.0 gallons sold) (£467.31999999999994 in shop sales) (0.0 gallons turned away) (£615.71 potential income lost) 
+Income : (977.0 gallons sold) (£238.54999999999998 in shop sales) (0.0 gallons turned away) (£405.21999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (452.0 gallons sold) (£40.74 in shop sales) (0.0 gallons turned away) (£210.5 potential income lost) 
+Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (1726.0 gallons sold) (£520.4599999999999 in shop sales) (0.0 gallons turned away) (£666.39 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (673.0 gallons sold) (£55.489999999999995 in shop sales) (0.0 gallons turned away) (£263.09 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (892.0 gallons sold) (£126.05000000000001 in shop sales) (0.0 gallons turned away) (£376.0699999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (468.0 gallons sold) (£82.67 in shop sales) (0.0 gallons turned away) (£199.42000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.016)
+Income : (408.0 gallons sold) (£66.24 in shop sales) (0.0 gallons turned away) (£126.46 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.0065536000000000014)
-Income : (847.0 gallons sold) (£69.30999999999999 in shop sales) (0.0 gallons turned away) (£420.93000000000006 potential income lost) 
+Income : (784.0 gallons sold) (£85.83 in shop sales) (0.0 gallons turned away) (£363.2900000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (1115.0 gallons sold) (£331.2 in shop sales) (0.0 gallons turned away) (£273.8199999999999 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.004194304000000002)
+Income : (928.0 gallons sold) (£112.05999999999999 in shop sales) (0.0 gallons turned away) (£419.74999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (437.0 gallons sold) (£32.47 in shop sales) (0.0 gallons turned away) (£222.50000000000009 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (851.0 gallons sold) (£125.07999999999998 in shop sales) (0.0 gallons turned away) (£335.78 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.01024)
+Income : (441.0 gallons sold) (£24.23 in shop sales) (0.0 gallons turned away) (£231.22 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (1231.0 gallons sold) (£350.39000000000004 in shop sales) (0.0 gallons turned away) (£342.11 potential income lost) 
+Income : (878.0 gallons sold) (£177.19 in shop sales) (0.0 gallons turned away) (£319.29999999999995 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.01024)
+Income : (1254.0 gallons sold) (£339.10999999999996 in shop sales) (0.0 gallons turned away) (£396.38 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.016)
+Income : (399.0 gallons sold) (£60.26 in shop sales) (0.0 gallons turned away) (£158.13999999999996 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.005242880000000002)
+Income : (885.0 gallons sold) (£144.36 in shop sales) (0.0 gallons turned away) (£377.41999999999996 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final 0.0128)
+Income : (1361.0 gallons sold) (£393.84000000000003 in shop sales) (0.0 gallons turned away) (£373.0400000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.0128)
+Income : (447.0 gallons sold) (£70.51 in shop sales) (0.0 gallons turned away) (£205.59 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
+Income : (741.0 gallons sold) (£42.11 in shop sales) (0.0 gallons turned away) (£360.08 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.0065536000000000014)
+Income : (975.0 gallons sold) (£85.98000000000002 in shop sales) (0.0 gallons turned away) (£490.3900000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (416.0 gallons sold) (£71.22 in shop sales) (0.0 gallons turned away) (£137.41 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (766.0 gallons sold) (£149.99 in shop sales) (0.0 gallons turned away) (£285.94 potential income lost) 
+Income : (412.0 gallons sold) (£41.669999999999995 in shop sales) (0.0 gallons turned away) (£191.82 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (857.0 gallons sold) (£89.46000000000001 in shop sales) (0.0 gallons turned away) (£432.46 potential income lost) 
+Income : (840.0 gallons sold) (£161.01 in shop sales) (0.0 gallons turned away) (£348.67 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.0065536000000000014)
+Income : (1328.0 gallons sold) (£294.93 in shop sales) (0.0 gallons turned away) (£533.2700000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (408.0 gallons sold) (£40.91 in shop sales) (0.0 gallons turned away) (£174.19000000000003 potential income lost) 
+Income : (418.0 gallons sold) (£40.16 in shop sales) (0.0 gallons turned away) (£189.63 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (859.0 gallons sold) (£200.66999999999996 in shop sales) (0.0 gallons turned away) (£324.3299999999999 potential income lost) 
+Income : (870.0 gallons sold) (£115.82000000000001 in shop sales) (0.0 gallons turned away) (£368.04999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (1369.0 gallons sold) (£351.61 in shop sales) (0.0 gallons turned away) (£443.2799999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (465.0 gallons sold) (£84.71 in shop sales) (0.0 gallons turned away) (£217.04000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (797.0 gallons sold) (£133.24 in shop sales) (0.0 gallons turned away) (£344.69000000000005 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (1244.0 gallons sold) (£364.93 in shop sales) (0.0 gallons turned away) (£428.61 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final 0.0128)
+Income : (1381.0 gallons sold) (£349.78 in shop sales) (0.0 gallons turned away) (£471.98 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.02)
-Income : (433.0 gallons sold) (£63.39 in shop sales) (0.0 gallons turned away) (£226.3 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (789.0 gallons sold) (£122.14999999999999 in shop sales) (0.0 gallons turned away) (£322.06 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.005242880000000002)
-Income : (1050.0 gallons sold) (£112.30000000000001 in shop sales) (0.0 gallons turned away) (£512.3799999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (439.0 gallons sold) (£49.33 in shop sales) (0.0 gallons turned away) (£225.58999999999995 potential income lost) 
+Income : (434.0 gallons sold) (£92.83999999999999 in shop sales) (0.0 gallons turned away) (£152.04000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.02)
-Income : (788.0 gallons sold) (£161.38 in shop sales) (0.0 gallons turned away) (£335.4099999999999 potential income lost) 
+Income : (662.0 gallons sold) (£71.86 in shop sales) (0.0 gallons turned away) (£256.58 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
-Income : (1440.0 gallons sold) (£320.33000000000004 in shop sales) (0.0 gallons turned away) (£598.1200000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
-Income : (489.0 gallons sold) (£66.76 in shop sales) (0.0 gallons turned away) (£231.62999999999997 potential income lost) 
+Income : (878.0 gallons sold) (£53.160000000000004 in shop sales) (0.0 gallons turned away) (£532.07 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (915.0 gallons sold) (£222.01999999999998 in shop sales) (0.0 gallons turned away) (£342.75000000000006 potential income lost) 
+Income : (408.0 gallons sold) (£84.66 in shop sales) (0.0 gallons turned away) (£198.26 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.01024)
-Income : (1476.0 gallons sold) (£377.34000000000003 in shop sales) (0.0 gallons turned away) (£588.8100000000001 potential income lost) 
+Income : (933.0 gallons sold) (£118.70000000000002 in shop sales) (0.0 gallons turned away) (£490.31 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (397.0 gallons sold) (£31.77 in shop sales) (0.0 gallons turned away) (£181.01 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.01024)
+Income : (1489.0 gallons sold) (£425.74000000000007 in shop sales) (0.0 gallons turned away) (£517.77 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (729.0 gallons sold) (£68.11 in shop sales) (0.0 gallons turned away) (£403.74 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.0128)
+Income : (414.0 gallons sold) (£25.39 in shop sales) (0.0 gallons turned away) (£227.38000000000005 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.016)
+Income : (848.0 gallons sold) (£202.31999999999996 in shop sales) (0.0 gallons turned away) (£358.83 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
+Income : (1521.0 gallons sold) (£400.26 in shop sales) (0.0 gallons turned away) (£530.9899999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (827.0 gallons sold) (£31.73 in shop sales) (0.0 gallons turned away) (£458.8799999999998 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (400.0 gallons sold) (£13.97 in shop sales) (0.0 gallons turned away) (£181.81 potential income lost) 
+Income : (448.0 gallons sold) (£15.13 in shop sales) (0.0 gallons turned away) (£246.36 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (878.0 gallons sold) (£125.97 in shop sales) (0.0 gallons turned away) (£391.6000000000001 potential income lost) 
+Income : (849.0 gallons sold) (£104.89 in shop sales) (0.0 gallons turned away) (£494.7399999999999 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (780.0 gallons sold) (£41.33 in shop sales) (0.0 gallons turned away) (£426.0800000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (422.0 gallons sold) (£59.97 in shop sales) (0.0 gallons turned away) (£191.14 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (952.0 gallons sold) (£141.09 in shop sales) (0.0 gallons turned away) (£546.6899999999998 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.0065536000000000014)
+Income : (1602.0 gallons sold) (£364.70000000000005 in shop sales) (0.0 gallons turned away) (£708.6100000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (455.0 gallons sold) (£92.72 in shop sales) (0.0 gallons turned away) (£172.42 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
-Income : (1457.0 gallons sold) (£372.67 in shop sales) (0.0 gallons turned away) (£554.5400000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.02)
-Income : (384.0 gallons sold) (£71.28999999999999 in shop sales) (0.0 gallons turned away) (£137.97 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.005242880000000002)
-Income : (988.0 gallons sold) (£140.60999999999999 in shop sales) (0.0 gallons turned away) (£464.05000000000007 potential income lost) 
+Income : (944.0 gallons sold) (£117.95999999999998 in shop sales) (0.0 gallons turned away) (£481.16000000000014 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
-Income : (1732.0 gallons sold) (£390.79000000000013 in shop sales) (0.0 gallons turned away) (£730.8400000000003 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (459.0 gallons sold) (£50.129999999999995 in shop sales) (0.0 gallons turned away) (£206.33999999999997 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (761.0 gallons sold) (£56.989999999999995 in shop sales) (0.0 gallons turned away) (£403.55999999999995 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (885.0 gallons sold) (£92.61 in shop sales) (0.0 gallons turned away) (£451.07000000000005 potential income lost) 
+Income : (1743.0 gallons sold) (£413.15999999999997 in shop sales) (0.0 gallons turned away) (£732.96 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (409.0 gallons sold) (£80.5 in shop sales) (0.0 gallons turned away) (£155.01 potential income lost) 
+Income : (418.0 gallons sold) (£56.190000000000005 in shop sales) (0.0 gallons turned away) (£214.16999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (961.0 gallons sold) (£186.23 in shop sales) (0.0 gallons turned away) (£464.4300000000001 potential income lost) 
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (682.0 gallons sold) (£116.44000000000001 in shop sales) (0.0 gallons turned away) (£325.6500000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.008192000000000001)
-Income : (1516.0 gallons sold) (£271.21999999999997 in shop sales) (0.0 gallons turned away) (£762.9399999999995 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (492.0 gallons sold) (£84.29 in shop sales) (0.0 gallons turned away) (£209.21 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (932.0 gallons sold) (£168.67999999999998 in shop sales) (0.0 gallons turned away) (£388.08000000000004 potential income lost) 
+Income : (881.0 gallons sold) (£52.88 in shop sales) (0.0 gallons turned away) (£527.2900000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
-Income : (1493.0 gallons sold) (£390.4800000000001 in shop sales) (0.0 gallons turned away) (£629.8899999999999 potential income lost) 
+Income : (479.0 gallons sold) (£83.23 in shop sales) (0.0 gallons turned away) (£208.02999999999997 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.0065536000000000014)
+Income : (971.0 gallons sold) (£134.06 in shop sales) (0.0 gallons turned away) (£487.51000000000005 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
+Income : (1606.0 gallons sold) (£347.76 in shop sales) (0.0 gallons turned away) (£709.8400000000003 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.016)
+Income : (420.0 gallons sold) (£28.880000000000003 in shop sales) (0.0 gallons turned away) (£198.97 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.01024)
+Income : (922.0 gallons sold) (£103.42 in shop sales) (0.0 gallons turned away) (£449.68000000000006 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final 0.008192000000000001)
+Income : (1687.0 gallons sold) (£352.1 in shop sales) (0.0 gallons turned away) (£761.2099999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.016)
-Income : (416.0 gallons sold) (£38.94 in shop sales) (0.0 gallons turned away) (£182.01999999999998 potential income lost) 
+Income : (388.0 gallons sold) (£27.529999999999998 in shop sales) (0.0 gallons turned away) (£188.46000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (710.0 gallons sold) (£33.39 in shop sales) (0.0 gallons turned away) (£349.21 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.01024)
+Income : (657.0 gallons sold) (£27.97 in shop sales) (0.0 gallons turned away) (£325.50000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (699.0 gallons sold) (£59.11 in shop sales) (0.0 gallons turned away) (£324.1600000000001 potential income lost) 
+Income : (698.0 gallons sold) (£44.46 in shop sales) (0.0 gallons turned away) (£330.75 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (440.0 gallons sold) (£18.310000000000002 in shop sales) (0.0 gallons turned away) (£238.85 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.0128)
+Income : (417.0 gallons sold) (£12.22 in shop sales) (0.0 gallons turned away) (£212.86 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.02)
+Income : (749.0 gallons sold) (£113.86999999999998 in shop sales) (0.0 gallons turned away) (£318.3300000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.0065536000000000014)
+Income : (1385.0 gallons sold) (£218.11999999999998 in shop sales) (0.0 gallons turned away) (£589.2800000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.02)
+Income : (372.0 gallons sold) (£12.95 in shop sales) (0.0 gallons turned away) (£209.29999999999998 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.005242880000000002)
+Income : (853.0 gallons sold) (£68.13 in shop sales) (0.0 gallons turned away) (£372.05 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (848.0 gallons sold) (£71.93 in shop sales) (0.0 gallons turned away) (£366.1100000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.004194304000000002)
-Income : (1356.0 gallons sold) (£176.65 in shop sales) (0.0 gallons turned away) (£615.7699999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.016)
-Income : (365.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£181.20000000000005 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (779.0 gallons sold) (£78.41 in shop sales) (0.0 gallons turned away) (£385.5799999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
-Income : (1471.0 gallons sold) (£338.68999999999994 in shop sales) (0.0 gallons turned away) (£461.1199999999999 potential income lost) 
+Income : (1363.0 gallons sold) (£367.00999999999993 in shop sales) (0.0 gallons turned away) (£414.86999999999983 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (394.0 gallons sold) (£72.34 in shop sales) (0.0 gallons turned away) (£168.32999999999998 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (711.0 gallons sold) (£30.34 in shop sales) (0.0 gallons turned away) (£355.35 potential income lost) 
+Income : (420.0 gallons sold) (£52.53 in shop sales) (0.0 gallons turned away) (£157.08 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
-Income : (764.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£462.37999999999994 potential income lost) 
+Income : (750.0 gallons sold) (£72.67 in shop sales) (0.0 gallons turned away) (£313.63000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (395.0 gallons sold) (£13.49 in shop sales) (0.0 gallons turned away) (£186.82000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (808.0 gallons sold) (£57.53 in shop sales) (0.0 gallons turned away) (£429.39000000000004 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.005242880000000002)
-Income : (1475.0 gallons sold) (£211.69000000000003 in shop sales) (0.0 gallons turned away) (£667.1000000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.02)
-Income : (396.0 gallons sold) (£36.5 in shop sales) (0.0 gallons turned away) (£176.94999999999996 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.008192000000000001)
+Income : (754.0 gallons sold) (£17.38 in shop sales) (0.0 gallons turned away) (£328.6099999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.0128)
-Income : (854.0 gallons sold) (£103.48 in shop sales) (0.0 gallons turned away) (£417.3700000000001 potential income lost) 
+Income : (450.0 gallons sold) (£17.0 in shop sales) (0.0 gallons turned away) (£218.05000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.004194304000000002)
-Income : (1541.0 gallons sold) (£301.65000000000003 in shop sales) (0.0 gallons turned away) (£679.0600000000003 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.016)
+Income : (735.0 gallons sold) (£50.71 in shop sales) (0.0 gallons turned away) (£371.01000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (390.0 gallons sold) (£33.68 in shop sales) (0.0 gallons turned away) (£158.46 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.01024)
+Income : (1340.0 gallons sold) (£208.38000000000002 in shop sales) (0.0 gallons turned away) (£669.3299999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.01024)
-Income : (730.0 gallons sold) (£78.91000000000001 in shop sales) (0.0 gallons turned away) (£324.94 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.0128)
+Income : (409.0 gallons sold) (£25.009999999999998 in shop sales) (0.0 gallons turned away) (£213.35999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (699.0 gallons sold) (£42.02 in shop sales) (0.0 gallons turned away) (£349.17999999999995 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.01024)
+Income : (875.0 gallons sold) (£73.64 in shop sales) (0.0 gallons turned away) (£452.5700000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final 0.01024)
+Income : (1527.0 gallons sold) (£438.79 in shop sales) (0.0 gallons turned away) (£489.56000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.02)
-Income : (370.0 gallons sold) (£73.92 in shop sales) (0.0 gallons turned away) (£123.52000000000001 potential income lost) 
+Income : (392.0 gallons sold) (£45.26 in shop sales) (0.0 gallons turned away) (£215.20999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (844.0 gallons sold) (£135.08 in shop sales) (0.0 gallons turned away) (£400.72999999999996 potential income lost) 
+Income : (611.0 gallons sold) (£9.72 in shop sales) (0.0 gallons turned away) (£366.1000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
-Income : (1491.0 gallons sold) (£266.10999999999996 in shop sales) (0.0 gallons turned away) (£626.07 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.016)
+Income : (675.0 gallons sold) (£20.34 in shop sales) (0.0 gallons turned away) (£375.7100000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (427.0 gallons sold) (£24.82 in shop sales) (0.0 gallons turned away) (£193.30999999999997 potential income lost) 
+Income : (437.0 gallons sold) (£31.67 in shop sales) (0.0 gallons turned away) (£218.84999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (858.0 gallons sold) (£78.14999999999999 in shop sales) (0.0 gallons turned away) (£482.35999999999996 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.01024)
+Income : (856.0 gallons sold) (£114.76999999999998 in shop sales) (0.0 gallons turned away) (£377.14 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.005242880000000002)
+Income : (1517.0 gallons sold) (£251.90999999999997 in shop sales) (0.0 gallons turned away) (£730.8400000000003 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.0128)
+Income : (461.0 gallons sold) (£32.22 in shop sales) (0.0 gallons turned away) (£217.18 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.01024)
+Income : (829.0 gallons sold) (£92.74000000000001 in shop sales) (0.0 gallons turned away) (£414.97 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final 0.0065536000000000014)
-Income : (1628.0 gallons sold) (£378.39000000000004 in shop sales) (0.0 gallons turned away) (£673.25 potential income lost) 
+Income : (1697.0 gallons sold) (£326.97 in shop sales) (0.0 gallons turned away) (£700.9499999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (413.0 gallons sold) (£35.69 in shop sales) (0.0 gallons turned away) (£231.35000000000005 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
-Income : (791.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£527.0699999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (823.0 gallons sold) (£55.74999999999999 in shop sales) (0.0 gallons turned away) (£433.0199999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (420.0 gallons sold) (£31.75 in shop sales) (0.0 gallons turned away) (£194.36999999999998 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (803.0 gallons sold) (£88.63 in shop sales) (0.0 gallons turned away) (£384.94 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
-Income : (1555.0 gallons sold) (£272.75000000000006 in shop sales) (0.0 gallons turned away) (£715.1100000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (422.0 gallons sold) (£65.17 in shop sales) (0.0 gallons turned away) (£207.07 potential income lost) 
+Income : (393.0 gallons sold) (£53.85 in shop sales) (0.0 gallons turned away) (£166.73999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (888.0 gallons sold) (£126.05000000000001 in shop sales) (0.0 gallons turned away) (£442.72999999999985 potential income lost) 
+Income : (792.0 gallons sold) (£109.15 in shop sales) (0.0 gallons turned away) (£399.48999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.0065536000000000014)
-Income : (1749.0 gallons sold) (£286.94000000000005 in shop sales) (0.0 gallons turned away) (£762.31 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.0128)
+Income : (795.0 gallons sold) (£24.509999999999998 in shop sales) (0.0 gallons turned away) (£461.21000000000004 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.02)
+Income : (393.0 gallons sold) (£60.56999999999999 in shop sales) (0.0 gallons turned away) (£155.22 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (869.0 gallons sold) (£77.86 in shop sales) (0.0 gallons turned away) (£395.1200000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (1536.0 gallons sold) (£426.97999999999996 in shop sales) (0.0 gallons turned away) (£563.2700000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.016)
+Income : (419.0 gallons sold) (£24.43 in shop sales) (0.0 gallons turned away) (£199.87 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.0128)
+Income : (877.0 gallons sold) (£77.95 in shop sales) (0.0 gallons turned away) (£427.19999999999993 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final 0.008192000000000001)
+Income : (1660.0 gallons sold) (£381.75 in shop sales) (0.0 gallons turned away) (£636.7899999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (424.0 gallons sold) (£19.61 in shop sales) (0.0 gallons turned away) (£208.34000000000003 potential income lost) 
+Income : (422.0 gallons sold) (£26.439999999999998 in shop sales) (0.0 gallons turned away) (£189.65999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (711.0 gallons sold) (£58.43000000000001 in shop sales) (0.0 gallons turned away) (£353.89000000000004 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (744.0 gallons sold) (£23.32 in shop sales) (0.0 gallons turned away) (£448.5599999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (422.0 gallons sold) (£31.230000000000004 in shop sales) (0.0 gallons turned away) (£217.97 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (911.0 gallons sold) (£146.88 in shop sales) (0.0 gallons turned away) (£397.41999999999996 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.005242880000000002)
-Income : (1557.0 gallons sold) (£273.61999999999995 in shop sales) (0.0 gallons turned away) (£760.0400000000001 potential income lost) 
+Income : (731.0 gallons sold) (£45.019999999999996 in shop sales) (0.0 gallons turned away) (£447.02000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (444.0 gallons sold) (£58.86 in shop sales) (0.0 gallons turned away) (£191.64000000000007 potential income lost) 
+Income : (700.0 gallons sold) (£16.419999999999998 in shop sales) (0.0 gallons turned away) (£440.91 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (896.0 gallons sold) (£94.56 in shop sales) (0.0 gallons turned away) (£460.39 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (381.0 gallons sold) (£26.79 in shop sales) (0.0 gallons turned away) (£186.84000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.003355443200000002)
-Income : (1824.0 gallons sold) (£288.39000000000004 in shop sales) (0.0 gallons turned away) (£924.64 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (872.0 gallons sold) (£133.68 in shop sales) (0.0 gallons turned away) (£463.44999999999993 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.016)
-Income : (402.0 gallons sold) (£37.06 in shop sales) (0.0 gallons turned away) (£135.98 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.008192000000000001)
+Income : (1544.0 gallons sold) (£257.43 in shop sales) (0.0 gallons turned away) (£785.4299999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.016)
-Income : (642.0 gallons sold) (£32.05 in shop sales) (0.0 gallons turned away) (£330.5300000000001 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (384.0 gallons sold) (£24.67 in shop sales) (0.0 gallons turned away) (£138.14000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (704.0 gallons sold) (£65.33 in shop sales) (0.0 gallons turned away) (£334.1700000000001 potential income lost) 
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.01024)
+Income : (882.0 gallons sold) (£156.04999999999998 in shop sales) (0.0 gallons turned away) (£341.48 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final 0.0065536000000000014)
+Income : (1767.0 gallons sold) (£394.15000000000003 in shop sales) (0.0 gallons turned away) (£734.8200000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.02)
-Income : (359.0 gallons sold) (£32.26 in shop sales) (0.0 gallons turned away) (£144.6 potential income lost) 
+Income : (339.0 gallons sold) (£15.19 in shop sales) (0.0 gallons turned away) (£95.25 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.01024)
-Income : (836.0 gallons sold) (£46.78 in shop sales) (0.0 gallons turned away) (£406.94999999999993 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.02)
+Income : (627.0 gallons sold) (£47.17 in shop sales) (0.0 gallons turned away) (£282.37999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.0065536000000000014)
-Income : (1314.0 gallons sold) (£256.19 in shop sales) (0.0 gallons turned away) (£529.91 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.02)
+Income : (540.0 gallons sold) (£6.64 in shop sales) (0.0 gallons turned away) (£222.92999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.016)
-Income : (378.0 gallons sold) (£29.74 in shop sales) (0.0 gallons turned away) (£139.98000000000002 potential income lost) 
+Income : (380.0 gallons sold) (£30.49 in shop sales) (0.0 gallons turned away) (£107.40000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (832.0 gallons sold) (£77.96 in shop sales) (0.0 gallons turned away) (£383.4600000000001 potential income lost) 
+Income : (810.0 gallons sold) (£48.730000000000004 in shop sales) (0.0 gallons turned away) (£355.27 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.0128)
-Income : (1417.0 gallons sold) (£316.18999999999994 in shop sales) (0.0 gallons turned away) (£522.5699999999999 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.005242880000000002)
+Income : (1309.0 gallons sold) (£164.88000000000002 in shop sales) (0.0 gallons turned away) (£659.8100000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.016)
+Income : (393.0 gallons sold) (£48.06999999999999 in shop sales) (0.0 gallons turned away) (£164.54 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.016)
+Income : (765.0 gallons sold) (£40.45 in shop sales) (0.0 gallons turned away) (£424.86000000000007 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final 0.008192000000000001)
+Income : (1486.0 gallons sold) (£283.41999999999996 in shop sales) (0.0 gallons turned away) (£612.87 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.02)
+Income : (350.0 gallons sold) (£25.1 in shop sales) (0.0 gallons turned away) (£111.11000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.0128)
-Income : (450.0 gallons sold) (£44.27 in shop sales) (0.0 gallons turned away) (£246.93999999999997 potential income lost) 
+Income : (644.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£358.59999999999985 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.0128)
+Income : (645.0 gallons sold) (£9.07 in shop sales) (0.0 gallons turned away) (£310.66 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (584.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£292.32 potential income lost) 
+Income : (406.0 gallons sold) (£18.41 in shop sales) (0.0 gallons turned away) (£177.50000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (636.0 gallons sold) (£23.439999999999998 in shop sales) (0.0 gallons turned away) (£332.20000000000005 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.0128)
+Income : (823.0 gallons sold) (£92.87 in shop sales) (0.0 gallons turned away) (£402.12 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.0065536000000000014)
+Income : (1465.0 gallons sold) (£277.64 in shop sales) (0.0 gallons turned away) (£653.2399999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.02)
-Income : (364.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£143.88 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.02)
-Income : (776.0 gallons sold) (£89.26999999999998 in shop sales) (0.0 gallons turned away) (£338.1 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.004194304000000002)
-Income : (1378.0 gallons sold) (£203.34 in shop sales) (0.0 gallons turned away) (£592.38 potential income lost) 
+Income : (394.0 gallons sold) (£26.02 in shop sales) (0.0 gallons turned away) (£189.70000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.016)
-Income : (422.0 gallons sold) (£43.28 in shop sales) (0.0 gallons turned away) (£142.52 potential income lost) 
+Income : (782.0 gallons sold) (£58.83 in shop sales) (0.0 gallons turned away) (£411.4699999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.01024)
-Income : (870.0 gallons sold) (£36.879999999999995 in shop sales) (0.0 gallons turned away) (£501.0399999999999 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.005242880000000002)
-Income : (1489.0 gallons sold) (£238.34000000000003 in shop sales) (0.0 gallons turned away) (£623.83 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (403.0 gallons sold) (£31.730000000000004 in shop sales) (0.0 gallons turned away) (£174.29000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final 0.0065536000000000014)
+Income : (1477.0 gallons sold) (£308.78 in shop sales) (0.0 gallons turned away) (£554.4999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.016)
-Income : (626.0 gallons sold) (£21.12 in shop sales) (0.0 gallons turned away) (£322.05999999999995 potential income lost) 
+Income : (401.0 gallons sold) (£39.79 in shop sales) (0.0 gallons turned away) (£171.39999999999998 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.01024)
+Income : (660.0 gallons sold) (£33.1 in shop sales) (0.0 gallons turned away) (£269.36999999999995 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.02)
+Income : (601.0 gallons sold) (£10.61 in shop sales) (0.0 gallons turned away) (£301.23 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.02)
+Income : (376.0 gallons sold) (£39.78 in shop sales) (0.0 gallons turned away) (£120.44 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (621.0 gallons sold) (£31.1 in shop sales) (0.0 gallons turned away) (£164.13999999999996 potential income lost) 
+Income : (835.0 gallons sold) (£80.96 in shop sales) (0.0 gallons turned away) (£364.02 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.008192000000000001)
+Income : (1433.0 gallons sold) (£166.23000000000002 in shop sales) (0.0 gallons turned away) (£790.2000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.02)
-Income : (395.0 gallons sold) (£43.019999999999996 in shop sales) (0.0 gallons turned away) (£199.70000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.02)
-Income : (796.0 gallons sold) (£59.47 in shop sales) (0.0 gallons turned away) (£422.33 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.004194304000000002)
-Income : (1535.0 gallons sold) (£132.64000000000001 in shop sales) (0.0 gallons turned away) (£834.5899999999996 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.02)
-Income : (379.0 gallons sold) (£23.310000000000002 in shop sales) (0.0 gallons turned away) (£190.94000000000003 potential income lost) 
+Income : (371.0 gallons sold) (£23.09 in shop sales) (0.0 gallons turned away) (£152.67999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.0128)
-Income : (801.0 gallons sold) (£50.580000000000005 in shop sales) (0.0 gallons turned away) (£368.57000000000005 potential income lost) 
+Income : (814.0 gallons sold) (£68.13 in shop sales) (0.0 gallons turned away) (£376.93999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final 0.0065536000000000014)
-Income : (1549.0 gallons sold) (£281.6 in shop sales) (0.0 gallons turned away) (£715.96 potential income lost) 
+Income : (1693.0 gallons sold) (£303.29 in shop sales) (0.0 gallons turned away) (£771.1799999999996 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.02)
+Income : (403.0 gallons sold) (£29.869999999999997 in shop sales) (0.0 gallons turned away) (£185.29 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.02)
+Income : (610.0 gallons sold) (£46.98 in shop sales) (0.0 gallons turned away) (£352.8299999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (382.0 gallons sold) (£25.479999999999997 in shop sales) (0.0 gallons turned away) (£155.23000000000002 potential income lost) 
+Income : (680.0 gallons sold) (£57.64 in shop sales) (0.0 gallons turned away) (£289.94000000000005 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.02)
+Income : (388.0 gallons sold) (£42.519999999999996 in shop sales) (0.0 gallons turned away) (£194.26 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (681.0 gallons sold) (£22.68 in shop sales) (0.0 gallons turned away) (£388.55 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (649.0 gallons sold) (£31.18 in shop sales) (0.0 gallons turned away) (£328.4600000000001 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.0128)
-Income : (447.0 gallons sold) (£20.71 in shop sales) (0.0 gallons turned away) (£268.77000000000004 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (837.0 gallons sold) (£69.1 in shop sales) (0.0 gallons turned away) (£434.87000000000006 potential income lost) 
+Income : (850.0 gallons sold) (£83.56 in shop sales) (0.0 gallons turned away) (£436.6700000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (1449.0 gallons sold) (£179.26 in shop sales) (0.0 gallons turned away) (£692.9500000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.01024)
-Income : (464.0 gallons sold) (£14.08 in shop sales) (0.0 gallons turned away) (£252.62 potential income lost) 
+Income : (1312.0 gallons sold) (£178.65999999999997 in shop sales) (0.0 gallons turned away) (£642.3800000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.016)
-Income : (845.0 gallons sold) (£86.07000000000001 in shop sales) (0.0 gallons turned away) (£390.76 potential income lost) 
+Income : (407.0 gallons sold) (£70.19999999999999 in shop sales) (0.0 gallons turned away) (£169.89000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.005242880000000002)
-Income : (1705.0 gallons sold) (£340.14000000000004 in shop sales) (0.0 gallons turned away) (£700.9299999999994 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.01024)
+Income : (881.0 gallons sold) (£121.7 in shop sales) (0.0 gallons turned away) (£426.78999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (364.0 gallons sold) (£26.04 in shop sales) (0.0 gallons turned away) (£158.12999999999994 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (707.0 gallons sold) (£62.739999999999995 in shop sales) (0.0 gallons turned away) (£354.19000000000005 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (682.0 gallons sold) (£28.85 in shop sales) (0.0 gallons turned away) (£325.40999999999997 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (441.0 gallons sold) (£34.42 in shop sales) (0.0 gallons turned away) (£220.46000000000004 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.0128)
-Income : (883.0 gallons sold) (£97.84 in shop sales) (0.0 gallons turned away) (£470.78000000000003 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.008192000000000001)
-Income : (1473.0 gallons sold) (£204.36999999999995 in shop sales) (0.0 gallons turned away) (£808.0600000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final 0.0065536000000000014)
+Income : (1786.0 gallons sold) (£219.11 in shop sales) (0.0 gallons turned away) (£886.5 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.02)
-Income : (390.0 gallons sold) (£19.75 in shop sales) (0.0 gallons turned away) (£200.30999999999995 potential income lost) 
+Income : (382.0 gallons sold) (£34.0 in shop sales) (0.0 gallons turned away) (£177.45999999999998 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (638.0 gallons sold) (£37.95 in shop sales) (0.0 gallons turned away) (£259.6600000000001 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (638.0 gallons sold) (£27.93 in shop sales) (0.0 gallons turned away) (£303.03 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (374.0 gallons sold) (£25.2 in shop sales) (0.0 gallons turned away) (£180.1 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.016)
-Income : (810.0 gallons sold) (£92.36000000000001 in shop sales) (0.0 gallons turned away) (£361.08 potential income lost) 
+Income : (820.0 gallons sold) (£56.529999999999994 in shop sales) (0.0 gallons turned away) (£476.31 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.0065536000000000014)
-Income : (1702.0 gallons sold) (£303.73 in shop sales) (0.0 gallons turned away) (£818.9399999999998 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.01024)
+Income : (1450.0 gallons sold) (£120.86 in shop sales) (0.0 gallons turned away) (£828.7800000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (288.0 gallons sold) (£26.96 in shop sales) (0.0 gallons turned away) (£187.98000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.02)
+Income : (370.0 gallons sold) (£28.43 in shop sales) (0.0 gallons turned away) (£143.50999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (349.0 gallons sold) (£62.169999999999995 in shop sales) (0.0 gallons turned away) (£154.54000000000002 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.0128)
+Income : (876.0 gallons sold) (£111.14 in shop sales) (0.0 gallons turned away) (£405.3100000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (447.0 gallons sold) (£101.25999999999999 in shop sales) (0.0 gallons turned away) (£195.35000000000002 potential income lost) 
-
-Simulation run for 1440 ticks (14400 sec)
-Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (257.0 gallons sold) (£69.58 in shop sales) (0.0 gallons turned away) (£118.6 potential income lost) 
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final 0.01024)
+Income : (1728.0 gallons sold) (£287.73 in shop sales) (0.0 gallons turned away) (£881.5800000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (432.0 gallons sold) (£65.28999999999999 in shop sales) (0.0 gallons turned away) (£242.81000000000003 potential income lost) 
+Income : (366.0 gallons sold) (£63.589999999999996 in shop sales) (0.0 gallons turned away) (£169.82 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (418.0 gallons sold) (£72.0 in shop sales) (0.0 gallons turned away) (£206.28 potential income lost) 
+Income : (287.0 gallons sold) (£67.46000000000001 in shop sales) (0.0 gallons turned away) (£121.18000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (264.0 gallons sold) (£65.08 in shop sales) (0.0 gallons turned away) (£112.04 potential income lost) 
+Income : (426.0 gallons sold) (£119.9 in shop sales) (0.0 gallons turned away) (£179.36 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (388.0 gallons sold) (£136.21 in shop sales) (0.0 gallons turned away) (£177.57000000000002 potential income lost) 
+Income : (273.0 gallons sold) (£75.78 in shop sales) (0.0 gallons turned away) (£106.20000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (425.0 gallons sold) (£80.88 in shop sales) (0.0 gallons turned away) (£222.18999999999997 potential income lost) 
+Income : (299.0 gallons sold) (£76.84 in shop sales) (0.0 gallons turned away) (£143.83 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
+Income : (381.0 gallons sold) (£67.16 in shop sales) (0.0 gallons turned away) (£194.18 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
+Income : (249.0 gallons sold) (£27.23 in shop sales) (0.0 gallons turned away) (£140.59 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
+Income : (324.0 gallons sold) (£120.06 in shop sales) (0.0 gallons turned away) (£119.96 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.01) (Family Sedans 0.01) (Trucks final Restricted)
+Income : (354.0 gallons sold) (£67.02000000000001 in shop sales) (0.0 gallons turned away) (£152.62 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (341.0 gallons sold) (£101.76000000000002 in shop sales) (0.0 gallons turned away) (£152.30999999999997 potential income lost) 
+Income : (396.0 gallons sold) (£107.73000000000002 in shop sales) (0.0 gallons turned away) (£200.23000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (687.0 gallons sold) (£134.55 in shop sales) (0.0 gallons turned away) (£376.98 potential income lost) 
+Income : (576.0 gallons sold) (£146.08 in shop sales) (0.0 gallons turned away) (£275.35 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (554.0 gallons sold) (£210.38 in shop sales) (0.0 gallons turned away) (£163.29999999999995 potential income lost) 
+Income : (498.0 gallons sold) (£130.96 in shop sales) (0.0 gallons turned away) (£224.06 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (365.0 gallons sold) (£77.53999999999999 in shop sales) (0.0 gallons turned away) (£174.78000000000003 potential income lost) 
+Income : (408.0 gallons sold) (£77.83000000000001 in shop sales) (0.0 gallons turned away) (£220.50000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (598.0 gallons sold) (£160.48000000000002 in shop sales) (0.0 gallons turned away) (£241.04999999999995 potential income lost) 
+Income : (513.0 gallons sold) (£153.62 in shop sales) (0.0 gallons turned away) (£221.03000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (551.0 gallons sold) (£92.66 in shop sales) (0.0 gallons turned away) (£300.90000000000003 potential income lost) 
+Income : (524.0 gallons sold) (£129.7 in shop sales) (0.0 gallons turned away) (£256.05 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (396.0 gallons sold) (£88.42 in shop sales) (0.0 gallons turned away) (£213.42999999999998 potential income lost) 
+Income : (378.0 gallons sold) (£64.14999999999999 in shop sales) (0.0 gallons turned away) (£188.12999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (430.0 gallons sold) (£105.43 in shop sales) (0.0 gallons turned away) (£209.53 potential income lost) 
+Income : (653.0 gallons sold) (£190.19 in shop sales) (0.0 gallons turned away) (£288.79 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (636.0 gallons sold) (£165.85999999999999 in shop sales) (0.0 gallons turned away) (£313.31 potential income lost) 
+Income : (489.0 gallons sold) (£102.79 in shop sales) (0.0 gallons turned away) (£268.59999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (434.0 gallons sold) (£106.28 in shop sales) (0.0 gallons turned away) (£201.01 potential income lost) 
+Income : (397.0 gallons sold) (£130.09 in shop sales) (0.0 gallons turned away) (£146.09999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (693.0 gallons sold) (£194.79000000000002 in shop sales) (0.0 gallons turned away) (£313.42 potential income lost) 
+Income : (663.0 gallons sold) (£193.94 in shop sales) (0.0 gallons turned away) (£256.17999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (769.0 gallons sold) (£223.32000000000002 in shop sales) (0.0 gallons turned away) (£365.9699999999999 potential income lost) 
+Income : (752.0 gallons sold) (£189.58 in shop sales) (0.0 gallons turned away) (£363.97 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (451.0 gallons sold) (£100.74 in shop sales) (0.0 gallons turned away) (£222.14999999999998 potential income lost) 
+Income : (427.0 gallons sold) (£72.31 in shop sales) (0.0 gallons turned away) (£235.08 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (680.0 gallons sold) (£207.16000000000003 in shop sales) (0.0 gallons turned away) (£302.17999999999995 potential income lost) 
+Income : (687.0 gallons sold) (£194.63 in shop sales) (0.0 gallons turned away) (£319.74 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (796.0 gallons sold) (£278.23 in shop sales) (0.0 gallons turned away) (£327.90000000000003 potential income lost) 
+Income : (772.0 gallons sold) (£339.88 in shop sales) (0.0 gallons turned away) (£248.09 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (420.0 gallons sold) (£101.37 in shop sales) (0.0 gallons turned away) (£206.01 potential income lost) 
+Income : (407.0 gallons sold) (£110.69 in shop sales) (0.0 gallons turned away) (£196.23 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (613.0 gallons sold) (£107.78999999999999 in shop sales) (0.0 gallons turned away) (£304.56 potential income lost) 
+Income : (652.0 gallons sold) (£218.95000000000002 in shop sales) (0.0 gallons turned away) (£283.25 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (814.0 gallons sold) (£207.32999999999998 in shop sales) (0.0 gallons turned away) (£432.66000000000014 potential income lost) 
+Income : (784.0 gallons sold) (£188.22 in shop sales) (0.0 gallons turned away) (£394.92999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (448.0 gallons sold) (£150.10999999999996 in shop sales) (0.0 gallons turned away) (£206.46999999999994 potential income lost) 
+Income : (477.0 gallons sold) (£136.05 in shop sales) (0.0 gallons turned away) (£213.35000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (785.0 gallons sold) (£147.63 in shop sales) (0.0 gallons turned away) (£452.8100000000001 potential income lost) 
+Income : (832.0 gallons sold) (£207.05999999999997 in shop sales) (0.0 gallons turned away) (£411.6400000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (881.0 gallons sold) (£177.36 in shop sales) (0.0 gallons turned away) (£488.29 potential income lost) 
+Income : (866.0 gallons sold) (£268.05 in shop sales) (0.0 gallons turned away) (£359.01 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (424.0 gallons sold) (£68.89 in shop sales) (0.0 gallons turned away) (£217.77 potential income lost) 
+Income : (407.0 gallons sold) (£94.86 in shop sales) (0.0 gallons turned away) (£210.72000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (817.0 gallons sold) (£230.14 in shop sales) (0.0 gallons turned away) (£395.1800000000001 potential income lost) 
+Income : (750.0 gallons sold) (£198.47999999999996 in shop sales) (0.0 gallons turned away) (£356.71000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1122.0 gallons sold) (£332.24000000000007 in shop sales) (0.0 gallons turned away) (£495.92 potential income lost) 
+Income : (1148.0 gallons sold) (£359.96999999999997 in shop sales) (0.0 gallons turned away) (£500.40000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (454.0 gallons sold) (£79.88000000000001 in shop sales) (0.0 gallons turned away) (£259.89 potential income lost) 
+Income : (427.0 gallons sold) (£104.42 in shop sales) (0.0 gallons turned away) (£204.39999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (834.0 gallons sold) (£230.7 in shop sales) (0.0 gallons turned away) (£405.84 potential income lost) 
+Income : (820.0 gallons sold) (£242.64000000000001 in shop sales) (0.0 gallons turned away) (£384.48 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1029.0 gallons sold) (£293.69999999999993 in shop sales) (0.0 gallons turned away) (£496.4399999999999 potential income lost) 
+Income : (1085.0 gallons sold) (£344.5599999999999 in shop sales) (0.0 gallons turned away) (£488.9300000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (465.0 gallons sold) (£132.92 in shop sales) (0.0 gallons turned away) (£262.51 potential income lost) 
+Income : (469.0 gallons sold) (£133.95999999999998 in shop sales) (0.0 gallons turned away) (£249.72999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (812.0 gallons sold) (£218.39 in shop sales) (0.0 gallons turned away) (£409.51 potential income lost) 
+Income : (892.0 gallons sold) (£191.04000000000002 in shop sales) (0.0 gallons turned away) (£519.5 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (922.0 gallons sold) (£181.52 in shop sales) (0.0 gallons turned away) (£526.3399999999999 potential income lost) 
+Income : (1057.0 gallons sold) (£257.1 in shop sales) (0.0 gallons turned away) (£521.65 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (485.0 gallons sold) (£115.17999999999999 in shop sales) (0.0 gallons turned away) (£280.97999999999996 potential income lost) 
+Income : (446.0 gallons sold) (£122.45 in shop sales) (0.0 gallons turned away) (£220.05 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (993.0 gallons sold) (£186.37999999999997 in shop sales) (0.0 gallons turned away) (£538.7599999999999 potential income lost) 
+Income : (845.0 gallons sold) (£265.14000000000004 in shop sales) (0.0 gallons turned away) (£362.75 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1328.0 gallons sold) (£383.3599999999999 in shop sales) (0.0 gallons turned away) (£655.8000000000001 potential income lost) 
+Income : (1254.0 gallons sold) (£401.6099999999999 in shop sales) (0.0 gallons turned away) (£550.5700000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (502.0 gallons sold) (£95.61 in shop sales) (0.0 gallons turned away) (£290.08 potential income lost) 
+Income : (417.0 gallons sold) (£118.2 in shop sales) (0.0 gallons turned away) (£199.43 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (862.0 gallons sold) (£213.78 in shop sales) (0.0 gallons turned away) (£464.54999999999984 potential income lost) 
+Income : (940.0 gallons sold) (£199.03 in shop sales) (0.0 gallons turned away) (£505.54 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.01) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1211.0 gallons sold) (£263.20000000000005 in shop sales) (0.0 gallons turned away) (£677.5500000000001 potential income lost) 
+Income : (1176.0 gallons sold) (£320.28 in shop sales) (0.0 gallons turned away) (£618.0899999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (353.0 gallons sold) (£55.02 in shop sales) (0.0 gallons turned away) (£173.71999999999997 potential income lost) 
+Income : (348.0 gallons sold) (£77.00999999999999 in shop sales) (0.0 gallons turned away) (£145.98000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (420.0 gallons sold) (£100.05 in shop sales) (0.0 gallons turned away) (£204.43999999999994 potential income lost) 
+Income : (461.0 gallons sold) (£119.71000000000001 in shop sales) (0.0 gallons turned away) (£210.10999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (633.0 gallons sold) (£133.94 in shop sales) (0.0 gallons turned away) (£279.45 potential income lost) 
+Income : (523.0 gallons sold) (£99.45 in shop sales) (0.0 gallons turned away) (£256.38999999999993 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (355.0 gallons sold) (£40.29 in shop sales) (0.0 gallons turned away) (£206.85999999999999 potential income lost) 
+Income : (359.0 gallons sold) (£47.53 in shop sales) (0.0 gallons turned away) (£191.45999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (582.0 gallons sold) (£78.22 in shop sales) (0.0 gallons turned away) (£306.06 potential income lost) 
+Income : (549.0 gallons sold) (£101.55 in shop sales) (0.0 gallons turned away) (£272.25 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (616.0 gallons sold) (£163.65 in shop sales) (0.0 gallons turned away) (£261.25999999999993 potential income lost) 
+Income : (605.0 gallons sold) (£102.61999999999999 in shop sales) (0.0 gallons turned away) (£257.47 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (385.0 gallons sold) (£21.97 in shop sales) (0.0 gallons turned away) (£237.01999999999998 potential income lost) 
+Income : (281.0 gallons sold) (£81.03999999999999 in shop sales) (0.0 gallons turned away) (£97.58 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (594.0 gallons sold) (£59.150000000000006 in shop sales) (0.0 gallons turned away) (£311.34999999999997 potential income lost) 
+Income : (488.0 gallons sold) (£91.37999999999998 in shop sales) (0.0 gallons turned away) (£211.36 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (702.0 gallons sold) (£135.8 in shop sales) (0.0 gallons turned away) (£289.34 potential income lost) 
+Income : (566.0 gallons sold) (£117.01 in shop sales) (0.0 gallons turned away) (£199.36999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (385.0 gallons sold) (£76.86 in shop sales) (0.0 gallons turned away) (£176.67000000000004 potential income lost) 
+Income : (353.0 gallons sold) (£47.2 in shop sales) (0.0 gallons turned away) (£163.05999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (626.0 gallons sold) (£98.75999999999999 in shop sales) (0.0 gallons turned away) (£336.1900000000001 potential income lost) 
+Income : (675.0 gallons sold) (£83.97 in shop sales) (0.0 gallons turned away) (£396.45999999999987 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (610.0 gallons sold) (£108.89999999999999 in shop sales) (0.0 gallons turned away) (£301.48999999999995 potential income lost) 
+Income : (593.0 gallons sold) (£117.61 in shop sales) (0.0 gallons turned away) (£275.12000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (409.0 gallons sold) (£52.89 in shop sales) (0.0 gallons turned away) (£223.58000000000004 potential income lost) 
+Income : (402.0 gallons sold) (£66.07000000000001 in shop sales) (0.0 gallons turned away) (£194.54 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (547.0 gallons sold) (£163.48999999999998 in shop sales) (0.0 gallons turned away) (£216.87000000000003 potential income lost) 
+Income : (625.0 gallons sold) (£141.08999999999997 in shop sales) (0.0 gallons turned away) (£322.82 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (757.0 gallons sold) (£119.6 in shop sales) (0.0 gallons turned away) (£441.24999999999983 potential income lost) 
+Income : (885.0 gallons sold) (£236.73000000000002 in shop sales) (0.0 gallons turned away) (£390.84 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (422.0 gallons sold) (£62.129999999999995 in shop sales) (0.0 gallons turned away) (£206.22000000000003 potential income lost) 
+Income : (409.0 gallons sold) (£77.58 in shop sales) (0.0 gallons turned away) (£163.93000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (630.0 gallons sold) (£146.35 in shop sales) (0.0 gallons turned away) (£277.17 potential income lost) 
+Income : (724.0 gallons sold) (£134.10999999999999 in shop sales) (0.0 gallons turned away) (£370.3999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (663.0 gallons sold) (£107.07 in shop sales) (0.0 gallons turned away) (£356.84999999999997 potential income lost) 
+Income : (808.0 gallons sold) (£113.3 in shop sales) (0.0 gallons turned away) (£400.30999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (435.0 gallons sold) (£99.25999999999999 in shop sales) (0.0 gallons turned away) (£233.82999999999996 potential income lost) 
+Income : (402.0 gallons sold) (£27.31 in shop sales) (0.0 gallons turned away) (£226.93000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (704.0 gallons sold) (£167.58000000000004 in shop sales) (0.0 gallons turned away) (£299.19 potential income lost) 
+Income : (684.0 gallons sold) (£166.09 in shop sales) (0.0 gallons turned away) (£372.76999999999987 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (898.0 gallons sold) (£157.95 in shop sales) (0.0 gallons turned away) (£469.99999999999983 potential income lost) 
+Income : (729.0 gallons sold) (£59.43 in shop sales) (0.0 gallons turned away) (£406.0599999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (380.0 gallons sold) (£40.69 in shop sales) (0.0 gallons turned away) (£195.09000000000003 potential income lost) 
+Income : (410.0 gallons sold) (£53.7 in shop sales) (0.0 gallons turned away) (£239.41 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (795.0 gallons sold) (£170.09 in shop sales) (0.0 gallons turned away) (£412.97999999999996 potential income lost) 
+Income : (767.0 gallons sold) (£157.45 in shop sales) (0.0 gallons turned away) (£367.03000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (934.0 gallons sold) (£245.04 in shop sales) (0.0 gallons turned away) (£400.99 potential income lost) 
+Income : (961.0 gallons sold) (£246.81999999999996 in shop sales) (0.0 gallons turned away) (£488.80999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (388.0 gallons sold) (£47.540000000000006 in shop sales) (0.0 gallons turned away) (£161.72000000000003 potential income lost) 
+Income : (433.0 gallons sold) (£63.29 in shop sales) (0.0 gallons turned away) (£227.12000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (635.0 gallons sold) (£187.05 in shop sales) (0.0 gallons turned away) (£248.73000000000002 potential income lost) 
+Income : (777.0 gallons sold) (£167.46 in shop sales) (0.0 gallons turned away) (£394.46 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1026.0 gallons sold) (£257.5 in shop sales) (0.0 gallons turned away) (£460.7400000000001 potential income lost) 
+Income : (926.0 gallons sold) (£293.9599999999999 in shop sales) (0.0 gallons turned away) (£349.71999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (389.0 gallons sold) (£58.82000000000001 in shop sales) (0.0 gallons turned away) (£169.96000000000004 potential income lost) 
+Income : (409.0 gallons sold) (£53.82 in shop sales) (0.0 gallons turned away) (£202.09000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (726.0 gallons sold) (£162.81 in shop sales) (0.0 gallons turned away) (£325.78 potential income lost) 
+Income : (782.0 gallons sold) (£201.01 in shop sales) (0.0 gallons turned away) (£380.36999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (862.0 gallons sold) (£55.87 in shop sales) (0.0 gallons turned away) (£562.9 potential income lost) 
+Income : (914.0 gallons sold) (£107.47999999999999 in shop sales) (0.0 gallons turned away) (£530.2499999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (418.0 gallons sold) (£46.81 in shop sales) (0.0 gallons turned away) (£189.49 potential income lost) 
+Income : (440.0 gallons sold) (£79.93 in shop sales) (0.0 gallons turned away) (£211.70999999999992 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (842.0 gallons sold) (£218.30000000000004 in shop sales) (0.0 gallons turned away) (£415.62 potential income lost) 
+Income : (850.0 gallons sold) (£163.63 in shop sales) (0.0 gallons turned away) (£490.19 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1144.0 gallons sold) (£280.22 in shop sales) (0.0 gallons turned away) (£513.7099999999999 potential income lost) 
+Income : (1236.0 gallons sold) (£352.61 in shop sales) (0.0 gallons turned away) (£524.82 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (411.0 gallons sold) (£55.79 in shop sales) (0.0 gallons turned away) (£219.37 potential income lost) 
+Income : (423.0 gallons sold) (£89.46000000000001 in shop sales) (0.0 gallons turned away) (£200.19 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (798.0 gallons sold) (£182.08999999999997 in shop sales) (0.0 gallons turned away) (£384.0 potential income lost) 
+Income : (834.0 gallons sold) (£172.32 in shop sales) (0.0 gallons turned away) (£432.32 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1163.0 gallons sold) (£260.27000000000004 in shop sales) (0.0 gallons turned away) (£584.3 potential income lost) 
+Income : (1395.0 gallons sold) (£362.93999999999994 in shop sales) (0.0 gallons turned away) (£670.8500000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (449.0 gallons sold) (£60.730000000000004 in shop sales) (0.0 gallons turned away) (£233.28 potential income lost) 
+Income : (450.0 gallons sold) (£80.81 in shop sales) (0.0 gallons turned away) (£228.78000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (743.0 gallons sold) (£105.45 in shop sales) (0.0 gallons turned away) (£449.49999999999994 potential income lost) 
+Income : (731.0 gallons sold) (£61.370000000000005 in shop sales) (0.0 gallons turned away) (£418.16 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (928.0 gallons sold) (£53.44 in shop sales) (0.0 gallons turned away) (£593.6600000000001 potential income lost) 
+Income : (889.0 gallons sold) (£53.6 in shop sales) (0.0 gallons turned away) (£549.68 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (431.0 gallons sold) (£81.35999999999999 in shop sales) (0.0 gallons turned away) (£219.07999999999998 potential income lost) 
+Income : (405.0 gallons sold) (£131.63 in shop sales) (0.0 gallons turned away) (£171.07000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (856.0 gallons sold) (£217.03000000000003 in shop sales) (0.0 gallons turned away) (£455.13000000000005 potential income lost) 
+Income : (858.0 gallons sold) (£227.27000000000004 in shop sales) (0.0 gallons turned away) (£430.54999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1320.0 gallons sold) (£364.66 in shop sales) (0.0 gallons turned away) (£639.8999999999999 potential income lost) 
+Income : (1478.0 gallons sold) (£394.3 in shop sales) (0.0 gallons turned away) (£676.2699999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (437.0 gallons sold) (£78.74 in shop sales) (0.0 gallons turned away) (£169.02999999999997 potential income lost) 
+Income : (423.0 gallons sold) (£110.33 in shop sales) (0.0 gallons turned away) (£189.33 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (812.0 gallons sold) (£225.9 in shop sales) (0.0 gallons turned away) (£354.15 potential income lost) 
+Income : (833.0 gallons sold) (£172.59 in shop sales) (0.0 gallons turned away) (£408.98999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.02) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1330.0 gallons sold) (£373.7100000000001 in shop sales) (0.0 gallons turned away) (£628.68 potential income lost) 
+Income : (1379.0 gallons sold) (£330.24 in shop sales) (0.0 gallons turned away) (£710.2200000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (374.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£208.20000000000002 potential income lost) 
+Income : (364.0 gallons sold) (£49.11 in shop sales) (0.0 gallons turned away) (£157.14999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (575.0 gallons sold) (£50.57 in shop sales) (0.0 gallons turned away) (£334.66 potential income lost) 
+Income : (522.0 gallons sold) (£46.629999999999995 in shop sales) (0.0 gallons turned away) (£234.14999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (605.0 gallons sold) (£132.7 in shop sales) (0.0 gallons turned away) (£266.26 potential income lost) 
+Income : (676.0 gallons sold) (£134.32999999999998 in shop sales) (0.0 gallons turned away) (£351.55000000000007 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (343.0 gallons sold) (£53.24 in shop sales) (0.0 gallons turned away) (£155.10999999999999 potential income lost) 
+Income : (355.0 gallons sold) (£22.32 in shop sales) (0.0 gallons turned away) (£187.59999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (579.0 gallons sold) (£91.08000000000001 in shop sales) (0.0 gallons turned away) (£279.48999999999995 potential income lost) 
+Income : (711.0 gallons sold) (£164.26 in shop sales) (0.0 gallons turned away) (£310.57000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (774.0 gallons sold) (£140.7 in shop sales) (0.0 gallons turned away) (£321.61000000000007 potential income lost) 
+Income : (584.0 gallons sold) (£64.42 in shop sales) (0.0 gallons turned away) (£275.83 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (384.0 gallons sold) (£42.35 in shop sales) (0.0 gallons turned away) (£204.08000000000004 potential income lost) 
+Income : (389.0 gallons sold) (£8.66 in shop sales) (0.0 gallons turned away) (£232.67999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (665.0 gallons sold) (£96.08 in shop sales) (0.0 gallons turned away) (£351.09 potential income lost) 
+Income : (718.0 gallons sold) (£70.83 in shop sales) (0.0 gallons turned away) (£407.93999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (890.0 gallons sold) (£163.27999999999997 in shop sales) (0.0 gallons turned away) (£424.4899999999999 potential income lost) 
+Income : (624.0 gallons sold) (£128.31 in shop sales) (0.0 gallons turned away) (£242.54000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (388.0 gallons sold) (£34.44 in shop sales) (0.0 gallons turned away) (£172.66 potential income lost) 
+Income : (356.0 gallons sold) (£60.339999999999996 in shop sales) (0.0 gallons turned away) (£128.54 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (624.0 gallons sold) (£35.51 in shop sales) (0.0 gallons turned away) (£356.3000000000001 potential income lost) 
+Income : (655.0 gallons sold) (£72.74999999999999 in shop sales) (0.0 gallons turned away) (£351.74 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (730.0 gallons sold) (£99.35000000000001 in shop sales) (0.0 gallons turned away) (£372.21 potential income lost) 
+Income : (698.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£419.04000000000013 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (365.0 gallons sold) (£75.25000000000001 in shop sales) (0.0 gallons turned away) (£165.81 potential income lost) 
+Income : (368.0 gallons sold) (£40.06 in shop sales) (0.0 gallons turned away) (£165.96999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (707.0 gallons sold) (£182.42000000000002 in shop sales) (0.0 gallons turned away) (£271.22999999999996 potential income lost) 
+Income : (743.0 gallons sold) (£103.28 in shop sales) (0.0 gallons turned away) (£317.59999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (1076.0 gallons sold) (£175.48000000000002 in shop sales) (0.0 gallons turned away) (£543.4099999999999 potential income lost) 
+Income : (847.0 gallons sold) (£263.3800000000001 in shop sales) (0.0 gallons turned away) (£256.19 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (391.0 gallons sold) (£29.119999999999997 in shop sales) (0.0 gallons turned away) (£173.43 potential income lost) 
+Income : (373.0 gallons sold) (£20.96 in shop sales) (0.0 gallons turned away) (£137.75 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (779.0 gallons sold) (£127.43 in shop sales) (0.0 gallons turned away) (£408.36 potential income lost) 
+Income : (699.0 gallons sold) (£91.32 in shop sales) (0.0 gallons turned away) (£378.51 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (1111.0 gallons sold) (£191.89999999999998 in shop sales) (0.0 gallons turned away) (£586.97 potential income lost) 
+Income : (1009.0 gallons sold) (£272.96999999999997 in shop sales) (0.0 gallons turned away) (£434.76000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (392.0 gallons sold) (£27.05 in shop sales) (0.0 gallons turned away) (£202.96 potential income lost) 
+Income : (376.0 gallons sold) (£38.39 in shop sales) (0.0 gallons turned away) (£196.62999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (674.0 gallons sold) (£109.8 in shop sales) (0.0 gallons turned away) (£330.74 potential income lost) 
+Income : (647.0 gallons sold) (£81.5 in shop sales) (0.0 gallons turned away) (£316.2 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (799.0 gallons sold) (£55.669999999999995 in shop sales) (0.0 gallons turned away) (£463.10999999999996 potential income lost) 
+Income : (668.0 gallons sold) (£45.199999999999996 in shop sales) (0.0 gallons turned away) (£340.3299999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (380.0 gallons sold) (£44.440000000000005 in shop sales) (0.0 gallons turned away) (£210.54 potential income lost) 
+Income : (434.0 gallons sold) (£84.47 in shop sales) (0.0 gallons turned away) (£198.19 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (813.0 gallons sold) (£76.67 in shop sales) (0.0 gallons turned away) (£505.12 potential income lost) 
+Income : (786.0 gallons sold) (£93.2 in shop sales) (0.0 gallons turned away) (£406.5000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1323.0 gallons sold) (£337.52 in shop sales) (0.0 gallons turned away) (£611.3900000000002 potential income lost) 
+Income : (1233.0 gallons sold) (£333.00999999999993 in shop sales) (0.0 gallons turned away) (£568.9999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (397.0 gallons sold) (£15.17 in shop sales) (0.0 gallons turned away) (£231.28000000000003 potential income lost) 
+Income : (402.0 gallons sold) (£48.22999999999999 in shop sales) (0.0 gallons turned away) (£205.23999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (830.0 gallons sold) (£135.71 in shop sales) (0.0 gallons turned away) (£420.93000000000006 potential income lost) 
+Income : (719.0 gallons sold) (£138.17 in shop sales) (0.0 gallons turned away) (£332.65999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1219.0 gallons sold) (£349.54 in shop sales) (0.0 gallons turned away) (£515.45 potential income lost) 
+Income : (1266.0 gallons sold) (£402.29 in shop sales) (0.0 gallons turned away) (£517.48 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (417.0 gallons sold) (£71.15 in shop sales) (0.0 gallons turned away) (£198.89000000000001 potential income lost) 
+Income : (429.0 gallons sold) (£45.18 in shop sales) (0.0 gallons turned away) (£258.57000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (677.0 gallons sold) (£96.49000000000001 in shop sales) (0.0 gallons turned away) (£345.41999999999996 potential income lost) 
+Income : (753.0 gallons sold) (£98.98 in shop sales) (0.0 gallons turned away) (£434.64 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (728.0 gallons sold) (£33.14 in shop sales) (0.0 gallons turned away) (£424.83999999999986 potential income lost) 
+Income : (689.0 gallons sold) (£43.809999999999995 in shop sales) (0.0 gallons turned away) (£371.99 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (393.0 gallons sold) (£23.92 in shop sales) (0.0 gallons turned away) (£189.53000000000003 potential income lost) 
+Income : (398.0 gallons sold) (£65.61 in shop sales) (0.0 gallons turned away) (£189.18000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (803.0 gallons sold) (£179.76000000000005 in shop sales) (0.0 gallons turned away) (£407.61999999999995 potential income lost) 
+Income : (792.0 gallons sold) (£157.62 in shop sales) (0.0 gallons turned away) (£359.76000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1307.0 gallons sold) (£287.4299999999999 in shop sales) (0.0 gallons turned away) (£649.6099999999997 potential income lost) 
+Income : (1286.0 gallons sold) (£385.27000000000004 in shop sales) (0.0 gallons turned away) (£529.0699999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (403.0 gallons sold) (£52.43 in shop sales) (0.0 gallons turned away) (£249.18 potential income lost) 
+Income : (409.0 gallons sold) (£91.11000000000001 in shop sales) (0.0 gallons turned away) (£212.49999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (786.0 gallons sold) (£185.62000000000003 in shop sales) (0.0 gallons turned away) (£338.98 potential income lost) 
+Income : (804.0 gallons sold) (£157.52999999999997 in shop sales) (0.0 gallons turned away) (£430.68 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1362.0 gallons sold) (£310.02 in shop sales) (0.0 gallons turned away) (£627.4499999999999 potential income lost) 
+Income : (1242.0 gallons sold) (£342.6000000000001 in shop sales) (0.0 gallons turned away) (£512.2799999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (415.0 gallons sold) (£11.95 in shop sales) (0.0 gallons turned away) (£220.76000000000002 potential income lost) 
+Income : (452.0 gallons sold) (£78.88 in shop sales) (0.0 gallons turned away) (£245.15999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (692.0 gallons sold) (£95.72999999999999 in shop sales) (0.0 gallons turned away) (£352.4300000000001 potential income lost) 
+Income : (728.0 gallons sold) (£73.65 in shop sales) (0.0 gallons turned away) (£376.98 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (916.0 gallons sold) (£67.03999999999999 in shop sales) (0.0 gallons turned away) (£545.7699999999999 potential income lost) 
+Income : (646.0 gallons sold) (£25.96 in shop sales) (0.0 gallons turned away) (£323.51000000000016 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (391.0 gallons sold) (£36.230000000000004 in shop sales) (0.0 gallons turned away) (£170.38000000000002 potential income lost) 
+Income : (402.0 gallons sold) (£50.68 in shop sales) (0.0 gallons turned away) (£211.81000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (862.0 gallons sold) (£162.08 in shop sales) (0.0 gallons turned away) (£458.04 potential income lost) 
+Income : (785.0 gallons sold) (£207.86 in shop sales) (0.0 gallons turned away) (£284.69999999999993 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1309.0 gallons sold) (£245.69 in shop sales) (0.0 gallons turned away) (£636.7500000000002 potential income lost) 
+Income : (1482.0 gallons sold) (£252.60999999999999 in shop sales) (0.0 gallons turned away) (£810.7500000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (420.0 gallons sold) (£72.11000000000001 in shop sales) (0.0 gallons turned away) (£193.32000000000002 potential income lost) 
+Income : (406.0 gallons sold) (£60.16 in shop sales) (0.0 gallons turned away) (£182.86999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (904.0 gallons sold) (£154.85999999999999 in shop sales) (0.0 gallons turned away) (£531.3100000000002 potential income lost) 
+Income : (786.0 gallons sold) (£114.16 in shop sales) (0.0 gallons turned away) (£368.03999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.03) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1608.0 gallons sold) (£450.17000000000013 in shop sales) (0.0 gallons turned away) (£786.0499999999998 potential income lost) 
+Income : (1540.0 gallons sold) (£288.2999999999999 in shop sales) (0.0 gallons turned away) (£876.1600000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (392.0 gallons sold) (£45.89999999999999 in shop sales) (0.0 gallons turned away) (£198.67000000000004 potential income lost) 
+Income : (364.0 gallons sold) (£43.25 in shop sales) (0.0 gallons turned away) (£146.68 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (571.0 gallons sold) (£26.48 in shop sales) (0.0 gallons turned away) (£240.13999999999996 potential income lost) 
+Income : (612.0 gallons sold) (£41.6 in shop sales) (0.0 gallons turned away) (£349.4599999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (598.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£305.69000000000005 potential income lost) 
+Income : (570.0 gallons sold) (£13.969999999999999 in shop sales) (0.0 gallons turned away) (£250.45 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (384.0 gallons sold) (£32.09 in shop sales) (0.0 gallons turned away) (£148.38 potential income lost) 
+Income : (368.0 gallons sold) (£24.5 in shop sales) (0.0 gallons turned away) (£171.98000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (707.0 gallons sold) (£73.61000000000001 in shop sales) (0.0 gallons turned away) (£349.7 potential income lost) 
+Income : (715.0 gallons sold) (£83.41999999999999 in shop sales) (0.0 gallons turned away) (£360.45 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (905.0 gallons sold) (£206.47000000000003 in shop sales) (0.0 gallons turned away) (£334.84999999999997 potential income lost) 
+Income : (810.0 gallons sold) (£218.55 in shop sales) (0.0 gallons turned away) (£289.74 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (383.0 gallons sold) (£11.84 in shop sales) (0.0 gallons turned away) (£228.98000000000002 potential income lost) 
+Income : (375.0 gallons sold) (£22.18 in shop sales) (0.0 gallons turned away) (£157.07999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (726.0 gallons sold) (£116.47999999999999 in shop sales) (0.0 gallons turned away) (£326.75 potential income lost) 
+Income : (650.0 gallons sold) (£100.33999999999999 in shop sales) (0.0 gallons turned away) (£263.23999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (922.0 gallons sold) (£143.99999999999997 in shop sales) (0.0 gallons turned away) (£431.68999999999994 potential income lost) 
+Income : (971.0 gallons sold) (£169.25 in shop sales) (0.0 gallons turned away) (£452.87000000000006 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (375.0 gallons sold) (£19.35 in shop sales) (0.0 gallons turned away) (£193.88 potential income lost) 
+Income : (370.0 gallons sold) (£38.74 in shop sales) (0.0 gallons turned away) (£169.31 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (587.0 gallons sold) (£62.86 in shop sales) (0.0 gallons turned away) (£278.8399999999999 potential income lost) 
+Income : (646.0 gallons sold) (£57.739999999999995 in shop sales) (0.0 gallons turned away) (£345.53 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (599.0 gallons sold) (£30.24 in shop sales) (0.0 gallons turned away) (£272.94000000000005 potential income lost) 
+Income : (627.0 gallons sold) (£18.42 in shop sales) (0.0 gallons turned away) (£386.48 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (387.0 gallons sold) (£30.84 in shop sales) (0.0 gallons turned away) (£169.20999999999998 potential income lost) 
+Income : (419.0 gallons sold) (£19.21 in shop sales) (0.0 gallons turned away) (£231.57000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (742.0 gallons sold) (£62.64 in shop sales) (0.0 gallons turned away) (£369.36000000000007 potential income lost) 
+Income : (723.0 gallons sold) (£86.94 in shop sales) (0.0 gallons turned away) (£344.76 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (1067.0 gallons sold) (£215.35999999999999 in shop sales) (0.0 gallons turned away) (£439.6 potential income lost) 
+Income : (1082.0 gallons sold) (£153.73999999999998 in shop sales) (0.0 gallons turned away) (£511.5100000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (370.0 gallons sold) (£53.010000000000005 in shop sales) (0.0 gallons turned away) (£223.13999999999996 potential income lost) 
+Income : (388.0 gallons sold) (£29.700000000000003 in shop sales) (0.0 gallons turned away) (£243.62 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (770.0 gallons sold) (£97.12 in shop sales) (0.0 gallons turned away) (£352.89000000000004 potential income lost) 
+Income : (798.0 gallons sold) (£97.98 in shop sales) (0.0 gallons turned away) (£426.90000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (1043.0 gallons sold) (£222.27999999999994 in shop sales) (0.0 gallons turned away) (£481.9000000000001 potential income lost) 
+Income : (1191.0 gallons sold) (£178.47000000000003 in shop sales) (0.0 gallons turned away) (£629.05 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (371.0 gallons sold) (£10.62 in shop sales) (0.0 gallons turned away) (£173.95000000000002 potential income lost) 
+Income : (383.0 gallons sold) (£22.09 in shop sales) (0.0 gallons turned away) (£203.35999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (647.0 gallons sold) (£30.900000000000002 in shop sales) (0.0 gallons turned away) (£345.75000000000006 potential income lost) 
+Income : (629.0 gallons sold) (£55.56000000000001 in shop sales) (0.0 gallons turned away) (£311.9200000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (616.0 gallons sold) (£24.42 in shop sales) (0.0 gallons turned away) (£359.9200000000001 potential income lost) 
+Income : (627.0 gallons sold) (£73.61 in shop sales) (0.0 gallons turned away) (£319.25999999999993 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (374.0 gallons sold) (£28.46 in shop sales) (0.0 gallons turned away) (£150.35999999999999 potential income lost) 
+Income : (385.0 gallons sold) (£57.07 in shop sales) (0.0 gallons turned away) (£177.19000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (772.0 gallons sold) (£122.21999999999998 in shop sales) (0.0 gallons turned away) (£359.23000000000013 potential income lost) 
+Income : (714.0 gallons sold) (£158.76 in shop sales) (0.0 gallons turned away) (£257.67999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1242.0 gallons sold) (£183.79999999999998 in shop sales) (0.0 gallons turned away) (£668.1499999999999 potential income lost) 
+Income : (1345.0 gallons sold) (£228.39 in shop sales) (0.0 gallons turned away) (£658.5799999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (388.0 gallons sold) (£92.7 in shop sales) (0.0 gallons turned away) (£165.62000000000003 potential income lost) 
+Income : (370.0 gallons sold) (£10.38 in shop sales) (0.0 gallons turned away) (£159.13 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (809.0 gallons sold) (£113.5 in shop sales) (0.0 gallons turned away) (£421.35 potential income lost) 
+Income : (782.0 gallons sold) (£86.23 in shop sales) (0.0 gallons turned away) (£357.1999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1428.0 gallons sold) (£359.1 in shop sales) (0.0 gallons turned away) (£616.1499999999997 potential income lost) 
+Income : (1214.0 gallons sold) (£311.6400000000001 in shop sales) (0.0 gallons turned away) (£448.65999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (419.0 gallons sold) (£13.69 in shop sales) (0.0 gallons turned away) (£249.98000000000005 potential income lost) 
+Income : (445.0 gallons sold) (£34.1 in shop sales) (0.0 gallons turned away) (£255.98999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (692.0 gallons sold) (£64.47 in shop sales) (0.0 gallons turned away) (£362.2999999999999 potential income lost) 
+Income : (616.0 gallons sold) (£19.240000000000002 in shop sales) (0.0 gallons turned away) (£341.93 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (636.0 gallons sold) (£39.03 in shop sales) (0.0 gallons turned away) (£314.51000000000005 potential income lost) 
+Income : (611.0 gallons sold) (£14.46 in shop sales) (0.0 gallons turned away) (£300.77999999999986 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (395.0 gallons sold) (£16.17 in shop sales) (0.0 gallons turned away) (£218.79 potential income lost) 
+Income : (404.0 gallons sold) (£37.0 in shop sales) (0.0 gallons turned away) (£188.58999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (799.0 gallons sold) (£73.66999999999999 in shop sales) (0.0 gallons turned away) (£411.41999999999996 potential income lost) 
+Income : (776.0 gallons sold) (£112.68 in shop sales) (0.0 gallons turned away) (£352.86000000000007 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1287.0 gallons sold) (£190.28999999999996 in shop sales) (0.0 gallons turned away) (£643.49 potential income lost) 
+Income : (1233.0 gallons sold) (£226.28 in shop sales) (0.0 gallons turned away) (£548.9299999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (402.0 gallons sold) (£19.689999999999998 in shop sales) (0.0 gallons turned away) (£229.45 potential income lost) 
+Income : (398.0 gallons sold) (£33.63 in shop sales) (0.0 gallons turned away) (£185.04000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (804.0 gallons sold) (£133.01999999999998 in shop sales) (0.0 gallons turned away) (£348.20000000000005 potential income lost) 
+Income : (810.0 gallons sold) (£115.82 in shop sales) (0.0 gallons turned away) (£425.99999999999994 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1530.0 gallons sold) (£363.16999999999996 in shop sales) (0.0 gallons turned away) (£736.4599999999999 potential income lost) 
+Income : (1474.0 gallons sold) (£303.5 in shop sales) (0.0 gallons turned away) (£767.4400000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (427.0 gallons sold) (£65.39 in shop sales) (0.0 gallons turned away) (£187.39000000000001 potential income lost) 
+Income : (415.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£222.09 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (636.0 gallons sold) (£35.3 in shop sales) (0.0 gallons turned away) (£366.62 potential income lost) 
+Income : (651.0 gallons sold) (£50.31999999999999 in shop sales) (0.0 gallons turned away) (£343.51 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (777.0 gallons sold) (£17.509999999999998 in shop sales) (0.0 gallons turned away) (£475.58 potential income lost) 
+Income : (738.0 gallons sold) (£36.0 in shop sales) (0.0 gallons turned away) (£425.9699999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (393.0 gallons sold) (£47.46000000000001 in shop sales) (0.0 gallons turned away) (£156.21 potential income lost) 
+Income : (440.0 gallons sold) (£39.58 in shop sales) (0.0 gallons turned away) (£178.69000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (847.0 gallons sold) (£124.04999999999998 in shop sales) (0.0 gallons turned away) (£411.7100000000001 potential income lost) 
+Income : (839.0 gallons sold) (£99.29 in shop sales) (0.0 gallons turned away) (£409.7 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1431.0 gallons sold) (£263.23 in shop sales) (0.0 gallons turned away) (£654.54 potential income lost) 
+Income : (1390.0 gallons sold) (£224.51 in shop sales) (0.0 gallons turned away) (£759.0499999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (408.0 gallons sold) (£68.17 in shop sales) (0.0 gallons turned away) (£204.31000000000003 potential income lost) 
+Income : (403.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£219.45 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (808.0 gallons sold) (£127.93999999999998 in shop sales) (0.0 gallons turned away) (£358.1099999999999 potential income lost) 
+Income : (778.0 gallons sold) (£105.59 in shop sales) (0.0 gallons turned away) (£309.82 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.04) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (1638.0 gallons sold) (£356.25000000000006 in shop sales) (0.0 gallons turned away) (£784.3200000000003 potential income lost) 
+Income : (1603.0 gallons sold) (£272.65000000000003 in shop sales) (0.0 gallons turned away) (£829.2400000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (345.0 gallons sold) (£15.16 in shop sales) (0.0 gallons turned away) (£134.56000000000003 potential income lost) 
+Income : (368.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£187.27999999999997 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (523.0 gallons sold) (£6.92 in shop sales) (0.0 gallons turned away) (£177.23999999999998 potential income lost) 
+Income : (533.0 gallons sold) (£8.8 in shop sales) (0.0 gallons turned away) (£186.78999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (554.0 gallons sold) (£9.85 in shop sales) (0.0 gallons turned away) (£237.69000000000003 potential income lost) 
+Income : (539.0 gallons sold) (£16.62 in shop sales) (0.0 gallons turned away) (£195.27 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (366.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£123.96999999999997 potential income lost) 
+Income : (362.0 gallons sold) (£14.88 in shop sales) (0.0 gallons turned away) (£157.51 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (737.0 gallons sold) (£43.4 in shop sales) (0.0 gallons turned away) (£352.55999999999995 potential income lost) 
+Income : (735.0 gallons sold) (£24.23 in shop sales) (0.0 gallons turned away) (£378.05999999999995 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (941.0 gallons sold) (£212.51 in shop sales) (0.0 gallons turned away) (£333.69 potential income lost) 
+Income : (1133.0 gallons sold) (£165.10999999999996 in shop sales) (0.0 gallons turned away) (£586.18 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (359.0 gallons sold) (£6.23 in shop sales) (0.0 gallons turned away) (£184.82 potential income lost) 
+Income : (374.0 gallons sold) (£32.9 in shop sales) (0.0 gallons turned away) (£132.89000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (706.0 gallons sold) (£15.629999999999999 in shop sales) (0.0 gallons turned away) (£342.6200000000001 potential income lost) 
+Income : (717.0 gallons sold) (£37.73 in shop sales) (0.0 gallons turned away) (£345.2699999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.01) (Trucks final Restricted)
-Income : (1265.0 gallons sold) (£221.49999999999997 in shop sales) (0.0 gallons turned away) (£566.9899999999999 potential income lost) 
+Income : (1132.0 gallons sold) (£232.53000000000003 in shop sales) (0.0 gallons turned away) (£455.15000000000003 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (389.0 gallons sold) (£9.29 in shop sales) (0.0 gallons turned away) (£231.61999999999998 potential income lost) 
+Income : (379.0 gallons sold) (£8.14 in shop sales) (0.0 gallons turned away) (£224.92 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (618.0 gallons sold) (£20.5 in shop sales) (0.0 gallons turned away) (£353.2100000000001 potential income lost) 
+Income : (572.0 gallons sold) (£15.57 in shop sales) (0.0 gallons turned away) (£271.49 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (617.0 gallons sold) (£7.41 in shop sales) (0.0 gallons turned away) (£367.80000000000007 potential income lost) 
+Income : (571.0 gallons sold) (£25.07 in shop sales) (0.0 gallons turned away) (£242.64000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (383.0 gallons sold) (£16.060000000000002 in shop sales) (0.0 gallons turned away) (£163.32999999999998 potential income lost) 
+Income : (389.0 gallons sold) (£5.19 in shop sales) (0.0 gallons turned away) (£189.23 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (785.0 gallons sold) (£41.849999999999994 in shop sales) (0.0 gallons turned away) (£432.7299999999999 potential income lost) 
+Income : (746.0 gallons sold) (£58.47 in shop sales) (0.0 gallons turned away) (£308.85 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (1212.0 gallons sold) (£83.60000000000001 in shop sales) (0.0 gallons turned away) (£689.8699999999998 potential income lost) 
+Income : (1218.0 gallons sold) (£148.07999999999998 in shop sales) (0.0 gallons turned away) (£564.5600000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (371.0 gallons sold) (£12.8 in shop sales) (0.0 gallons turned away) (£168.26999999999998 potential income lost) 
+Income : (397.0 gallons sold) (£46.120000000000005 in shop sales) (0.0 gallons turned away) (£177.54999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (744.0 gallons sold) (£55.809999999999995 in shop sales) (0.0 gallons turned away) (£400.5799999999999 potential income lost) 
+Income : (742.0 gallons sold) (£83.08000000000001 in shop sales) (0.0 gallons turned away) (£306.53999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.02) (Trucks final Restricted)
-Income : (1244.0 gallons sold) (£226.57 in shop sales) (0.0 gallons turned away) (£547.73 potential income lost) 
+Income : (1322.0 gallons sold) (£216.12999999999997 in shop sales) (0.0 gallons turned away) (£684.9699999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (388.0 gallons sold) (£24.73 in shop sales) (0.0 gallons turned away) (£212.6 potential income lost) 
+Income : (377.0 gallons sold) (£25.049999999999997 in shop sales) (0.0 gallons turned away) (£181.23999999999998 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (612.0 gallons sold) (£34.3 in shop sales) (0.0 gallons turned away) (£332.39000000000004 potential income lost) 
+Income : (565.0 gallons sold) (£8.53 in shop sales) (0.0 gallons turned away) (£273.97999999999996 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (581.0 gallons sold) (£8.14 in shop sales) (0.0 gallons turned away) (£269.94 potential income lost) 
+Income : (680.0 gallons sold) (£21.79 in shop sales) (0.0 gallons turned away) (£426.93 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (402.0 gallons sold) (£20.65 in shop sales) (0.0 gallons turned away) (£212.93 potential income lost) 
+Income : (389.0 gallons sold) (£39.91 in shop sales) (0.0 gallons turned away) (£186.63000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (774.0 gallons sold) (£96.73 in shop sales) (0.0 gallons turned away) (£343.54999999999995 potential income lost) 
+Income : (769.0 gallons sold) (£58.339999999999996 in shop sales) (0.0 gallons turned away) (£400.95 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1302.0 gallons sold) (£155.46 in shop sales) (0.0 gallons turned away) (£618.1300000000001 potential income lost) 
+Income : (1271.0 gallons sold) (£138.84 in shop sales) (0.0 gallons turned away) (£659.9899999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (410.0 gallons sold) (£18.08 in shop sales) (0.0 gallons turned away) (£214.55 potential income lost) 
+Income : (383.0 gallons sold) (£14.96 in shop sales) (0.0 gallons turned away) (£175.96000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (786.0 gallons sold) (£64.5 in shop sales) (0.0 gallons turned away) (£436.1299999999999 potential income lost) 
+Income : (746.0 gallons sold) (£83.86999999999999 in shop sales) (0.0 gallons turned away) (£368.65000000000015 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.03) (Trucks final Restricted)
-Income : (1398.0 gallons sold) (£298.5399999999999 in shop sales) (0.0 gallons turned away) (£657.0700000000002 potential income lost) 
+Income : (1440.0 gallons sold) (£215.41999999999996 in shop sales) (0.0 gallons turned away) (£762.4100000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (371.0 gallons sold) (£0.0 in shop sales) (0.0 gallons turned away) (£131.89999999999998 potential income lost) 
+Income : (383.0 gallons sold) (£20.41 in shop sales) (0.0 gallons turned away) (£218.71000000000004 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (570.0 gallons sold) (£26.4 in shop sales) (0.0 gallons turned away) (£244.11999999999995 potential income lost) 
+Income : (629.0 gallons sold) (£34.78 in shop sales) (0.0 gallons turned away) (£317.3400000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (618.0 gallons sold) (£7.99 in shop sales) (0.0 gallons turned away) (£350.8300000000001 potential income lost) 
+Income : (583.0 gallons sold) (£5.58 in shop sales) (0.0 gallons turned away) (£308.11000000000007 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (374.0 gallons sold) (£21.189999999999998 in shop sales) (0.0 gallons turned away) (£150.69 potential income lost) 
+Income : (375.0 gallons sold) (£27.71 in shop sales) (0.0 gallons turned away) (£132.21 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (818.0 gallons sold) (£112.94 in shop sales) (0.0 gallons turned away) (£393.97 potential income lost) 
+Income : (739.0 gallons sold) (£70.27 in shop sales) (0.0 gallons turned away) (£394.2099999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1364.0 gallons sold) (£199.57 in shop sales) (0.0 gallons turned away) (£727.6599999999999 potential income lost) 
+Income : (1325.0 gallons sold) (£118.61 in shop sales) (0.0 gallons turned away) (£724.0000000000001 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (393.0 gallons sold) (£8.32 in shop sales) (0.0 gallons turned away) (£205.35000000000002 potential income lost) 
+Income : (387.0 gallons sold) (£32.17 in shop sales) (0.0 gallons turned away) (£163.85000000000002 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (749.0 gallons sold) (£58.51 in shop sales) (0.0 gallons turned away) (£350.60999999999996 potential income lost) 
+Income : (848.0 gallons sold) (£117.54 in shop sales) (0.0 gallons turned away) (£421.99 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.04) (Trucks final Restricted)
-Income : (1441.0 gallons sold) (£280.81 in shop sales) (0.0 gallons turned away) (£642.7500000000001 potential income lost) 
+Income : (1449.0 gallons sold) (£309.0 in shop sales) (0.0 gallons turned away) (£595.9999999999999 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (372.0 gallons sold) (£48.72 in shop sales) (0.0 gallons turned away) (£142.72 potential income lost) 
+Income : (399.0 gallons sold) (£10.06 in shop sales) (0.0 gallons turned away) (£237.29000000000005 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final Restricted)
-Income : (666.0 gallons sold) (£32.16 in shop sales) (0.0 gallons turned away) (£365.18000000000006 potential income lost) 
+Income : (624.0 gallons sold) (£30.629999999999995 in shop sales) (0.0 gallons turned away) (£320.46 potential income lost) 
 
 Simulation run for 1440 ticks (14400 sec)
 Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final Restricted)
-Income 
+Income : (609.0 gallons sold) (£7.03 in shop sales) (0.0 gallons turned away) (£327.75 potential income lost) 
+
+Simulation run for 1440 ticks (14400 sec)
+Probabilities : (Small Vehicles 0.05) (Family Sedans 0.05) (Trucks final Restricted)
+Income : (384.0 gallons sol

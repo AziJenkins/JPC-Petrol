@@ -9,6 +9,8 @@ import java.net.URL;
 import javafx.scene.control.ListCell;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import model.Vehicle;
 import model.FamilySedan;
 import model.Motorbike;
@@ -27,8 +29,9 @@ public class VehicleCell extends ListCell<Vehicle> {
 				imageView.setPreserveRatio(true);
 				imageView.setFitWidth(50);
 				setGraphic(imageView);
-				setText(item.getRegistration().toString() + " Capacity:" + item.getFuelCapacity());
-				
+				setText("Vehicle ID: " + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6) + " Capacity:" + item.getFuelCapacity());
+				setTextFill(Paint.valueOf("white"));
+				setStyle("-fx-background-color: #" + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6));
 			} catch (FileNotFoundException e) {
 
 			}
@@ -41,8 +44,9 @@ public class VehicleCell extends ListCell<Vehicle> {
 				imageView.setPreserveRatio(true);
 				imageView.setFitWidth(50);
 				setGraphic(imageView);
-				setText(item.getRegistration().toString() + " Capacity:" + item.getFuelCapacity());
-				
+				setText("Vehicle ID: " + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6) + " Capacity:" + item.getFuelCapacity());
+				setTextFill(Paint.valueOf("white"));
+				setStyle("-fx-background-color: #" + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6));
 			} catch (FileNotFoundException e) {
 
 			}
@@ -53,8 +57,9 @@ public class VehicleCell extends ListCell<Vehicle> {
 				imageView.setPreserveRatio(true);
 				imageView.setFitWidth(50);
 				setGraphic(imageView);
-				setText(item.getRegistration().toString() + " Capacity:" + item.getFuelCapacity());
-				
+				setText("Vehicle ID: " + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6) + " Capacity:" + item.getFuelCapacity());
+				setTextFill(Paint.valueOf("white"));
+				setStyle("-fx-background-color: #" + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6));				
 			} catch (FileNotFoundException e) {
 
 			}
@@ -65,8 +70,9 @@ public class VehicleCell extends ListCell<Vehicle> {
 				imageView.setPreserveRatio(true);
 				imageView.setFitWidth(50);
 				setGraphic(imageView);
-				setText(item.getRegistration().toString() + " Capacity:" + item.getFuelCapacity());
-				
+				setText("Vehicle ID: " + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6) + " Capacity:" + item.getFuelCapacity());
+				setTextFill(Paint.valueOf("white"));
+				setStyle("-fx-background-color: #" + item.getRegistration().toString().substring(item.getRegistration().toString().length() - 6));				
 			} catch (FileNotFoundException e) {
 
 			}
@@ -74,6 +80,7 @@ public class VehicleCell extends ListCell<Vehicle> {
 			else {
 			setText("");
 			setGraphic(null);
+			setStyle("-fx-background-color: white");
 		}
 	}
 }
