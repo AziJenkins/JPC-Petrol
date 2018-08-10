@@ -233,6 +233,7 @@ public class MainController {
 		txtTicks.clear();
 	}
 
+	//
 	private void createTillView() {
 		Till[] tills = sim.getStation().getTillController().getTills();
 		for (int i = 0; i < Integer.parseInt(txtNumTills.getText()); i++) {

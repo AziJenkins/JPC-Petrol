@@ -104,26 +104,57 @@ public class Customer implements QueueItem {
 		}
 	}
 
+	/**
+	 * Getter for willShop
+	 * 
+	 * @return
+	 */
 	public Boolean getWillShop() {
 		return willShop;
 	}
 
+	/**
+	 * Getter for finishShopping
+	 * 
+	 * @return
+	 */
 	public void finishShopping() {
 		willShop = false;
 	}
 
+	/**
+	 * Getter for shopTicks
+	 * 
+	 * @return
+	 */
 	public int getShopTicks() {
 		return shopTicks;
 	}
 
+	/**
+	 * Getter for payTicks
+	 * 
+	 * @return
+	 */
 	public int getPayTicks() {
 		return payTicks;
 	}
+	
+	/**
+	 * update payTicks
+	 * 
+	 * @return
+	 */
 
 	public int reducePayTicks() {
 		return payTicks--;
 	}
 
+	/**
+	 * update shopTicks
+	 * 
+	 * @return
+	 */
 	public int reduceShopTicks() {
 		return shopTicks--;
 	}
@@ -136,10 +167,20 @@ public class Customer implements QueueItem {
 		
 	}
 
+	/**
+	 * Getter for shopSpend
+	 * 
+	 * @return
+	 */
 	public double getShopSpend() {
 		return shopSpend;
 	}
 	
+	/**
+	 * Getter for registration
+	 * 
+	 * @return
+	 */
 	public String toString() {
 		return registration.toString();
 	}

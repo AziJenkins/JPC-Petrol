@@ -74,10 +74,20 @@ public class PetrolStation {
 		return gallonsSold;
 	}
 	
+	/**
+	 * Getter for lostGallons
+	 * 
+	 * @return
+	 */
 	public SimpleDoubleProperty getLostGallons() {
 		return lostGallons;
 	}
 	
+	/**
+	 * Getter for lostShopincome
+	 * 
+	 * @return
+	 */
 	public SimpleDoubleProperty getLostShopIncome() {
 		return lostShopIncome;
 	}
@@ -162,6 +172,16 @@ public class PetrolStation {
 		}
 	}
 
+	/**
+	 * loops through a list of customer and call receive customer
+	 * on each customer in the list
+	 * 
+	 * @param customers
+	 * @throws CustomerCouldNotFindVehicleException
+	 * @throws CustomerHasNotPaidException
+	 * @throws CustomerCarMismatchException
+	 * @throws TillFullException
+	 */
 	public void recieveCustomers(List<Customer> customers) throws CustomerAlreadyPresentException, CustomerCarMismatchException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException, TillFullException {
 		for (Customer c : customers) {
 			recieveCustomer(c);

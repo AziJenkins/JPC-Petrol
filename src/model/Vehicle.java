@@ -228,14 +228,29 @@ public abstract class Vehicle implements QueueItem {
 		// TODO throw CustomerAlreadyPresentException if already occupied
 	}
 
+	/**
+	 * Getter for fuelCapacity
+	 * 
+	 * @return int
+	 */
 	public int getFuelCapacity() {
 		return fuelCapacity;
 	}
 
+	/**
+	 * Getter for hasPaid
+	 * 
+	 * @return
+	 */
 	public boolean getHasPaid() {
 		return hasPaid;
 	}
 
+	/**
+	 * Getter for registration
+	 * 
+	 * @return uuid
+	 */
 	public UUID getRegistration() {
 		return registration;
 	}
@@ -246,11 +261,22 @@ public abstract class Vehicle implements QueueItem {
 	public void addTick() {
 		this.ticksSinceArrival++;
 	}
+	
+	/**
+	 * Getter for isOccupied
+	 * 
+	 * @return
+	 */
 
 	public Boolean getIsOccupied() {
 		return isOccupied;
 	}
-
+	
+	/**
+	 * Setter for isOccupied
+	 * 
+	 * @param isOccupied
+	 */
 	private void setIsOccupied(Boolean isOccupied) {
 		this.isOccupied = isOccupied;
 	}
@@ -263,10 +289,20 @@ public abstract class Vehicle implements QueueItem {
 
 	}
 	
+	/**
+	 * Getter for didShop
+	 * 
+	 * @return boolean
+	 */
 	public boolean getDidShop() {
 		return didShop;
 	}
 	
+	/**
+	 * Getter for shoppingSpend
+	 * 
+	 * @return
+	 */
 	public double getShoppingSpend() {
 		return shoppingSpend;
 	}

@@ -27,10 +27,20 @@ public class Payment {
 		this.shopMoney = shopMoney;
 	}	
 	
+	/**
+	 * Getter for fuelGallons
+	 * 
+	 * @return
+	 */
 	public double getFuelGallons() {
 		return fuelGallons;
 	}
 
+	/**
+	 * Getter for shopMoney
+	 * 
+	 * @return
+	 */
 	public double getShopMoney() {
 		return shopMoney;
 	}
