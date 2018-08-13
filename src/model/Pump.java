@@ -38,7 +38,13 @@ public class Pump {
 		this.spaceUnused = PUMP_CAPACITY;
 		this.queue = new ObservableListQueue<Vehicle>(PUMP_CAPACITY);
 	}
-
+	
+	/**
+	 * Takes a vehicle and adds it to the pump queue
+	 * 
+	 * @param v
+	 * @return boolean
+	 */
 	public boolean enqueue(Vehicle v) {
 		if (queue.add(v)) {
 			spaceUnused -= v.getSize();
@@ -47,6 +53,11 @@ public class Pump {
 		return false;
 	}
 
+	/**
+	 * try to fill the next vehicle in the queue
+	 * 
+	 * @return boolean
+	 */
 	public boolean fill() {
 		if (queue.iterator().hasNext()) {
 			return queue.peek().tryFill(FUEL_RATE);
@@ -79,7 +90,12 @@ public class Pump {
 		// tryfill
 		// leave car
 	}
-
+	
+	/**
+	 * Getter for space unused
+	 * 
+	 * @return
+	 */
 	public double getSpaceUnused() {
 		return spaceUnused;
 	}
@@ -93,10 +109,21 @@ public class Pump {
 		return this.queue;
 	}
 
+	/**
+	 * Getter for queue size
+	 * 
+	 * @return
+	 */
 	public double getQueueSize() {
 		return queue.getSize();
 	}
 
+	/**
+	 * loop through vehicles in the queue and check if the 
+	 * vehicle has paid, if so then remove from the queue
+	 * 
+	 * @return Vehicle
+	 */
 	public Vehicle dequeueWhenFullyPaid() {
 		Vehicle v = queue.peek();
 		if (v != null && v.getHasPaid() && v.getIsOccupied()) {

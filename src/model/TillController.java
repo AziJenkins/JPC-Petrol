@@ -51,6 +51,9 @@ public class TillController {
 		tills[shortestQueueIndex].enqueue(c);
 	}
 
+	/**
+	 * 
+	 */
 	public void enqueue(List<Customer> customers) throws TillFullException, CustomerAlreadyPresentException {
 		for (Customer c : customers) {
 			enqueue(c);

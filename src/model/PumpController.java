@@ -103,6 +103,17 @@ public class PumpController {
 		return this.pumps;
 	}
 
+	/**
+	 * takes a customer and puts the customer back
+	 * into the car if all checks are true
+	 * 
+	 * @param c
+	 * @throws CustomerCarMismatchException
+	 * @throws CustomerAlreadyPresentException
+	 * @throws CustomerHasNotPaidException
+	 * @throws CustomerCouldNotFindVehicleException
+	 * 
+	 */
 	public void recieveCustomer(Customer c) throws CustomerCarMismatchException, CustomerAlreadyPresentException, CustomerHasNotPaidException, CustomerCouldNotFindVehicleException {
 		boolean found = false;
 		for (Pump p : pumps) {

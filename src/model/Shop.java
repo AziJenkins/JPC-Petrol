@@ -72,6 +72,11 @@ public class Shop {
 		return finishedShopping;
 	}
 
+	/**
+	 * 
+	 * 
+	 * @return List<Customer>
+	 */
 	public List<Customer> tick() {
 		return remove(reduceAllTimers());
 	}

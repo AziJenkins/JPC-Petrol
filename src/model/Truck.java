@@ -68,6 +68,11 @@ public class Truck extends Vehicle {
 		
 	}
 	
+	/**
+	 * Getter for isHappy
+	 * 
+	 * @return boolean
+	 */
 	public SimpleBooleanProperty getIsHappy() {
 		return isHappy;
 	}

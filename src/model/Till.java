@@ -42,6 +42,14 @@ public class Till {
 		}
 		return null;
 	}
+	
+	/**
+	 * If the queue is empty or firts customer hasn't paid 
+	 * don't return anything, if those conditions are not met
+	 * call remove() on the queue
+	 * 
+	 * @return Customer
+	 */
 
 	public Customer dequeueWhenDone() {
 		if (queue.isEmpty() || !queue.peek().getHasPaid()) {
