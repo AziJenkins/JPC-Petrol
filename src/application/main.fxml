@@ -70,7 +70,7 @@
                   </AnchorPane>
               </content>
             </TitledPane>
-            <TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="untitled" GridPane.columnIndex="1">
+            <TitledPane animated="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" text="Simulator" GridPane.columnIndex="1">
               <content>
                 <AnchorPane>
                      <children>
